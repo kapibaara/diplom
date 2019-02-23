@@ -1,0 +1,256 @@
+ *****          file of input data set *******
+:poly
+ &vvod
+ iout(12)=2,
+ @ 0 @        rcel(1,1)=0.3865,0.455,0.743,
+                  ncelsos(1,1)=1,3,4,
+ @  t1/2 @    rcel(1,2)=0.3865,0.455,0.743,
+                  ncelsos(1,2)=2,3,4,
+                                                                                                                        
+  t=1273.0, 1273.0, 1273.0, 873.0, 575.0,
+@-----------------------------------------------------------------------
+ troiz=
+ @u235  @ 0.0011   , 0.000046 ,  0.000e+00, 0.000e+00,
+ @u238  @ 0.021    , 0.023    ,  0.000e+00, 0.000e+00,
+ @ o    @ 0.046    , 0.046    ,  0.000e+00, 0.000e+00,
+ @ fe   @ 0.000e+00, 0.000e+00,  0.084000,  0.000e+00,
+ @ *h*  @ 0.000e+00, 0.000e+00,  0.000e+00, 0.046,
+ @ *o*  @ 0.000e+00, 0.000e+00,  0.000e+00, 0.0233,
+ @ u23  @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ slag @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ tc99 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ rh03 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ ag09 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ cd13 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ xe35 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ sm49 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ sm51 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ eu55 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ gd55 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @gd56  @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @gd57  @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @np37  @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ np39 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ pu38 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ pu39 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ pu40 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ pu41 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ pu42 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ am41 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ am2m @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ am43 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ cm42 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ cm44 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ cm45 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ sm52 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ xe31 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ cs33 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ nd45 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ nd43 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ pm47 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ mo95 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ cs34 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ pr41 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ pm48 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @pm8m  @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ rh05 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ pm49 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ kr83 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ ru01 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ pd05 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ cs35 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ sm50 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ eu51 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ eu53 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ eu54 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ gd54 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ am42 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @ cm43 @ 0.000e+00, 0.000e+00,  0.000e+00, 0.000e+00,
+ @-----------------------------------------------------------------------
+ ntcell=1,2,
+ krat= 1.,1.,
+ alout=
+       0.333,0.666,
+       0.666,0.333,
+                                                                                                                        
+ material(1)='chmc',
+ &end
+u235      1
+u238      2
+o         3
+fe        4
+*h*       5
+*o*       7
+u236     10
+slag     11
+tc99     12
+rh03     13
+ag09     14
+cd13     15
+xe35     16
+sm49     17
+sm51     18
+eu55     19
+gd55     20
+gd56     21
+gd57     22
+np37     23
+np39     24
+pu38     25
+pu39     26
+pu40     27
+pu41     28
+pu42     29
+am41     30
+am2m     31
+am43     32
+cm42     33
+cm44     34
+cm45     35
+sm52     40
+xe31     41
+cs33     42
+nd45     43
+nd43     44
+pm47     45
+mo95     46
+cs34     47
+pr41     48
+pm48     49
+pm8m     50
+rh05     51
+pm49     52
+kr83     53
+ru01     54
+pd05     55
+cs35     56
+sm50     57
+eu51     58
+eu53     59
+eu54     60
+gd54     61
+am42     62
+cm43     63
+****
+                                                                                                                        
+:fier
+ &vvod &end
+:stop
+ ***** end of   file of input data set *******
+:poly                                                                           
+  rout and rin were constructed
+Rout= 0.387, 0.455, 0.743, 0.387, 0.455, 0.743,
+Rin = 0.000, 0.387, 0.455, 0.000, 0.387, 0.455,
+  nsos  was constructed
+nsos=  1,  3,  4,  2,  3,  4,
+ definition izotr in sos           1:izotr=   2.000000    
+ definition izotr in sos           2:izotr=   2.000000    
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--cefzad  -- programm standart value --cefzad  =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--bakl    -- programm standart value --bakl    =  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alin    -- programm standart value --alin    =  0.000000E+00  0.000000E+00
+     0.000000E+00  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alcorr  -- programm standart value --alcorr  =  0.100000E+01  0.100000E+01
+     0.100000E+01  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --uncorrected definition--alin    --bat programm use this value --alin      0.000000E+00  0.000000E+00
+     0.000000E+00  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --uncorrected definition--alout   --bat programm use this value --alout     0.333000E+00  0.666000E+00
+     0.666000E+00  0.333000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--nbv     -- programm standart value --nbv     =    1    1    1    1    1    1
+   
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--et      -- programm standart value --et      =  0.105000E+08  0.215000E+01
+     0.215000E+01  0.000000E+00
+    ????  storage for pr. getter =      600 ?? common /rrr/ rab(        0 )  ????
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           2
+          cell number    1  number of zone= 3
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =  0.3330000      0.6660000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3
+ radius   0.38650E+00 0.45500E+00 0.74300E+00
+ temper   0.12730E+04 0.12730E+04 0.87300E+03
+ rez_izot    u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=62
+  1 u235     0.11000E-02 0.00000E+00 0.00000E+00
+  2 u238     0.21000E-01 0.00000E+00 0.00000E+00
+  3 o        0.46000E-01 0.00000E+00 0.00000E+00
+  4 fe       0.00000E+00 0.84000E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.46000E-01
+  6 *o*      0.00000E+00 0.00000E+00 0.23300E-01
+ ------------------------------------------------------------------------------
+  number of cells =           2
+          cell number    2  number of zone= 3
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =  0.6660000      0.3330000    
+ ------------------------------------------------------------------------------
+ num zone      4           5           6
+ radius   0.38650E+00 0.45500E+00 0.74300E+00
+ temper   0.12730E+04 0.12730E+04 0.87300E+03
+ rez_izot    u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=62
+  1 u235     0.46000E-04 0.00000E+00 0.00000E+00
+  2 u238     0.23000E-01 0.00000E+00 0.00000E+00
+  3 o        0.46000E-01 0.00000E+00 0.00000E+00
+  4 fe       0.00000E+00 0.84000E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.46000E-01
+  6 *o*      0.00000E+00 0.00000E+00 0.23300E-01
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  800K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp= 1000K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  800K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp= 1000K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.06925     ***k(itt)= 1.03498     ***k(integ)= 1.06925    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     * 0.33300     0.66600    
+     * 0.66600     0.33300    
+ lokal kner      in cell ,ru=           1=   1.844074       1.422161    
+ lokal kner      in cell ,ru=           2=  0.1559261      0.5778393    
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.0693       1.7320       1.1973      0.68793      0.74952    
+ s0z(n)=    1.168588      0.0000000E+00  0.0000000E+00   1.168588    
+  0.0000000E+00  0.0000000E+00
+:stop                                                                           

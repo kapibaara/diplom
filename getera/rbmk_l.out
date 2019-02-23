@@ -1,0 +1,860 @@
+ *****          file of input data set *******
+:poly
+	@  fuel chenell -  14 zons
+ &vvod
+@   delkit=0.5e-2,
+@   delro=0.5e-2,
+@ iout(1)=1,
+ iout(54)=1,
+@ iout(30)=2,
+@
+@  iout(14)=1,
+@  cef0=1.04,
+@
+   r= 0.75,4.,4.4,5.,6.5,9.,11.3,14.105,
+ nsos=1,101,2,3,3,3,3,3,
+  izotr(4)=4,
+ ig=2,
+ sroiz=
+@1 zr-centr
+   0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.0,0.0,0.033900,
+   0.,1.040e-5,6.2845e-4,.0,.0,0.,0.,0.,.0,
+@2 tube of chenell
+   0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.0,0.0,0.042780,
+   0.,7.000e-6,1.0690e-3,.0,.0,0.,0.,0.,.0,
+@3 grafit
+   0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.085075,0.,0.,1.8e-8,.0,
+   0.,0.,0.,.0,
+@4 fuel, pt=0., 2% u235
+   0.0000000,0.0000000,0.41985e-3,0.0206568,0.,0.,0.,0.,0.,0.,0.042153,
+   0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+  .0,
+@5 zr
+   0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.00,0.000,0.043352,
+   0.,1.33e-5,8.04e-4,.0,.0,0.,0.,0.,.0,
+@6 h2o   in fuel chenell ( zr-dist.lett.)
+@@ h2o = 1
+@   0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.06692,0.033460,0.,
+@@ h2o = 0.78
+   0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.05220,0.026100,0.,
+   0.,0.,0.00e-4,.0,.0,4.82e-4,1.35e-4,6.65e-5,.0,
+@    zr  tubf  c    fue  zr   h2of h2os al   b10  tubs
+  t=543.,543.,873.,773.,493.,543.,
+       iout(2)=1,rfuel=0.5915,rcon=0.6815,nrow=2,nsosc=4,5,6,
+       ntvel=18,
+   &end
+xe35
+sm49
+u235
+u238
+pu39
+pu40
+pu41
+pu42
+fp35
+fp39
+o
+*h*
+*o*
+zr
+*c*
+hf
+nb
+b-10
+u236
+fe
+cr
+ni
+al
+****
+:fier
+ &vvod
+ &end
+:macro
+ &vvod
+  et=10.5e+6,2.15,2.15,0.,
+  nbv=0,0,1,0,1,
+ &end
+:micro
+ &vvod
+  et=10.5e+6,2.15,2.15,0.,
+  nbv=0,0,1,0,1,
+ &end
+:micro
+ &vvod
+  et=10.5e+6,0.,
+  nbv=0,0,1,0,1,
+ &end
+@:stop
+@:bunt
+ &vvod qv=4.2,dtim=200.,
+ iesbur=0,0,1,0,1,0,0,0,0,0,0,0,
+ &end
+@:fier
+ &vvod &end
+@:stop
+:burn
+ &vvod qv=4.5,dtim=5.,
+ iesbur=0,0,1,0,1,0,0,0,0,0,0,0,
+ &end
+:fier
+ &vvod &end
+:burn
+ &vvod qv=4.5,dtim=10.,
+ iesbur=0,0,1,0,1,0,0,0,0,0,0,0,
+ &end
+:fier
+ &vvod &end
+:burn
+ &vvod qv=4.5,dtim=10.,
+ iesbur=0,0,1,0,1,0,0,0,0,0,0,0,
+ &end
+:fier
+ &vvod &end
+:burn
+ &vvod qv=4.5,dtim=10.,
+ iesbur=0,0,1,0,1,0,0,0,0,0,0,0,
+ &end
+:fier
+ &vvod &end
+:burn
+ &vvod qv=4.5,dtim=10.,
+ iesbur=0,0,1,0,1,0,0,0,0,0,0,0,
+ &end
+:fier
+ &vvod &end
+:burn
+ &vvod qv=4.5,dtim=10.,
+ iesbur=0,0,1,0,1,0,0,0,0,0,0,0,
+ &end
+:fier
+ &vvod &end
+:burn
+ &vvod qv=4.5,dtim=10.,
+ iesbur=0,0,1,0,1,0,0,0,0,0,0,0,
+ &end
+:fier
+ &vvod &end
+:burn
+ &vvod qv=4.5,dtim=10.,
+ iesbur=0,0,1,0,1,0,0,0,0,0,0,0,
+ &end
+:fier
+ &vvod &end
+:burn
+ &vvod qv=4.5,dtim=10.,
+ iesbur=0,0,1,0,1,0,0,0,0,0,0,0,
+ &end
+:fier
+ &vvod &end
+:burn
+ &vvod qv=4.5,dtim=10.,
+ iesbur=0,0,1,0,1,0,0,0,0,0,0,0,
+ &end
+:fier
+ &vvod &end
+:burn
+ &vvod qv=4.5,dtim=10.,
+ iesbur=0,0,1,0,1,0,0,0,0,0,0,0,
+ &end
+:fier
+&vvod &end
+:prnt
+:stop
+ ***** end of   file of input data set *******
+:poly                                                                           
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--cefzad  -- programm standart value --cefzad  =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--bakl    -- programm standart value --bakl    =  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alin    -- programm standart value --alin    =  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alout   -- programm standart value --alout   =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alcorr  -- programm standart value --alcorr  =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--nbv     -- programm standart value --nbv     =    1    1    1    1    1    1
+       1    1    1    1    1    1
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--et      -- programm standart value --et      =  0.105000E+08  0.215000E+01
+     0.215000E+01  0.000000E+00
+    ????  storage for pr. getter =     1200 ?? common /rrr/ rab(        0 )  ????
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone=12
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4           5           6
+ radius   0.75000E+00 0.12266E+01 0.18984E+01 0.28582E+01 0.35168E+01 0.40000E+01
+ temper   0.54300E+03 0.53172E+03 0.77300E+03 0.53172E+03 0.77300E+03 0.53172E+03
+ rez_izot    bad         bad         u238        bad         u238        bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=23
+  3 u235     0.00000E+00 0.00000E+00 0.41985E-03 0.00000E+00 0.41985E-03 0.00000E+00
+  4 u238     0.00000E+00 0.00000E+00 0.20657E-01 0.00000E+00 0.20657E-01 0.00000E+00
+ 11 o        0.00000E+00 0.00000E+00 0.42153E-01 0.00000E+00 0.42153E-01 0.00000E+00
+ 12 *h*      0.00000E+00 0.40422E-01 0.00000E+00 0.40422E-01 0.00000E+00 0.40422E-01
+ 13 *o*      0.00000E+00 0.20211E-01 0.00000E+00 0.20211E-01 0.00000E+00 0.20211E-01
+ 14 zr       0.33900E-01 0.97817E-02 0.00000E+00 0.97817E-02 0.00000E+00 0.97817E-02
+ 16 hf       0.10400E-04 0.30009E-05 0.00000E+00 0.30009E-05 0.00000E+00 0.30009E-05
+ 17 nb       0.62845E-03 0.18141E-03 0.00000E+00 0.18141E-03 0.00000E+00 0.18141E-03
+ 20 fe       0.00000E+00 0.37324E-03 0.00000E+00 0.37324E-03 0.00000E+00 0.37324E-03
+ 21 cr       0.00000E+00 0.10454E-03 0.00000E+00 0.10454E-03 0.00000E+00 0.10454E-03
+ 22 ni       0.00000E+00 0.51495E-04 0.00000E+00 0.51495E-04 0.00000E+00 0.51495E-04
+ num zone      7           8           9          10          11          12
+ radius   0.44000E+01 0.50000E+01 0.65000E+01 0.90000E+01 0.11300E+02 0.14105E+02
+ temper   0.54300E+03 0.87300E+03 0.87300E+03 0.87300E+03 0.87300E+03 0.87300E+03
+ rez_izot    bad         bad         bad         bad         bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=23
+ 14 zr       0.42780E-01 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 15 *c*      0.00000E+00 0.85075E-01 0.85075E-01 0.85075E-01 0.85075E-01 0.85075E-01
+ 16 hf       0.70000E-05 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 17 nb       0.10690E-02 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 18 b-10     0.00000E+00 0.18000E-07 0.18000E-07 0.18000E-07 0.18000E-07 0.18000E-07
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp=  800K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp= 1000K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.2884       1.7035       1.0813      0.81946      0.85358    
+ s0z(n)=   0.0000000E+00  0.0000000E+00  0.6456643      0.0000000E+00
+  0.7923020      0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00
+  0.0000000E+00  0.0000000E+00  0.0000000E+00
+:macro                                                                          
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+    -------------------------------------------------------------------------------
+    * n group   * e(i)        * e(i+1)      *spect neutron fission  *
+          1       0.10500E+08    2.1544           0.99900    
+          2        2.1544        0.0000           0.13540E-08
+    *******************************************************************************
+                                       **    macro cross section    **
+    *******************************************************************************
+    ** n zone    1 vzone=  19.785     /  3  5
+*grp*flux 1/cm2c  * stotal      * sabs        * sfis.       * nu$sfis.    * 1/3*strans  *1/aver.veloci*aver power
+  1  0.3430029     0.3761657     0.2440706E-01 0.5489527E-02 0.1425152E-01  1.246197     0.2385695E-06 0.5839096     0.7066353E-01
+  2  0.2150068     0.3537598     0.1644326     0.1151750     0.2801067     0.6358447     0.9911292E-05  1.703475     0.9293365    
+                                       * matric. scat.cross. sec. from i to j  *
+       i / j -->            1           2
+       i        1 0.3517023     0.5622773E-04
+       i        2  0.000000     0.1893272    
+:micro                                                                          
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+    -------------------------------------------------------------------------------
+    * n group   * e(i)        * e(i+1)
+          1       0.10500E+08    2.1544    
+          2        2.1544       0.10000E-04
+    ---------------------------------------------------------------------------
+         ** microcrossection  ** in   1  zone **v=  19.785    /  3  5
+    * n group  * izotop  * at.mas      *dens         *flux 1/cm2c  * capture   * fission  *    * production *
+          1       xe35     135.00         0.0000       0.34300        6.1867          0.0000         0.0000    
+          2       xe35     135.00         0.0000       0.21501       0.15438E+07      0.0000         0.0000    
+          1       sm49     149.00         0.0000       0.34300        40.243          0.0000         0.0000    
+          2       sm49     149.00         0.0000       0.21501        46559.          0.0000         0.0000    
+          1       u235     235.00        0.41985E-03   0.34300        11.482          7.6731         0.0000    
+          2       u235     235.00        0.41985E-03   0.21501        321.68          274.32         0.0000    
+          1       u238     238.00        0.20657E-01   0.34300       0.94026         0.10979         0.0000    
+          2       u238     238.00        0.20657E-01   0.21501        1.4218          0.0000         0.0000    
+          1       pu39     239.00         0.0000       0.34300        14.744          8.8947         0.0000    
+          2       pu39     239.00         0.0000       0.21501        1107.6          712.60         0.0000    
+          1       pu40     240.00         0.0000       0.34300        6.2055         0.64403         0.0000    
+          2       pu40     240.00         0.0000       0.21501        702.18         0.14200         0.0000    
+          1       pu41     241.00         0.0000       0.34300        24.325          18.896         0.0000    
+          2       pu41     241.00         0.0000       0.21501        986.03          730.57         0.0000    
+          1       pu42     242.00         0.0000       0.34300        42.406         0.47394         0.0000    
+          2       pu42     242.00         0.0000       0.21501        10.866         0.12357E-02     0.0000    
+          1       fp35     116.00         0.0000       0.34300       0.36515          0.0000         0.0000    
+          2       fp35     116.00         0.0000       0.21501        4.6277          0.0000         0.0000    
+          1       fp39     116.00         0.0000       0.34300       0.36515          0.0000         0.0000    
+          2       fp39     116.00         0.0000       0.21501        4.6277          0.0000         0.0000    
+          1       o         16.00        0.42153E-01   0.34300       0.38817E-02      0.0000         0.0000    
+          2       o         16.00        0.42153E-01   0.21501       0.10530E-03      0.0000         0.0000    
+          1       *h*        1.00         0.0000       0.34300       0.25355E-02      0.0000         0.0000    
+          2       *h*        1.00         0.0000       0.21501       0.17090          0.0000         0.0000    
+          1       *o*       16.00         0.0000       0.34300       0.38817E-02      0.0000         0.0000    
+          2       *o*       16.00         0.0000       0.21501       0.10530E-03      0.0000         0.0000    
+          1       zr        91.00         0.0000       0.34300       0.43511E-01      0.0000         0.0000    
+          2       zr        91.00         0.0000       0.21501       0.97593E-01      0.0000         0.0000    
+          1       *c*       12.00         0.0000       0.34300       0.36394E-03      0.0000         0.0000    
+          2       *c*       12.00         0.0000       0.21501       0.17511E-02      0.0000         0.0000    
+          1       hf       178.50         0.0000       0.34300        41.911          0.0000         0.0000    
+          2       hf       178.50         0.0000       0.21501        93.602          0.0000         0.0000    
+          1       nb        93.00         0.0000       0.34300       0.41164          0.0000         0.0000    
+          2       nb        93.00         0.0000       0.21501       0.57578          0.0000         0.0000    
+          1       b-10      10.00         0.0000       0.34300        29.640          0.0000         0.0000    
+          2       b-10      10.00         0.0000       0.21501        1974.2          0.0000         0.0000    
+          1       u236     236.00         0.0000       0.34300        10.333         0.34679         0.0000    
+          2       u236     236.00         0.0000       0.21501        2.6235         0.35104E-01     0.0000    
+          1       fe        55.80         0.0000       0.34300       0.32116E-01      0.0000         0.0000    
+          2       fe        55.80         0.0000       0.21501        1.3457          0.0000         0.0000    
+          1       cr        52.00         0.0000       0.34300       0.32559E-01      0.0000         0.0000    
+          2       cr        52.00         0.0000       0.21501        1.5578          0.0000         0.0000    
+          1       ni        58.70         0.0000       0.34300       0.71416E-01      0.0000         0.0000    
+          2       ni        58.70         0.0000       0.21501        2.2315          0.0000         0.0000    
+          1       al        27.00         0.0000       0.34300       0.52572E-02      0.0000         0.0000    
+          2       al        27.00         0.0000       0.21501       0.11787          0.0000         0.0000    
+:micro                                                                          
+    -------------------------------------------------------------------------------
+    * n group   * e(i)        * e(i+1)
+          1       0.10500E+08   0.10000E-04
+    ---------------------------------------------------------------------------
+         ** microcrossection  ** in   1  zone **v=  19.785    /  3  5
+    * n group  * izotop  * at.mas      *dens         *flux 1/cm2c  * capture   * fission  *    * production *
+          1       xe35     135.00         0.0000       0.55801       0.59484E+06      0.0000         0.0000    
+          1       sm49     149.00         0.0000       0.55801        17964.          0.0000         0.0000    
+          1       u235     235.00        0.41985E-03   0.55801        131.01          110.42         0.0000    
+          1       u238     238.00        0.20657E-01   0.55801        1.1258         0.67489E-01     0.0000    
+          1       pu39     239.00         0.0000       0.55801        435.85          280.04         0.0000    
+          1       pu40     240.00         0.0000       0.55801        274.37         0.45060         0.0000    
+          1       pu41     241.00         0.0000       0.55801        394.88          293.11         0.0000    
+          1       pu42     242.00         0.0000       0.55801        30.253         0.29180         0.0000    
+          1       fp35     116.00         0.0000       0.55801        2.0075          0.0000         0.0000    
+          1       fp39     116.00         0.0000       0.55801        2.0075          0.0000         0.0000    
+          1       o         16.00        0.42153E-01   0.55801       0.24266E-02      0.0000         0.0000    
+          1       *h*        1.00         0.0000       0.55801       0.67407E-01      0.0000         0.0000    
+          1       *o*       16.00         0.0000       0.55801       0.24266E-02      0.0000         0.0000    
+          1       zr        91.00         0.0000       0.55801       0.64349E-01      0.0000         0.0000    
+          1       *c*       12.00         0.0000       0.55801       0.89842E-03      0.0000         0.0000    
+          1       hf       178.50         0.0000       0.55801        61.828          0.0000         0.0000    
+          1       nb        93.00         0.0000       0.55801       0.47489          0.0000         0.0000    
+          1       b-10      10.00         0.0000       0.55801        778.89          0.0000         0.0000    
+          1       u236     236.00         0.0000       0.55801        7.3627         0.22669         0.0000    
+          1       fe        55.80         0.0000       0.55801       0.53825          0.0000         0.0000    
+          1       cr        52.00         0.0000       0.55801       0.62023          0.0000         0.0000    
+          1       ni        58.70         0.0000       0.55801       0.90371          0.0000         0.0000    
+          1       al        27.00         0.0000       0.55801       0.48650E-01      0.0000         0.0000    
+:burn                                                                           
+ *** average burn up =  0.85019E-01 (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp=  800K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp= 1000K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.2492       1.6414       1.0839      0.81955      0.85672    
+ s0z(n)=   0.0000000E+00  0.0000000E+00  0.6456643      0.0000000E+00
+  0.7923020      0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00
+  0.0000000E+00  0.0000000E+00  0.0000000E+00
+:burn                                                                           
+ *** average burn up =  0.25499     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp=  800K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp= 1000K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.2441       1.6339       1.0840      0.81968      0.85701    
+ s0z(n)=   0.0000000E+00  0.0000000E+00  0.6456643      0.0000000E+00
+  0.7923020      0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00
+  0.0000000E+00  0.0000000E+00  0.0000000E+00
+:burn                                                                           
+ *** average burn up =  0.42503     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp=  800K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp= 1000K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.2417       1.6305       1.0839      0.81981      0.85706    
+ s0z(n)=   0.0000000E+00  0.0000000E+00  0.6456643      0.0000000E+00
+  0.7923020      0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00
+  0.0000000E+00  0.0000000E+00  0.0000000E+00
+:burn                                                                           
+ *** average burn up =  0.59511     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp=  800K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp= 1000K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.2398       1.6280       1.0837      0.81995      0.85703    
+ s0z(n)=   0.0000000E+00  0.0000000E+00  0.6456643      0.0000000E+00
+  0.7923020      0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00
+  0.0000000E+00  0.0000000E+00  0.0000000E+00
+:burn                                                                           
+ *** average burn up =  0.76525     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp=  800K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp= 1000K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.2379       1.6256       1.0835      0.82008      0.85698    
+ s0z(n)=   0.0000000E+00  0.0000000E+00  0.6456643      0.0000000E+00
+  0.7923020      0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00
+  0.0000000E+00  0.0000000E+00  0.0000000E+00
+:burn                                                                           
+ *** average burn up =  0.93545     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp=  800K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp= 1000K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.2360       1.6233       1.0834      0.82022      0.85692    
+ s0z(n)=   0.0000000E+00  0.0000000E+00  0.6456643      0.0000000E+00
+  0.7923020      0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00
+  0.0000000E+00  0.0000000E+00  0.0000000E+00
+:burn                                                                           
+ *** average burn up =   1.1057     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp=  800K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp= 1000K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.2341       1.6208       1.0832      0.82036      0.85684    
+ s0z(n)=   0.0000000E+00  0.0000000E+00  0.6456643      0.0000000E+00
+  0.7923020      0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00
+  0.0000000E+00  0.0000000E+00  0.0000000E+00
+:burn                                                                           
+ *** average burn up =   1.2760     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp=  800K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp= 1000K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.2321       1.6183       1.0831      0.82050      0.85675    
+ s0z(n)=   0.0000000E+00  0.0000000E+00  0.6456643      0.0000000E+00
+  0.7923020      0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00
+  0.0000000E+00  0.0000000E+00  0.0000000E+00
+:burn                                                                           
+ *** average burn up =   1.4464     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp=  800K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp= 1000K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.2300       1.6158       1.0829      0.82063      0.85665    
+ s0z(n)=   0.0000000E+00  0.0000000E+00  0.6456643      0.0000000E+00
+  0.7923020      0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00
+  0.0000000E+00  0.0000000E+00  0.0000000E+00
+:burn                                                                           
+ *** average burn up =   1.6168     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp=  800K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp= 1000K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.2279       1.6131       1.0828      0.82077      0.85653    
+ s0z(n)=   0.0000000E+00  0.0000000E+00  0.6456643      0.0000000E+00
+  0.7923020      0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00
+  0.0000000E+00  0.0000000E+00  0.0000000E+00
+:burn                                                                           
+ *** average burn up =   1.7873     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp=  800K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp= 1000K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.2257       1.6104       1.0826      0.82091      0.85641    
+ s0z(n)=   0.0000000E+00  0.0000000E+00  0.6456643      0.0000000E+00
+  0.7923020      0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00
+  0.0000000E+00  0.0000000E+00  0.0000000E+00
+:prnt                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone=12
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4           5           6
+ radius   0.75000E+00 0.12266E+01 0.18984E+01 0.28582E+01 0.35168E+01 0.40000E+01
+ temper   0.54300E+03 0.53172E+03 0.77300E+03 0.53172E+03 0.77300E+03 0.53172E+03
+ rez_izot    bad         bad         u238        bad         u238        bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=23
+  1 xe35     0.00000E+00 0.00000E+00 0.35070E-08 0.00000E+00 0.36544E-08 0.00000E+00
+  2 sm49     0.00000E+00 0.00000E+00 0.23595E-07 0.00000E+00 0.23626E-07 0.00000E+00
+  3 u235     0.00000E+00 0.00000E+00 0.38030E-03 0.00000E+00 0.37441E-03 0.00000E+00
+  4 u238     0.00000E+00 0.00000E+00 0.20639E-01 0.00000E+00 0.20636E-01 0.00000E+00
+  5 pu39     0.00000E+00 0.00000E+00 0.97598E-05 0.00000E+00 0.10774E-04 0.00000E+00
+  6 pu40     0.00000E+00 0.00000E+00 0.50457E-06 0.00000E+00 0.71315E-06 0.00000E+00
+  7 pu41     0.00000E+00 0.00000E+00 0.33281E-07 0.00000E+00 0.51757E-07 0.00000E+00
+  8 pu42     0.00000E+00 0.00000E+00 0.62819E-09 0.00000E+00 0.12016E-08 0.00000E+00
+ 11 o        0.00000E+00 0.00000E+00 0.42153E-01 0.00000E+00 0.42153E-01 0.00000E+00
+ 12 *h*      0.00000E+00 0.40422E-01 0.00000E+00 0.40422E-01 0.00000E+00 0.40422E-01
+ 13 *o*      0.00000E+00 0.20211E-01 0.00000E+00 0.20211E-01 0.00000E+00 0.20211E-01
+ 14 zr       0.33900E-01 0.97817E-02 0.00000E+00 0.97817E-02 0.00000E+00 0.97817E-02
+ 16 hf       0.10400E-04 0.30009E-05 0.00000E+00 0.30009E-05 0.00000E+00 0.30009E-05
+ 17 nb       0.62845E-03 0.18141E-03 0.00000E+00 0.18141E-03 0.00000E+00 0.18141E-03
+ 19 u236     0.00000E+00 0.00000E+00 0.62167E-05 0.00000E+00 0.71298E-05 0.00000E+00
+ 20 fe       0.00000E+00 0.37324E-03 0.00000E+00 0.37324E-03 0.00000E+00 0.37324E-03
+ 21 cr       0.00000E+00 0.10454E-03 0.00000E+00 0.10454E-03 0.00000E+00 0.10454E-03
+ 22 ni       0.00000E+00 0.51495E-04 0.00000E+00 0.51495E-04 0.00000E+00 0.51495E-04
+ num zone      7           8           9          10          11          12
+ radius   0.44000E+01 0.50000E+01 0.65000E+01 0.90000E+01 0.11300E+02 0.14105E+02
+ temper   0.54300E+03 0.87300E+03 0.87300E+03 0.87300E+03 0.87300E+03 0.87300E+03
+ rez_izot    bad         bad         bad         bad         bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=23
+ 14 zr       0.42780E-01 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 15 *c*      0.00000E+00 0.85075E-01 0.85075E-01 0.85075E-01 0.85075E-01 0.85075E-01
+ 16 hf       0.70000E-05 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 17 nb       0.10690E-02 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
+ 18 b-10     0.00000E+00 0.18000E-07 0.18000E-07 0.18000E-07 0.18000E-07 0.18000E-07
+:stop                                                                           

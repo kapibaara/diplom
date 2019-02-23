@@ -1,0 +1,162 @@
+:POLY
+	@  Fuel chenell -  14 zons
+ &VVOD
+@   DELKIT=0.5E-2,
+@   DELRO=0.5E-2,
+@ IOUT(1)=1,
+ IOUT(54)=1,
+@ IOUT(30)=2,
+@
+@  IOUT(14)=1,
+@  CEF0=1.04,
+@
+   R= 0.75,4.,4.4,5.,6.5,9.,11.3,14.105,
+ NSOS=1,101,2,3,3,3,3,3,
+  IZOTR(4)=4,
+ IG=2,
+ SROIZ=
+@1 ZR-CENTR
+   0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.0,0.0,0.033900,
+   0.,1.040E-5,6.2845E-4,.0,.0,0.,0.,0.,.0,
+@2 TUBE OF CHENELL
+   0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.0,0.0,0.042780,
+   0.,7.000E-6,1.0690E-3,.0,.0,0.,0.,0.,.0,
+@3 GRAFIT
+   0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.085075,0.,0.,1.8E-8,.0,
+   0.,0.,0.,.0,
+@4 Fuel, Pt=0., 2% U235
+   0.0000000,0.0000000,0.41985E-3,0.0206568,0.,0.,0.,0.,0.,0.,0.042153,
+   0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+  .0,
+@5 ZR
+   0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.00,0.000,0.043352,
+   0.,1.33E-5,8.04E-4,.0,.0,0.,0.,0.,.0,
+@6 H2O   in fuel chenell ( Zr-dist.lett.)
+@@ h2o = 1
+@   0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.06692,0.033460,0.,
+@@ h2o = 0.78
+   0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.05220,0.026100,0.,
+   0.,0.,0.00E-4,.0,.0,4.82E-4,1.35E-4,6.65E-5,.0,
+@    Zr  Tubf  C    Fue  Zr   H2Of H2Os Al   B10  Tubs
+  T=543.,543.,873.,773.,493.,543.,
+       IOUT(2)=1,RFUEL=0.5915,RCON=0.6815,NROW=2,NSOSC=4,5,6,
+       NTVEL=18,
+   &END
+XE35
+SM49
+U235
+U238
+PU39
+PU40
+PU41
+PU42
+FP35
+FP39
+O
+*H*
+*O*
+ZR
+*C*
+HF
+NB
+B-10
+U236
+FE
+CR
+NI
+AL
+****
+:FIER
+ &VVOD
+ &END
+:MACRO
+ &VVOD
+  ET=10.5E+6,2.15,2.15,0.,
+  NBV=0,0,1,0,1,
+ &END
+:MICRO
+ &VVOD
+  ET=10.5E+6,2.15,2.15,0.,
+  NBV=0,0,1,0,1,
+ &END
+:MICRO
+ &VVOD
+  ET=10.5E+6,0.,
+  NBV=0,0,1,0,1,
+ &END
+@:STOP
+@:BUNT
+ &VVOD QV=4.2,DTIM=200.,
+ IESBUR=0,0,1,0,1,0,0,0,0,0,0,0,
+ &END
+@:FIER
+ &VVOD &END
+@:STOP
+:BURN
+ &VVOD QV=4.5,DTIM=5.,
+ IESBUR=0,0,1,0,1,0,0,0,0,0,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=4.5,DTIM=10.,
+ IESBUR=0,0,1,0,1,0,0,0,0,0,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=4.5,DTIM=10.,
+ IESBUR=0,0,1,0,1,0,0,0,0,0,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=4.5,DTIM=10.,
+ IESBUR=0,0,1,0,1,0,0,0,0,0,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=4.5,DTIM=10.,
+ IESBUR=0,0,1,0,1,0,0,0,0,0,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=4.5,DTIM=10.,
+ IESBUR=0,0,1,0,1,0,0,0,0,0,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=4.5,DTIM=10.,
+ IESBUR=0,0,1,0,1,0,0,0,0,0,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=4.5,DTIM=10.,
+ IESBUR=0,0,1,0,1,0,0,0,0,0,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=4.5,DTIM=10.,
+ IESBUR=0,0,1,0,1,0,0,0,0,0,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=4.5,DTIM=10.,
+ IESBUR=0,0,1,0,1,0,0,0,0,0,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=4.5,DTIM=10.,
+ IESBUR=0,0,1,0,1,0,0,0,0,0,0,0,
+ &END
+:FIER
+&VVOD &END
+:PRNT
+:STOP

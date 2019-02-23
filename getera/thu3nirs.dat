@@ -1,0 +1,76 @@
+*****          file of input data set *******
+:poly
+ &vvod                                                                                       
+   nsos=1,2,3,
+   r=0.3865,0.455,0.743,                                       
+@ ------------------------------------------------------------------------------
+ t=        1273.0, 873.0, 575.0,
+ troiz=
+ @ izotop    / fuel /     / km /       / mod /   
+ @ U233  @   0.001126   , 0.00000e+00, 0.00000e+00, 
+ @ TH32  @   0.021389   , 0.00000e+00, 0.00000e+00, 
+ @ O     @   0.04503    , 0.00000e+00, 0.00000e+00, 
+ @ Fe    @   0.00000e+00, 0.084      , 0.00000e+00,
+ @ *H*   @   0.00000e+00, 0.00000e+00, 0.046,
+ @  D    @   0.00000e+00, 0.00000e+00, 0.00000,
+ @ *O*   @   0.00000e+00, 0.00000e+00, 0.023,
+ @ EU    @   0.26980E+02, 0.00000e+00, 0.00000e+00
+@-------------------------------------------------------------------------------------
+ material(1)='chmc',
+ &end
+U233
+TH32
+O
+Fe
+*H*
+D
+*O*
+EU
+****
+:macro
+ &vvod
+   nbv=1,1,1,
+   et=10.5e+6,2.15,2.15,0,
+ &end
+:fier
+ &vvod &end
+
+@:stop
+:burn
+ &vvod qv=70.6,dtim=2.,
+ &end
+:fier
+ &vvod &end
+@:stop
+:burn
+ &vvod qv=70.6,dtim=3.,
+ &end
+:fier
+ &vvod &end
+:burn
+ &vvod qv=70.6,dtim=5.,
+ &end
+:fier
+ &vvod &end
+:burn
+ &vvod qv=70.6,dtim=100.,
+ &end
+:fier
+ &vvod &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=70.6,dtim=540.,
+ &end
+:fier
+ &vvod &end
+:corr
+ &vvod &end
+@:stop
+:burn
+ &vvod qv=70.6,dtim=650.,
+ &end
+:fier
+ &vvod &end
+
+:stop

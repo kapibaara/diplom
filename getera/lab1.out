@@ -1,0 +1,133 @@
+ *****          file of input data set *******
+ *****          file of input data set *******
+:poly
+ &vvod
+   ig=3,
+   nsos=1,
+   r=1.0,
+@----------------------------------------------------------------------
+ t=293.0,
+ troiz=
+ @ izotop    / concentration /
+ @ u235  @   0.000002e+00,
+ @ u238  @   0.000083e+00,
+ @ al    @   0.000009e+00,
+ @ c     @   0.225559e+00,
+ @ er    @   0.00000234,
+@----------------------------------------------------------------------
+ material(1)='chmc',
+ &end
+u235
+u238
+al
+c
+er
+****
+:corr
+ &vvod &end
+:fier
+ &vvod &end
+:stop
+@----------------------------------------------------------------------
+ ***** end of   file of input data set *******
+:poly                                                                           
+ definition izotr in sos           1:izotr=   2.000000    
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--cefzad  -- programm standart value --cefzad  =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--bakl    -- programm standart value --bakl    =  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alin    -- programm standart value --alin    =  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alout   -- programm standart value --alout   =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alcorr  -- programm standart value --alcorr  =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--nbv     -- programm standart value --nbv     =    1
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--et      -- programm standart value --et      =  0.105000E+08  0.215000E+01
+     0.215000E+01  0.000000E+00
+    ????  storage for pr. getter =      100 ?? common /rrr/ rab(        0 )  ????
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 1
+ << geometry characteristics >>
+    geometry of cell- sphere      index=           3
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1
+ radius   0.10000E+01
+ temper   0.29300E+03
+ rez_izot    u238
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=61
+  1 u235     0.20000E-05
+  2 u238     0.83000E-04
+  3 al       0.90000E-05
+  4 c        0.22556E+00
+  5 er       0.23400E-05
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >>  K-inf(MLT)= 0.75155 Balance= 1.00727 NU= 2.63 FI-Sum=  1.20E+02
+    > CONSYST finished at  0: 0: 0:  
+ upper scatt bound=         297  2.1544299E-03
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.28985     ***k(itt)= 1.28985     ***k(integ)= 1.28985    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 1
+ << geometry characteristics >>
+    geometry of cell- sphere      index=           3
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1
+ radius   0.10000E+01
+ temper   0.29300E+03
+ rez_izot    u238
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=61
+  1 u235     0.20000E-05
+  2 u238     0.83000E-04
+  3 al       0.90000E-05
+  4 c        0.22556E+00
+  5 er       0.23400E-05
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.2899       1.4319       1.0050      0.89629       1.0000    
+ s0z(n)=   0.0000000E+00
+:stop                                                                           

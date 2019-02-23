@@ -1,0 +1,551 @@
+ *****          file of input data set *******
+*****          file of input data set *******
+:poly
+ &vvod
+   nsos=1,2,3,
+   r=0.3865,0.455,0.743,
+@ ------------------------------------------------------------------------------
+ t=        1273.0, 873.0, 575.0,
+ troiz=
+ @ izotop    / fuel /     / km /       / mod /
+ @ u233  @   0.001126   , 0.00000e+00, 0.00000e+00,
+ @ th32  @   0.021389   , 0.00000e+00, 0.00000e+00,
+ @ o     @   0.04503    , 0.00000e+00, 0.00000e+00,
+ @ fe    @   0.00000e+00, 0.084      , 0.00000e+00,
+ @ *h*   @   0.00000e+00, 0.00000e+00, 0.046,
+ @  d    @   0.00000e+00, 0.00000e+00, 0.00000,
+ @ *o*   @   0.00000e+00, 0.00000e+00, 0.023,
+ @ eu    @   0.26980e+02, 0.00000e+00, 0.00000e+00
+@-------------------------------------------------------------------------------------
+ material(1)='chmc',
+ &end
+u233
+th32
+o
+fe
+*h*
+d
+*o*
+****
+:macro
+ &vvod
+   nbv=1,1,1,
+   et=10.5e+6,2.15,2.15,0,
+ &end
+:fier
+ &vvod &end
+                                                                                                                        
+@:stop
+:burn
+ &vvod qv=70.6,dtim=2.,
+ &end
+:fier
+ &vvod &end
+@:stop
+:burn
+ &vvod qv=70.6,dtim=3.,
+ &end
+:fier
+ &vvod &end
+:burn
+ &vvod qv=70.6,dtim=5.,
+ &end
+:fier
+ &vvod &end
+:burn
+ &vvod qv=70.6,dtim=100.,
+ &end
+:fier
+ &vvod &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=70.6,dtim=540.,
+ &end
+:fier
+ &vvod &end
+:corr
+ &vvod &end
+@:stop
+:burn
+ &vvod qv=70.6,dtim=650.,
+ &end
+:fier
+ &vvod &end
+                                                                                                                        
+:stop
+ ***** end of   file of input data set *******
+:poly                                                                           
+ definition izotr in sos           1:izotr=   2.000000    
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--cefzad  -- programm standart value --cefzad  =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--bakl    -- programm standart value --bakl    =  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alin    -- programm standart value --alin    =  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alout   -- programm standart value --alout   =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alcorr  -- programm standart value --alcorr  =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--nbv     -- programm standart value --nbv     =    1    1    1
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--et      -- programm standart value --et      =  0.105000E+08  0.215000E+01
+     0.215000E+01  0.000000E+00
+    ????  storage for pr. getter =      300 ?? common /rrr/ rab(        0 )  ????
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 3
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3
+ radius   0.38650E+00 0.45500E+00 0.74300E+00
+ temper   0.12730E+04 0.87300E+03 0.57500E+03
+ rez_izot    th32        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u233     0.11260E-02 0.00000E+00 0.00000E+00
+  2 th32     0.21389E-01 0.00000E+00 0.00000E+00
+  3 o        0.45030E-01 0.00000E+00 0.00000E+00
+  4 fe       0.00000E+00 0.84000E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.46000E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.23000E-01
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.45048     ***k(itt)= 1.45049     ***k(integ)= 1.45048    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:macro                                                                          
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+    -------------------------------------------------------------------------------
+    * n group   * e(i)        * e(i+1)      *spect neutron fission  *
+          1       0.10500E+08    2.1544           0.99913    
+          2        2.1544        0.0000           0.14216E-08
+    *******************************************************************************
+                                       **    macro cross section    **
+    *******************************************************************************
+    ** n zone    1 vzone=  1.7343     /  1  2  3
+*grp*flux 1/cm2c  * stotal      * sabs        * sfis.       * nu$sfis.    * 1/3*strans  *1/aver.veloci*aver power
+  1   20.66118     0.5470176     0.9645658E-02 0.4232421E-02 0.1058496E-01  1.443231     0.1164177E-05  1.097381     0.2608966    
+  2   3.444847      1.274392     0.1095119     0.7191358E-01 0.1792814     0.3255057     0.1208985E-04  1.637096     0.7391034    
+                                       * matric. scat.cross. sec. from i to j  *
+       i / j -->            1           2
+       i        1 0.5191018     0.1827008E-01
+       i        2 0.6905747E-04  1.164811    
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.4505       1.8852       1.3542      0.65427      0.86841    
+ s0z(n)=    1.168888      0.0000000E+00  0.0000000E+00
+:burn                                                                           
+ *** average burn up =  0.59964E-01 (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.42631     ***k(itt)= 1.42631     ***k(integ)= 1.42631    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.4263       1.8377       1.3618      0.65427      0.87110    
+ s0z(n)=    1.168888      0.0000000E+00  0.0000000E+00
+:burn                                                                           
+ *** average burn up =  0.14989     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.42373     ***k(itt)= 1.42373     ***k(integ)= 1.42373    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.4237       1.8343       1.3618      0.65430      0.87109    
+ s0z(n)=    1.168888      0.0000000E+00  0.0000000E+00
+:burn                                                                           
+ *** average burn up =  0.29969     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.41974     ***k(itt)= 1.41973     ***k(integ)= 1.41974    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000      0.9999999    
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.4197       1.8291       1.3618      0.65435      0.87105    
+ s0z(n)=    1.168888      0.0000000E+00  0.0000000E+00
+:burn                                                                           
+ *** average burn up =   3.2296     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.37802     ***k(itt)= 1.37802     ***k(integ)= 1.37802    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.3780       1.7863       1.3553      0.65549      0.86834    
+ s0z(n)=    1.168888      0.0000000E+00  0.0000000E+00
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 3
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3
+ radius   0.38650E+00 0.45500E+00 0.74300E+00
+ temper   0.12730E+04 0.87300E+03 0.57500E+03
+ rez_izot    th32        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u233     0.10650E-02 0.00000E+00 0.00000E+00
+  2 th32     0.21355E-01 0.00000E+00 0.00000E+00
+  3 o        0.45030E-01 0.00000E+00 0.00000E+00
+  4 fe       0.00000E+00 0.84000E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.46000E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.23000E-01
+ 10 u235     0.14453E-06 0.00000E+00 0.00000E+00
+ 11 u236     0.60985E-09 0.00000E+00 0.00000E+00
+ 13 slag     0.35811E-04 0.00000E+00 0.00000E+00
+ 14 tc99     0.45984E-05 0.00000E+00 0.00000E+00
+ 15 rh03     0.23186E-05 0.00000E+00 0.00000E+00
+ 16 ag09     0.24063E-07 0.00000E+00 0.00000E+00
+ 17 cd13     0.22635E-08 0.00000E+00 0.00000E+00
+ 18 xe35     0.83555E-08 0.00000E+00 0.00000E+00
+ 19 sm49     0.91568E-07 0.00000E+00 0.00000E+00
+ 20 sm51     0.18146E-06 0.00000E+00 0.00000E+00
+ 21 eu55     0.15019E-07 0.00000E+00 0.00000E+00
+ 22 gd55     0.22312E-09 0.00000E+00 0.00000E+00
+ 23 gd56     0.92847E-08 0.00000E+00 0.00000E+00
+ 24 gd57     0.21166E-08 0.00000E+00 0.00000E+00
+ 25 np37     0.20890E-11 0.00000E+00 0.00000E+00
+ 27 pu38     0.18305E-13 0.00000E+00 0.00000E+00
+ 28 pu39     0.12899E-15 0.00000E+00 0.00000E+00
+ 29 pu40     0.14193E-17 0.00000E+00 0.00000E+00
+ 30 pu41     0.48986E-19 0.00000E+00 0.00000E+00
+ 38 pa33     0.11089E-04 0.00000E+00 0.00000E+00
+ 39 u234     0.86460E-05 0.00000E+00 0.00000E+00
+ 40 sm52     0.26723E-06 0.00000E+00 0.00000E+00
+ 41 xe31     0.20491E-05 0.00000E+00 0.00000E+00
+ 42 cs33     0.50366E-05 0.00000E+00 0.00000E+00
+ 43 nd45     0.29335E-05 0.00000E+00 0.00000E+00
+ 44 nd43     0.44077E-05 0.00000E+00 0.00000E+00
+ 45 pm47     0.15920E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.48862E-05 0.00000E+00 0.00000E+00
+ 47 cs34     0.44131E-07 0.00000E+00 0.00000E+00
+ 48 pr41     0.43709E-05 0.00000E+00 0.00000E+00
+ 49 pm48     0.54010E-08 0.00000E+00 0.00000E+00
+ 50 pm8m     0.12418E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.76221E-08 0.00000E+00 0.00000E+00
+ 52 pm49     0.18760E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.41012E-06 0.00000E+00 0.00000E+00
+ 54 ru01     0.38158E-05 0.00000E+00 0.00000E+00
+ 55 pd05     0.39506E-06 0.00000E+00 0.00000E+00
+ 56 cs35     0.17189E-05 0.00000E+00 0.00000E+00
+ 57 sm50     0.50488E-06 0.00000E+00 0.00000E+00
+ 58 eu51     0.41633E-08 0.00000E+00 0.00000E+00
+ 59 eu53     0.15613E-07 0.00000E+00 0.00000E+00
+ 60 eu54     0.35973E-09 0.00000E+00 0.00000E+00
+ 61 gd54     0.22045E-11 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   17.963     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.23508     ***k(itt)= 1.23508     ***k(integ)= 1.23508    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.2351       1.6554       1.3207      0.66240      0.85282    
+ s0z(n)=    1.168888      0.0000000E+00  0.0000000E+00
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 3
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3
+ radius   0.38650E+00 0.45500E+00 0.74300E+00
+ temper   0.12730E+04 0.87300E+03 0.57500E+03
+ rez_izot    th32        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u233     0.85813E-03 0.00000E+00 0.00000E+00
+  2 th32     0.21179E-01 0.00000E+00 0.00000E+00
+  3 o        0.45030E-01 0.00000E+00 0.00000E+00
+  4 fe       0.00000E+00 0.84000E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.46000E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.23000E-01
+ 10 u235     0.40972E-05 0.00000E+00 0.00000E+00
+ 11 u236     0.11105E-06 0.00000E+00 0.00000E+00
+ 13 slag     0.20858E-03 0.00000E+00 0.00000E+00
+ 14 tc99     0.24466E-04 0.00000E+00 0.00000E+00
+ 15 rh03     0.11362E-04 0.00000E+00 0.00000E+00
+ 16 ag09     0.11282E-06 0.00000E+00 0.00000E+00
+ 17 cd13     0.18451E-08 0.00000E+00 0.00000E+00
+ 18 xe35     0.69074E-08 0.00000E+00 0.00000E+00
+ 19 sm49     0.94182E-07 0.00000E+00 0.00000E+00
+ 20 sm51     0.27099E-06 0.00000E+00 0.00000E+00
+ 21 eu55     0.33353E-07 0.00000E+00 0.00000E+00
+ 22 gd55     0.63092E-09 0.00000E+00 0.00000E+00
+ 23 gd56     0.20133E-07 0.00000E+00 0.00000E+00
+ 24 gd57     0.41848E-08 0.00000E+00 0.00000E+00
+ 25 np37     0.22856E-08 0.00000E+00 0.00000E+00
+ 27 pu38     0.12181E-09 0.00000E+00 0.00000E+00
+ 28 pu39     0.47232E-11 0.00000E+00 0.00000E+00
+ 29 pu40     0.28239E-12 0.00000E+00 0.00000E+00
+ 30 pu41     0.56073E-13 0.00000E+00 0.00000E+00
+ 31 pu42     0.19425E-14 0.00000E+00 0.00000E+00
+ 32 am41     0.51321E-15 0.00000E+00 0.00000E+00
+ 33 am2m     0.31750E-17 0.00000E+00 0.00000E+00
+ 34 am43     0.52896E-16 0.00000E+00 0.00000E+00
+ 35 cm42     0.27087E-16 0.00000E+00 0.00000E+00
+ 36 cm44     0.20849E-17 0.00000E+00 0.00000E+00
+ 37 cm45     0.25986E-19 0.00000E+00 0.00000E+00
+ 38 pa33     0.12156E-04 0.00000E+00 0.00000E+00
+ 39 u234     0.43529E-04 0.00000E+00 0.00000E+00
+ 40 sm52     0.16414E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.10128E-04 0.00000E+00 0.00000E+00
+ 42 cs33     0.26508E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.15667E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.22499E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.57921E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.26505E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.12213E-05 0.00000E+00 0.00000E+00
+ 48 pr41     0.23998E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.21280E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.54431E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.65085E-08 0.00000E+00 0.00000E+00
+ 52 pm49     0.20296E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.21508E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.20782E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.21802E-05 0.00000E+00 0.00000E+00
+ 56 cs35     0.91839E-05 0.00000E+00 0.00000E+00
+ 57 sm50     0.35965E-05 0.00000E+00 0.00000E+00
+ 58 eu51     0.10159E-06 0.00000E+00 0.00000E+00
+ 59 eu53     0.64073E-06 0.00000E+00 0.00000E+00
+ 60 eu54     0.66230E-07 0.00000E+00 0.00000E+00
+ 61 gd54     0.26291E-08 0.00000E+00 0.00000E+00
+ 62 am42     0.58286E-18 0.00000E+00 0.00000E+00
+ 63 cm43     0.93976E-19 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   35.603     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.07507     ***k(itt)= 1.07507     ***k(integ)= 1.07507    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.0751       1.4921       1.2873      0.67106      0.83404    
+ s0z(n)=    1.168888      0.0000000E+00  0.0000000E+00
+:stop                                                                           

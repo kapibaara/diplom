@@ -1,0 +1,151 @@
+ *****          file of input data set *******
+ *****          file of input data set *******
+:poly
+ &vvod
+   nsos=1,2,3,
+   r=0.3,0.34,0.65,
+@ ------------------------------------------------------------------------------
+ t=        1.00000e+03, 600.0, 579.0,
+ troiz=
+ @ izotop    / fuel /     / km /       / mod /
+ @ u235  @   0.11000e-02, 0.00000e+00, 0.00000e+00,
+ @ u238  @   2.34000e-02, 0.00000e+00, 0.00000e+00,
+ @ o     @   0.49000e-01, 0.00000e+00, 0.00000e+00,
+ @ zr    @   0.00000e+00, 0.03760e+00, 0.00000e+00,
+ @ *h*   @   0.00000e+00, 0.00000e+00, 0.06680,
+ @  d    @   0.00000e+00, 0.00000e+00, 0.00000,
+ @ *o*   @   0.00000e+00, 0.00000e+00, 0.03340,
+@-------------------------------------------------------------------------------------
+ material(1)='chmc',
+ &end
+u235
+u238
+o
+zr
+*h*
+d
+*o*
+****
+:fier
+ &vvod &end
+:macro
+ &vvod
+  et=10.5e+6,2.15,2.15,0.,
+ nbv=1,2,3,4,
+ &end
+:stop
+                                                                                                                        
+ ***** end of   file of input data set *******
+:poly                                                                           
+ definition izotr in sos           1:izotr=   2.000000    
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--cefzad  -- programm standart value --cefzad  =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--bakl    -- programm standart value --bakl    =  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alin    -- programm standart value --alin    =  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alout   -- programm standart value --alout   =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alcorr  -- programm standart value --alcorr  =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--nbv     -- programm standart value --nbv     =    1    1    1
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--et      -- programm standart value --et      =  0.105000E+08  0.215000E+01
+     0.215000E+01  0.000000E+00
+    ????  storage for pr. getter =      300 ?? common /rrr/ rab(        0 )  ????
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 3
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3
+ radius   0.30000E+00 0.34000E+00 0.65000E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03
+ rez_izot    u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.11000E-02 0.00000E+00 0.00000E+00
+  2 u238     0.23400E-01 0.00000E+00 0.00000E+00
+  3 o        0.49000E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.37600E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.66800E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.33400E-01
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  500K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  600K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.48305     ***k(itt)= 1.48305     ***k(integ)= 1.48305    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.4830       1.8941       1.1115      0.78996      0.89179    
+ s0z(n)=    1.645539      0.0000000E+00  0.0000000E+00
+:macro                                                                          
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+    -------------------------------------------------------------------------------
+    * n group   * e(i)        * e(i+1)      *spect neutron fission  *
+          1       0.10500E+08    2.1544           0.99901    
+          2        2.1544        0.0000           0.13601E-08
+    *******************************************************************************
+                                       **    macro cross section    **
+    *******************************************************************************
+    ** n zone    1 vzone= 0.28274     /  1
+*grp*flux 1/cm2c  * stotal      * sabs        * sfis.       * nu$sfis.    * 1/3*strans  *1/aver.veloci*aver power
+  1   18.52272     0.4418208     0.3874463E-01 0.1106038E-01 0.2835175E-01  1.215438     0.1677382E-06 0.7317594     0.9549552E-01
+  2   6.654643     0.5978377     0.3744117     0.2915934     0.7091576     0.2868562     0.4264693E-05  1.894058     0.9045045    
+                                       * matric. scat.cross. sec. from i to j  *
+       i / j -->            1           2
+       i        1 0.4030176     0.5855566E-04
+       i        2  0.000000     0.2234260    
+    ** n zone    2 vzone= 0.80425E-01 /  2
+*grp*flux 1/cm2c  * stotal      * sabs        * sfis.       * nu$sfis.    * 1/3*strans  *1/aver.veloci*aver power
+  1   18.08626     0.2652958     0.7186455E-03  0.000000      0.000000      1.208378     0.4904192E-07  0.000000      0.000000    
+  2   7.057305     0.2281332     0.3661213E-02  0.000000      0.000000     0.2692479     0.1318982E-05  0.000000      0.000000    
+                                       * matric. scat.cross. sec. from i to j  *
+       i / j -->            1           2
+       i        1 0.2644049     0.1723622E-03
+       i        2  0.000000     0.2244720    
+    ** n zone    3 vzone= 0.96415     /  3
+*grp*flux 1/cm2c  * stotal      * sabs        * sfis.       * nu$sfis.    * 1/3*strans  *1/aver.veloci*aver power
+  1   17.70033     0.8518654     0.3481460E-03  0.000000      0.000000      1.197786     0.5989022E-06  0.000000      0.000000    
+  2   7.440427      2.411489     0.1162629E-01  0.000000      0.000000     0.2173127     0.1701853E-04  0.000000      0.000000    
+                                       * matric. scat.cross. sec. from i to j  *
+       i / j -->            1           2
+       i        1 0.8052270     0.4629045E-01
+       i        2 0.8241298E-04  2.399781    
+:stop                                                                           

@@ -1,0 +1,2927 @@
+ *****          file of input data set *******
+ *****          file of input data set *******
+:poly
+ &vvod
+   nsos=1,2,3,4
+   r=0.200,0.386,0.455,0.7076,
+@ ------------------------------------------------------------------------------
+ t=        1.00000e+03, 600.0, 579.0,
+ troiz=
+ @ izotop    / fuel /     / fuel /     / km /       / mod /
+ @ u235  @   0.10000e-02, 0.10000e-02, 0.00000e+00, 0.00000e+00,
+ @ u238  @   2.19000e-02, 2.19000e-02, 0.00000e+00, 0.00000e+00,
+ @ o     @   0.45800e-01, 0.45800e-01, 0.00000e+00, 0.00000e+00,
+ @ zr    @   0.00000e+00, 0.00000e+00, 0.03891,     0.00000e+00,
+ @ *h*   @   0.00000e+00, 0.00000e+00, 0.00000e+00, 0.04746,
+ @  d    @   0.00000e+00, 0.00000e+00, 0.00000e+00, 0.00000,
+ @ *o*   @   0.00000e+00, 0.00000e+00, 0.00000e+00, 0.02373,
+@-------------------------------------------------------------------------------------
+ material(1)='chmc',
+ &end
+u235
+u238
+o
+zr
+*h*
+d
+*o*
+****
+:fier
+ &vvod &end
+:dina
+ &vvod
+ nbv=1,2,
+ &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=110.,dtim=50.,
+ &end
+:corr
+ &vvod &end
+:dina
+ &vvod
+ nbv=1,2,
+ &end
+:stop
+ ***** end of   file of input data set *******
+:poly                                                                           
+ definition izotr in sos           1:izotr=   2.000000    
+ definition izotr in sos           2:izotr=   2.000000    
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--cefzad  -- programm standart value --cefzad  =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--bakl    -- programm standart value --bakl    =  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alin    -- programm standart value --alin    =  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alout   -- programm standart value --alout   =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alcorr  -- programm standart value --alcorr  =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--nbv     -- programm standart value --nbv     =    1    1    1    1
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--et      -- programm standart value --et      =  0.105000E+08  0.215000E+01
+     0.215000E+01  0.000000E+00
+    ????  storage for pr. getter =      400 ?? common /rrr/ rab(        0 )  ????
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.10000E-02 0.10000E-02 0.00000E+00 0.00000E+00
+  2 u238     0.21900E-01 0.21900E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.41334     ***k(itt)= 1.41334     ***k(integ)= 1.41334    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:fier                                                                           
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+*** 4 *** ;egr=  2.1544    
+    keff         nu           mu           fi           teta
+   1.4133       1.8857       1.2349      0.64345      0.94324    
+ s0z(n)=    1.060591       1.060591      0.0000000E+00  0.0000000E+00
+:dina                                                                           
+    -------------------------------------------------------------------------------
+    * n group   * e(i)        * e(i+1)
+          1       0.20000E+08    0.0000    
+    -------------------------------------------------------------------------------
+          fraction of delay neutrons -betaj
+           beta`j
+           one group beta * 10e-4
+  
+          condensated zone : 1
+ nt      1           2           3           4           5           6
+ ne: 1  2.0845      14.412      12.960      26.744      8.3976      3.2703    
+ ne: 1 0.30713E-01 0.21235     0.19096     0.39405     0.12373     0.48186E-01
+       67.86856    
+  
+          condensated zone : 2
+ nt      1           2           3           4           5           6
+ ne: 1  2.0875      14.402      12.948      26.682      8.3459      3.2388    
+ ne: 1 0.30832E-01 0.21271     0.19125     0.39410     0.12327     0.47838E-01
+       67.70406    
+    -------------------------------------------------------------------------------
+    * n group   * e(i)        * e(i+1)
+          1       0.20000E+08    0.0000    
+    -------------------------------------------------------------------------------
+          decay constant -lambdaj
+           one group lambda
+  
+          condensated zone : 1
+ nt      1           2           3           4           5           6
+ ne: 1 0.12500E-01 0.34276E-01 0.13877     0.32879      1.0800      2.6144    
+ 1-group lambda   8.8028282E-02
+  
+          condensated zone : 2
+ nt      1           2           3           4           5           6
+ ne: 1 0.12500E-01 0.34283E-01 0.13878     0.32875      1.0800      2.6142    
+ 1-group lambda   8.7870173E-02
+    -------------------------------------------------------------------------------
+    * n group   * e(i)        * e(i+1)
+          1       0.20000E+08    0.0000    
+    -------------------------------------------------------------------------------
+          spectrum -xj
+  
+          condensated zone : 1
+ nt      1           2           3           4           5           6
+ ne: 1 0.21787E-04  0.0000      0.0000      1.3653      0.0000      0.0000    
+  
+          condensated zone : 2
+ nt      1           2           3           4           5           6
+ ne: 1 0.20562E-04  0.0000      0.0000      1.2915      0.0000      0.0000    
+    -------------------------------------------------------------------------------
+    * n group   * e(i)        * e(i+1)
+          1       0.10500E+08    0.0000    
+    -------------------------------------------------------------------------------
+          production part constant -alfa (id xe pm)
+  
+          condensated zone : 1
+           1  6.3129477E-02  7.3240104E-04  1.1940208E-02
+  
+          condensated zone : 2
+           1  6.3122086E-02  7.3454471E-04  1.1915109E-02
+:burn                                                                           
+ *** average burn up =   2.0267     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.33594     ***k(itt)= 1.33594     ***k(integ)= 1.33594    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.94736E-03 0.94471E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21877E-01 0.21875E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.94010E-05 0.98052E-05 0.00000E+00 0.00000E+00
+ 11 slag     0.21407E-04 0.22534E-04 0.00000E+00 0.00000E+00
+ 12 tc99     0.28459E-05 0.29888E-05 0.00000E+00 0.00000E+00
+ 13 rh03     0.15365E-05 0.16113E-05 0.00000E+00 0.00000E+00
+ 14 ag09     0.25977E-07 0.28003E-07 0.00000E+00 0.00000E+00
+ 15 cd13     0.21544E-08 0.21924E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.10270E-07 0.10388E-07 0.00000E+00 0.00000E+00
+ 17 sm49     0.10255E-06 0.10308E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.14519E-06 0.14856E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.12734E-07 0.13301E-07 0.00000E+00 0.00000E+00
+ 20 gd55     0.78652E-10 0.78531E-10 0.00000E+00 0.00000E+00
+ 21 gd56     0.56705E-08 0.57533E-08 0.00000E+00 0.00000E+00
+ 22 gd57     0.14162E-08 0.14359E-08 0.00000E+00 0.00000E+00
+ 23 np37     0.39893E-07 0.42835E-07 0.00000E+00 0.00000E+00
+ 24 np39     0.13636E-05 0.15091E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.46412E-09 0.51180E-09 0.00000E+00 0.00000E+00
+ 26 pu39     0.17521E-04 0.19340E-04 0.00000E+00 0.00000E+00
+ 27 pu40     0.41406E-06 0.47275E-06 0.00000E+00 0.00000E+00
+ 28 pu41     0.33578E-07 0.38795E-07 0.00000E+00 0.00000E+00
+ 29 pu42     0.29203E-09 0.35453E-09 0.00000E+00 0.00000E+00
+ 30 am41     0.52019E-10 0.60110E-10 0.00000E+00 0.00000E+00
+ 31 am2m     0.95536E-13 0.11322E-12 0.00000E+00 0.00000E+00
+ 32 am43     0.19086E-11 0.23280E-11 0.00000E+00 0.00000E+00
+ 33 cm42     0.71043E-12 0.84624E-12 0.00000E+00 0.00000E+00
+ 34 cm44     0.18143E-13 0.22400E-13 0.00000E+00 0.00000E+00
+ 35 cm45     0.39250E-16 0.49977E-16 0.00000E+00 0.00000E+00
+ 40 sm52     0.18970E-06 0.20254E-06 0.00000E+00 0.00000E+00
+ 41 xe31     0.12890E-05 0.13538E-05 0.00000E+00 0.00000E+00
+ 42 cs33     0.31123E-05 0.32692E-05 0.00000E+00 0.00000E+00
+ 43 nd45     0.18053E-05 0.18955E-05 0.00000E+00 0.00000E+00
+ 44 nd43     0.26830E-05 0.28170E-05 0.00000E+00 0.00000E+00
+ 45 pm47     0.10252E-05 0.10753E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.29745E-05 0.31248E-05 0.00000E+00 0.00000E+00
+ 47 cs34     0.18055E-07 0.19496E-07 0.00000E+00 0.00000E+00
+ 48 pr41     0.27168E-05 0.28519E-05 0.00000E+00 0.00000E+00
+ 49 pm48     0.44762E-08 0.48352E-08 0.00000E+00 0.00000E+00
+ 50 pm8m     0.74424E-08 0.79241E-08 0.00000E+00 0.00000E+00
+ 51 rh05     0.23564E-07 0.24840E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.37435E-07 0.39317E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.24254E-06 0.25468E-06 0.00000E+00 0.00000E+00
+ 54 ru01     0.23559E-05 0.24745E-05 0.00000E+00 0.00000E+00
+ 55 pd05     0.49765E-06 0.52123E-06 0.00000E+00 0.00000E+00
+ 56 cs35     0.93926E-06 0.94952E-06 0.00000E+00 0.00000E+00
+ 57 sm50     0.42029E-06 0.44507E-06 0.00000E+00 0.00000E+00
+ 58 eu51     0.17569E-08 0.20849E-08 0.00000E+00 0.00000E+00
+ 59 eu53     0.78092E-08 0.84812E-08 0.00000E+00 0.00000E+00
+ 60 eu54     0.14074E-09 0.15611E-09 0.00000E+00 0.00000E+00
+ 61 gd54     0.38638E-12 0.42779E-12 0.00000E+00 0.00000E+00
+ 62 am42     0.89787E-13 0.10689E-12 0.00000E+00 0.00000E+00
+ 63 cm43     0.51182E-15 0.62546E-15 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   4.0620     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.31225     ***k(itt)= 1.31224     ***k(integ)= 1.31224    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.89699E-03 0.89188E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21854E-01 0.21849E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.18406E-04 0.19178E-04 0.00000E+00 0.00000E+00
+ 11 slag     0.43053E-04 0.45376E-04 0.00000E+00 0.00000E+00
+ 12 tc99     0.56639E-05 0.59545E-05 0.00000E+00 0.00000E+00
+ 13 rh03     0.30669E-05 0.32239E-05 0.00000E+00 0.00000E+00
+ 14 ag09     0.69544E-07 0.76333E-07 0.00000E+00 0.00000E+00
+ 15 cd13     0.26895E-08 0.27551E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.10376E-07 0.10503E-07 0.00000E+00 0.00000E+00
+ 17 sm49     0.10878E-06 0.10933E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.21591E-06 0.21760E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.20370E-07 0.21395E-07 0.00000E+00 0.00000E+00
+ 20 gd55     0.16081E-09 0.15823E-09 0.00000E+00 0.00000E+00
+ 21 gd56     0.98525E-08 0.98902E-08 0.00000E+00 0.00000E+00
+ 22 gd57     0.23635E-08 0.23797E-08 0.00000E+00 0.00000E+00
+ 23 np37     0.15897E-06 0.16972E-06 0.00000E+00 0.00000E+00
+ 24 np39     0.14322E-05 0.15866E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.37800E-08 0.41506E-08 0.00000E+00 0.00000E+00
+ 26 pu39     0.34623E-04 0.38126E-04 0.00000E+00 0.00000E+00
+ 27 pu40     0.15808E-05 0.18032E-05 0.00000E+00 0.00000E+00
+ 28 pu41     0.26061E-06 0.30080E-06 0.00000E+00 0.00000E+00
+ 29 pu42     0.47529E-08 0.57756E-08 0.00000E+00 0.00000E+00
+ 30 am41     0.82814E-09 0.95528E-09 0.00000E+00 0.00000E+00
+ 31 am2m     0.29702E-11 0.35003E-11 0.00000E+00 0.00000E+00
+ 32 am43     0.67751E-10 0.82671E-10 0.00000E+00 0.00000E+00
+ 33 cm42     0.24559E-10 0.29236E-10 0.00000E+00 0.00000E+00
+ 34 cm44     0.13933E-11 0.17205E-11 0.00000E+00 0.00000E+00
+ 35 cm45     0.63524E-14 0.80818E-14 0.00000E+00 0.00000E+00
+ 40 sm52     0.44532E-06 0.47672E-06 0.00000E+00 0.00000E+00
+ 41 xe31     0.25517E-05 0.26841E-05 0.00000E+00 0.00000E+00
+ 42 cs33     0.61868E-05 0.65056E-05 0.00000E+00 0.00000E+00
+ 43 nd45     0.35770E-05 0.37584E-05 0.00000E+00 0.00000E+00
+ 44 nd43     0.52696E-05 0.55332E-05 0.00000E+00 0.00000E+00
+ 45 pm47     0.19453E-05 0.20404E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.59022E-05 0.62051E-05 0.00000E+00 0.00000E+00
+ 47 cs34     0.72900E-07 0.78820E-07 0.00000E+00 0.00000E+00
+ 48 pr41     0.54209E-05 0.56959E-05 0.00000E+00 0.00000E+00
+ 49 pm48     0.95918E-08 0.10379E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.18159E-07 0.19243E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.26802E-07 0.28573E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.39086E-07 0.41219E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.47655E-06 0.50041E-06 0.00000E+00 0.00000E+00
+ 54 ru01     0.47013E-05 0.49438E-05 0.00000E+00 0.00000E+00
+ 55 pd05     0.10902E-05 0.11499E-05 0.00000E+00 0.00000E+00
+ 56 cs35     0.18893E-05 0.19105E-05 0.00000E+00 0.00000E+00
+ 57 sm50     0.99028E-06 0.10446E-05 0.00000E+00 0.00000E+00
+ 58 eu51     0.80196E-08 0.94554E-08 0.00000E+00 0.00000E+00
+ 59 eu53     0.37571E-07 0.41082E-07 0.00000E+00 0.00000E+00
+ 60 eu54     0.13010E-08 0.14503E-08 0.00000E+00 0.00000E+00
+ 61 gd54     0.70113E-11 0.78040E-11 0.00000E+00 0.00000E+00
+ 62 am42     0.15286E-11 0.18188E-11 0.00000E+00 0.00000E+00
+ 63 cm43     0.38234E-13 0.46666E-13 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   6.0996     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.28957     ***k(itt)= 1.28957     ***k(integ)= 1.28957    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.84878E-03 0.84147E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21829E-01 0.21823E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.26966E-04 0.28058E-04 0.00000E+00 0.00000E+00
+ 11 slag     0.64917E-04 0.68455E-04 0.00000E+00 0.00000E+00
+ 12 tc99     0.84496E-05 0.88862E-05 0.00000E+00 0.00000E+00
+ 13 rh03     0.45806E-05 0.48227E-05 0.00000E+00 0.00000E+00
+ 14 ag09     0.12839E-06 0.14227E-06 0.00000E+00 0.00000E+00
+ 15 cd13     0.30755E-08 0.31762E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.10310E-07 0.10446E-07 0.00000E+00 0.00000E+00
+ 17 sm49     0.11187E-06 0.11269E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.25041E-06 0.25007E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.25829E-07 0.27301E-07 0.00000E+00 0.00000E+00
+ 20 gd55     0.21556E-09 0.21216E-09 0.00000E+00 0.00000E+00
+ 21 gd56     0.12567E-07 0.12613E-07 0.00000E+00 0.00000E+00
+ 22 gd57     0.29969E-08 0.30193E-08 0.00000E+00 0.00000E+00
+ 23 np37     0.34918E-06 0.37101E-06 0.00000E+00 0.00000E+00
+ 24 np39     0.14611E-05 0.16188E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.12632E-07 0.13814E-07 0.00000E+00 0.00000E+00
+ 26 pu39     0.49776E-04 0.54667E-04 0.00000E+00 0.00000E+00
+ 27 pu40     0.32251E-05 0.36702E-05 0.00000E+00 0.00000E+00
+ 28 pu41     0.80131E-06 0.92507E-06 0.00000E+00 0.00000E+00
+ 29 pu42     0.22606E-07 0.27480E-07 0.00000E+00 0.00000E+00
+ 30 am41     0.38693E-08 0.44595E-08 0.00000E+00 0.00000E+00
+ 31 am2m     0.19667E-10 0.23067E-10 0.00000E+00 0.00000E+00
+ 32 am43     0.50185E-09 0.61237E-09 0.00000E+00 0.00000E+00
+ 33 cm42     0.17468E-09 0.20786E-09 0.00000E+00 0.00000E+00
+ 34 cm44     0.15960E-10 0.19719E-10 0.00000E+00 0.00000E+00
+ 35 cm45     0.11059E-12 0.14066E-12 0.00000E+00 0.00000E+00
+ 40 sm52     0.72237E-06 0.77213E-06 0.00000E+00 0.00000E+00
+ 41 xe31     0.37845E-05 0.39838E-05 0.00000E+00 0.00000E+00
+ 42 cs33     0.92184E-05 0.96970E-05 0.00000E+00 0.00000E+00
+ 43 nd45     0.53136E-05 0.55834E-05 0.00000E+00 0.00000E+00
+ 44 nd43     0.77603E-05 0.81436E-05 0.00000E+00 0.00000E+00
+ 45 pm47     0.27692E-05 0.29023E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.87820E-05 0.92334E-05 0.00000E+00 0.00000E+00
+ 47 cs34     0.16243E-06 0.17578E-06 0.00000E+00 0.00000E+00
+ 48 pr41     0.81076E-05 0.85219E-05 0.00000E+00 0.00000E+00
+ 49 pm48     0.14148E-07 0.15320E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.27958E-07 0.29582E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.29576E-07 0.31747E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.40496E-07 0.42787E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.70218E-06 0.73688E-06 0.00000E+00 0.00000E+00
+ 54 ru01     0.70324E-05 0.73988E-05 0.00000E+00 0.00000E+00
+ 55 pd05     0.17488E-05 0.18544E-05 0.00000E+00 0.00000E+00
+ 56 cs35     0.28316E-05 0.28647E-05 0.00000E+00 0.00000E+00
+ 57 sm50     0.15795E-05 0.16644E-05 0.00000E+00 0.00000E+00
+ 58 eu51     0.17637E-07 0.20685E-07 0.00000E+00 0.00000E+00
+ 59 eu53     0.93063E-07 0.10200E-06 0.00000E+00 0.00000E+00
+ 60 eu54     0.46803E-08 0.52224E-08 0.00000E+00 0.00000E+00
+ 61 gd54     0.38124E-10 0.42513E-10 0.00000E+00 0.00000E+00
+ 62 am42     0.72726E-11 0.86513E-11 0.00000E+00 0.00000E+00
+ 63 cm43     0.42173E-12 0.51409E-12 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   8.1399     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.26758     ***k(itt)= 1.26758     ***k(integ)= 1.26758    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000      0.9999999    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.80252E-03 0.79327E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21805E-01 0.21796E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.35110E-04 0.36479E-04 0.00000E+00 0.00000E+00
+ 11 slag     0.87010E-04 0.91782E-04 0.00000E+00 0.00000E+00
+ 12 tc99     0.11204E-04 0.11784E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.60736E-05 0.64023E-05 0.00000E+00 0.00000E+00
+ 14 ag09     0.20078E-06 0.22378E-06 0.00000E+00 0.00000E+00
+ 15 cd13     0.34233E-08 0.35573E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.10225E-07 0.10368E-07 0.00000E+00 0.00000E+00
+ 17 sm49     0.11433E-06 0.11540E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.26744E-06 0.26584E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.30591E-07 0.32558E-07 0.00000E+00 0.00000E+00
+ 20 gd55     0.25688E-09 0.25424E-09 0.00000E+00 0.00000E+00
+ 21 gd56     0.14624E-07 0.14748E-07 0.00000E+00 0.00000E+00
+ 22 gd57     0.34817E-08 0.35241E-08 0.00000E+00 0.00000E+00
+ 23 np37     0.60430E-06 0.63922E-06 0.00000E+00 0.00000E+00
+ 24 np39     0.14906E-05 0.16515E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.29479E-07 0.32116E-07 0.00000E+00 0.00000E+00
+ 26 pu39     0.63216E-04 0.69241E-04 0.00000E+00 0.00000E+00
+ 27 pu40     0.51994E-05 0.59020E-05 0.00000E+00 0.00000E+00
+ 28 pu41     0.16556E-05 0.19092E-05 0.00000E+00 0.00000E+00
+ 29 pu42     0.65010E-07 0.79014E-07 0.00000E+00 0.00000E+00
+ 30 am41     0.10899E-07 0.12544E-07 0.00000E+00 0.00000E+00
+ 31 am2m     0.70164E-10 0.81929E-10 0.00000E+00 0.00000E+00
+ 32 am43     0.19980E-08 0.24376E-08 0.00000E+00 0.00000E+00
+ 33 cm42     0.66358E-09 0.78929E-09 0.00000E+00 0.00000E+00
+ 34 cm44     0.86934E-10 0.10746E-09 0.00000E+00 0.00000E+00
+ 35 cm45     0.80886E-12 0.10281E-11 0.00000E+00 0.00000E+00
+ 40 sm52     0.99987E-06 0.10665E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.49859E-05 0.52510E-05 0.00000E+00 0.00000E+00
+ 42 cs33     0.12207E-04 0.12843E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.70166E-05 0.73719E-05 0.00000E+00 0.00000E+00
+ 44 nd43     0.10159E-04 0.10652E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.35055E-05 0.36707E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.11616E-04 0.12212E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.28533E-06 0.30882E-06 0.00000E+00 0.00000E+00
+ 48 pr41     0.10779E-04 0.11331E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.18337E-07 0.19846E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.36879E-07 0.38955E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.32142E-07 0.34675E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.41820E-07 0.44251E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.91985E-06 0.96452E-06 0.00000E+00 0.00000E+00
+ 54 ru01     0.93498E-05 0.98396E-05 0.00000E+00 0.00000E+00
+ 55 pd05     0.24671E-05 0.26274E-05 0.00000E+00 0.00000E+00
+ 56 cs35     0.37640E-05 0.38096E-05 0.00000E+00 0.00000E+00
+ 57 sm50     0.21835E-05 0.22999E-05 0.00000E+00 0.00000E+00
+ 58 eu51     0.29659E-07 0.34640E-07 0.00000E+00 0.00000E+00
+ 59 eu53     0.17495E-06 0.19188E-06 0.00000E+00 0.00000E+00
+ 60 eu54     0.11402E-07 0.12712E-07 0.00000E+00 0.00000E+00
+ 61 gd54     0.12518E-09 0.13960E-09 0.00000E+00 0.00000E+00
+ 62 am42     0.20764E-10 0.24683E-10 0.00000E+00 0.00000E+00
+ 63 cm43     0.21989E-11 0.26776E-11 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   10.183     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.24650     ***k(itt)= 1.24649     ***k(integ)= 1.24650    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.75809E-03 0.74713E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21779E-01 0.21768E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.42862E-04 0.44467E-04 0.00000E+00 0.00000E+00
+ 11 slag     0.10934E-03 0.11537E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.13927E-04 0.14649E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.75429E-05 0.79590E-05 0.00000E+00 0.00000E+00
+ 14 ag09     0.28540E-06 0.31934E-06 0.00000E+00 0.00000E+00
+ 15 cd13     0.37432E-08 0.39090E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.10124E-07 0.10273E-07 0.00000E+00 0.00000E+00
+ 17 sm49     0.11621E-06 0.11750E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.27589E-06 0.27375E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.35508E-07 0.38062E-07 0.00000E+00 0.00000E+00
+ 20 gd55     0.29461E-09 0.29381E-09 0.00000E+00 0.00000E+00
+ 21 gd56     0.16514E-07 0.16772E-07 0.00000E+00 0.00000E+00
+ 22 gd57     0.39190E-08 0.39923E-08 0.00000E+00 0.00000E+00
+ 23 np37     0.91869E-06 0.96781E-06 0.00000E+00 0.00000E+00
+ 24 np39     0.15207E-05 0.16847E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.56621E-07 0.61469E-07 0.00000E+00 0.00000E+00
+ 26 pu39     0.75164E-04 0.82107E-04 0.00000E+00 0.00000E+00
+ 27 pu40     0.74108E-05 0.83860E-05 0.00000E+00 0.00000E+00
+ 28 pu41     0.27917E-05 0.32175E-05 0.00000E+00 0.00000E+00
+ 29 pu42     0.14242E-06 0.17302E-06 0.00000E+00 0.00000E+00
+ 30 am41     0.23326E-07 0.26808E-07 0.00000E+00 0.00000E+00
+ 31 am2m     0.17821E-09 0.20718E-09 0.00000E+00 0.00000E+00
+ 32 am43     0.56589E-08 0.69011E-08 0.00000E+00 0.00000E+00
+ 33 cm42     0.17880E-08 0.21253E-08 0.00000E+00 0.00000E+00
+ 34 cm44     0.31554E-09 0.39011E-09 0.00000E+00 0.00000E+00
+ 35 cm45     0.36910E-11 0.46886E-11 0.00000E+00 0.00000E+00
+ 40 sm52     0.12683E-05 0.13501E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.61549E-05 0.64844E-05 0.00000E+00 0.00000E+00
+ 42 cs33     0.15154E-04 0.15943E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.86872E-05 0.91250E-05 0.00000E+00 0.00000E+00
+ 44 nd43     0.12467E-04 0.13061E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.41625E-05 0.43540E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.14408E-04 0.15143E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.44012E-06 0.47648E-06 0.00000E+00 0.00000E+00
+ 48 pr41     0.13435E-04 0.14123E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.22178E-07 0.24003E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.44912E-07 0.47414E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.34558E-07 0.37419E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.43067E-07 0.45625E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.11298E-05 0.11836E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.11654E-04 0.12267E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.32407E-05 0.34633E-05 0.00000E+00 0.00000E+00
+ 56 cs35     0.46849E-05 0.47434E-05 0.00000E+00 0.00000E+00
+ 57 sm50     0.28004E-05 0.29489E-05 0.00000E+00 0.00000E+00
+ 58 eu51     0.43447E-07 0.50570E-07 0.00000E+00 0.00000E+00
+ 59 eu53     0.28229E-06 0.30960E-06 0.00000E+00 0.00000E+00
+ 60 eu54     0.22398E-07 0.24930E-07 0.00000E+00 0.00000E+00
+ 61 gd54     0.31119E-09 0.34679E-09 0.00000E+00 0.00000E+00
+ 62 am42     0.44994E-10 0.53439E-10 0.00000E+00 0.00000E+00
+ 63 cm43     0.76121E-11 0.92575E-11 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   12.230     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.22631     ***k(itt)= 1.22631     ***k(integ)= 1.22631    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.71540E-03 0.70295E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21754E-01 0.21740E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.50236E-04 0.52040E-04 0.00000E+00 0.00000E+00
+ 11 slag     0.13192E-03 0.13922E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.16620E-04 0.17480E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.89862E-05 0.94896E-05 0.00000E+00 0.00000E+00
+ 14 ag09     0.38120E-06 0.42769E-06 0.00000E+00 0.00000E+00
+ 15 cd13     0.40396E-08 0.42350E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.10011E-07 0.10164E-07 0.00000E+00 0.00000E+00
+ 17 sm49     0.11757E-06 0.11907E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.27994E-06 0.27777E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.41109E-07 0.44370E-07 0.00000E+00 0.00000E+00
+ 20 gd55     0.33450E-09 0.33633E-09 0.00000E+00 0.00000E+00
+ 21 gd56     0.18531E-07 0.18970E-07 0.00000E+00 0.00000E+00
+ 22 gd57     0.43689E-08 0.44825E-08 0.00000E+00 0.00000E+00
+ 23 np37     0.12872E-05 0.13509E-05 0.00000E+00 0.00000E+00
+ 24 np39     0.15511E-05 0.17184E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.96219E-07 0.10412E-06 0.00000E+00 0.00000E+00
+ 26 pu39     0.85793E-04 0.93472E-04 0.00000E+00 0.00000E+00
+ 27 pu40     0.98033E-05 0.11051E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.41605E-05 0.47962E-05 0.00000E+00 0.00000E+00
+ 29 pu42     0.26382E-06 0.32048E-06 0.00000E+00 0.00000E+00
+ 30 am41     0.42131E-07 0.48363E-07 0.00000E+00 0.00000E+00
+ 31 am2m     0.36632E-09 0.42421E-09 0.00000E+00 0.00000E+00
+ 32 am43     0.12956E-07 0.15792E-07 0.00000E+00 0.00000E+00
+ 33 cm42     0.38901E-08 0.46207E-08 0.00000E+00 0.00000E+00
+ 34 cm44     0.88721E-09 0.10972E-08 0.00000E+00 0.00000E+00
+ 35 cm45     0.12505E-10 0.15874E-10 0.00000E+00 0.00000E+00
+ 40 sm52     0.15234E-05 0.16192E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.72908E-05 0.76826E-05 0.00000E+00 0.00000E+00
+ 42 cs33     0.18057E-04 0.18997E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.10326E-04 0.10843E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.14686E-04 0.15372E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.47472E-05 0.49599E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.17156E-04 0.18028E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.62549E-06 0.67736E-06 0.00000E+00 0.00000E+00
+ 48 pr41     0.16077E-04 0.16900E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.25711E-07 0.27824E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.52130E-07 0.55001E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.36852E-07 0.40021E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.44242E-07 0.46919E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.13323E-05 0.13944E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.13945E-04 0.14680E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.40659E-05 0.43580E-05 0.00000E+00 0.00000E+00
+ 56 cs35     0.55928E-05 0.56647E-05 0.00000E+00 0.00000E+00
+ 57 sm50     0.34284E-05 0.36094E-05 0.00000E+00 0.00000E+00
+ 58 eu51     0.58561E-07 0.67961E-07 0.00000E+00 0.00000E+00
+ 59 eu53     0.41338E-06 0.45327E-06 0.00000E+00 0.00000E+00
+ 60 eu54     0.38365E-07 0.42620E-07 0.00000E+00 0.00000E+00
+ 61 gd54     0.64827E-09 0.72156E-09 0.00000E+00 0.00000E+00
+ 62 am42     0.82288E-10 0.97674E-10 0.00000E+00 0.00000E+00
+ 63 cm43     0.20369E-10 0.24738E-10 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   14.280     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.20691     ***k(itt)= 1.20690     ***k(integ)= 1.20691    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.67435E-03 0.66062E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21727E-01 0.21711E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.57246E-04 0.59214E-04 0.00000E+00 0.00000E+00
+ 11 slag     0.15476E-03 0.16334E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.19281E-04 0.20277E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.10402E-04 0.10992E-04 0.00000E+00 0.00000E+00
+ 14 ag09     0.48723E-06 0.54772E-06 0.00000E+00 0.00000E+00
+ 15 cd13     0.43135E-08 0.45386E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.98881E-08 0.10046E-07 0.00000E+00 0.00000E+00
+ 17 sm49     0.11850E-06 0.12018E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.28160E-06 0.27968E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.47736E-07 0.51840E-07 0.00000E+00 0.00000E+00
+ 20 gd55     0.37980E-09 0.38487E-09 0.00000E+00 0.00000E+00
+ 21 gd56     0.20856E-07 0.21519E-07 0.00000E+00 0.00000E+00
+ 22 gd57     0.48687E-08 0.50306E-08 0.00000E+00 0.00000E+00
+ 23 np37     0.17050E-05 0.17832E-05 0.00000E+00 0.00000E+00
+ 24 np39     0.15818E-05 0.17523E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.15032E-06 0.16218E-06 0.00000E+00 0.00000E+00
+ 26 pu39     0.95245E-04 0.10351E-03 0.00000E+00 0.00000E+00
+ 27 pu40     0.12340E-04 0.13845E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.57114E-05 0.65899E-05 0.00000E+00 0.00000E+00
+ 29 pu42     0.43655E-06 0.53042E-06 0.00000E+00 0.00000E+00
+ 30 am41     0.67848E-07 0.77823E-07 0.00000E+00 0.00000E+00
+ 31 am2m     0.65245E-09 0.75309E-09 0.00000E+00 0.00000E+00
+ 32 am43     0.25660E-07 0.31228E-07 0.00000E+00 0.00000E+00
+ 33 cm42     0.73210E-08 0.86919E-08 0.00000E+00 0.00000E+00
+ 34 cm44     0.20950E-08 0.25905E-08 0.00000E+00 0.00000E+00
+ 35 cm45     0.34522E-10 0.43790E-10 0.00000E+00 0.00000E+00
+ 40 sm52     0.17636E-05 0.18721E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.83929E-05 0.88448E-05 0.00000E+00 0.00000E+00
+ 42 cs33     0.20917E-04 0.22004E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.11933E-04 0.12527E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.16818E-04 0.17587E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.52660E-05 0.54953E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.19864E-04 0.20866E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.84016E-06 0.91006E-06 0.00000E+00 0.00000E+00
+ 48 pr41     0.18705E-04 0.19661E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.28963E-07 0.31335E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.58563E-07 0.61776E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.39051E-07 0.42506E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.45355E-07 0.48136E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.15273E-05 0.15969E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.16223E-04 0.17079E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.49398E-05 0.53079E-05 0.00000E+00 0.00000E+00
+ 56 cs35     0.64869E-05 0.65725E-05 0.00000E+00 0.00000E+00
+ 57 sm50     0.40661E-05 0.42796E-05 0.00000E+00 0.00000E+00
+ 58 eu51     0.74686E-07 0.86448E-07 0.00000E+00 0.00000E+00
+ 59 eu53     0.56617E-06 0.62064E-06 0.00000E+00 0.00000E+00
+ 60 eu54     0.59769E-07 0.66265E-07 0.00000E+00 0.00000E+00
+ 61 gd54     0.11949E-08 0.13282E-08 0.00000E+00 0.00000E+00
+ 62 am42     0.13426E-09 0.15933E-09 0.00000E+00 0.00000E+00
+ 63 cm43     0.45709E-10 0.55441E-10 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   16.334     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.18818     ***k(itt)= 1.18818     ***k(integ)= 1.18818    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=  0.9999999       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.63490E-03 0.62008E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21700E-01 0.21681E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.63903E-04 0.66001E-04 0.00000E+00 0.00000E+00
+ 11 slag     0.17786E-03 0.18774E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.21912E-04 0.23040E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.11788E-04 0.12464E-04 0.00000E+00 0.00000E+00
+ 14 ag09     0.60268E-06 0.67849E-06 0.00000E+00 0.00000E+00
+ 15 cd13     0.45664E-08 0.48183E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.97566E-08 0.99189E-08 0.00000E+00 0.00000E+00
+ 17 sm49     0.11898E-06 0.12084E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.28190E-06 0.28039E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.55620E-07 0.60719E-07 0.00000E+00 0.00000E+00
+ 20 gd55     0.43245E-09 0.44128E-09 0.00000E+00 0.00000E+00
+ 21 gd56     0.23603E-07 0.24533E-07 0.00000E+00 0.00000E+00
+ 22 gd57     0.54426E-08 0.56607E-08 0.00000E+00 0.00000E+00
+ 23 np37     0.21676E-05 0.22597E-05 0.00000E+00 0.00000E+00
+ 24 np39     0.16129E-05 0.17865E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.22083E-06 0.23760E-06 0.00000E+00 0.00000E+00
+ 26 pu39     0.10364E-03 0.11235E-03 0.00000E+00 0.00000E+00
+ 27 pu40     0.14993E-04 0.16734E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.73988E-05 0.85458E-05 0.00000E+00 0.00000E+00
+ 29 pu42     0.66638E-06 0.80996E-06 0.00000E+00 0.00000E+00
+ 30 am41     0.10062E-06 0.11535E-06 0.00000E+00 0.00000E+00
+ 31 am2m     0.10484E-08 0.12068E-08 0.00000E+00 0.00000E+00
+ 32 am43     0.45718E-07 0.55667E-07 0.00000E+00 0.00000E+00
+ 33 cm42     0.12413E-07 0.14732E-07 0.00000E+00 0.00000E+00
+ 34 cm44     0.43576E-08 0.53893E-08 0.00000E+00 0.00000E+00
+ 35 cm45     0.82105E-10 0.10406E-09 0.00000E+00 0.00000E+00
+ 40 sm52     0.19885E-05 0.21087E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.94605E-05 0.99702E-05 0.00000E+00 0.00000E+00
+ 42 cs33     0.23733E-04 0.24963E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.13509E-04 0.14177E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.18863E-04 0.19707E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.57248E-05 0.59666E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.22530E-04 0.23659E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.10829E-05 0.11733E-05 0.00000E+00 0.00000E+00
+ 48 pr41     0.21319E-04 0.22407E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.31959E-07 0.34563E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.64266E-07 0.67753E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.41170E-07 0.44898E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.46407E-07 0.49290E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.17151E-05 0.17914E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.18488E-04 0.19463E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.58600E-05 0.63102E-05 0.00000E+00 0.00000E+00
+ 56 cs35     0.73661E-05 0.74656E-05 0.00000E+00 0.00000E+00
+ 57 sm50     0.47119E-05 0.49579E-05 0.00000E+00 0.00000E+00
+ 58 eu51     0.91587E-07 0.10576E-06 0.00000E+00 0.00000E+00
+ 59 eu53     0.73850E-06 0.80936E-06 0.00000E+00 0.00000E+00
+ 60 eu54     0.86856E-07 0.96103E-07 0.00000E+00 0.00000E+00
+ 61 gd54     0.20136E-08 0.22347E-08 0.00000E+00 0.00000E+00
+ 62 am42     0.20190E-09 0.23956E-09 0.00000E+00 0.00000E+00
+ 63 cm43     0.90299E-10 0.10939E-09 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   18.392     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.17002     ***k(itt)= 1.17002     ***k(integ)= 1.17002    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.59699E-03 0.58126E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21673E-01 0.21652E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.70215E-04 0.72415E-04 0.00000E+00 0.00000E+00
+ 11 slag     0.20122E-03 0.21242E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.24511E-04 0.25769E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.13144E-04 0.13903E-04 0.00000E+00 0.00000E+00
+ 14 ag09     0.72668E-06 0.81898E-06 0.00000E+00 0.00000E+00
+ 15 cd13     0.48032E-08 0.50810E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.96173E-08 0.97838E-08 0.00000E+00 0.00000E+00
+ 17 sm49     0.11917E-06 0.12118E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.28115E-06 0.28011E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.64884E-07 0.71130E-07 0.00000E+00 0.00000E+00
+ 20 gd55     0.49256E-09 0.50557E-09 0.00000E+00 0.00000E+00
+ 21 gd56     0.26803E-07 0.28037E-07 0.00000E+00 0.00000E+00
+ 22 gd57     0.60961E-08 0.63776E-08 0.00000E+00 0.00000E+00
+ 23 np37     0.26707E-05 0.27757E-05 0.00000E+00 0.00000E+00
+ 24 np39     0.16444E-05 0.18212E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.30956E-06 0.33223E-06 0.00000E+00 0.00000E+00
+ 26 pu39     0.11108E-03 0.12013E-03 0.00000E+00 0.00000E+00
+ 27 pu40     0.17735E-04 0.19681E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.91827E-05 0.10619E-04 0.00000E+00 0.00000E+00
+ 29 pu42     0.95750E-06 0.11644E-05 0.00000E+00 0.00000E+00
+ 30 am41     0.14027E-06 0.16076E-06 0.00000E+00 0.00000E+00
+ 31 am2m     0.15590E-08 0.17905E-08 0.00000E+00 0.00000E+00
+ 32 am43     0.75318E-07 0.91758E-07 0.00000E+00 0.00000E+00
+ 33 cm42     0.19456E-07 0.23088E-07 0.00000E+00 0.00000E+00
+ 34 cm44     0.82360E-08 0.10193E-07 0.00000E+00 0.00000E+00
+ 35 cm45     0.17434E-09 0.22082E-09 0.00000E+00 0.00000E+00
+ 40 sm52     0.21983E-05 0.23293E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.10493E-04 0.11058E-04 0.00000E+00 0.00000E+00
+ 42 cs33     0.26505E-04 0.27874E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.15053E-04 0.15793E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.20821E-04 0.21731E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.61286E-05 0.63795E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.25156E-04 0.26408E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.13525E-05 0.14656E-05 0.00000E+00 0.00000E+00
+ 48 pr41     0.23920E-04 0.25138E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.34720E-07 0.37533E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.69356E-07 0.73076E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.43208E-07 0.47195E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.47399E-07 0.50377E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.18955E-05 0.19779E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.20740E-04 0.21834E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.68239E-05 0.73618E-05 0.00000E+00 0.00000E+00
+ 56 cs35     0.82296E-05 0.83434E-05 0.00000E+00 0.00000E+00
+ 57 sm50     0.53642E-05 0.56424E-05 0.00000E+00 0.00000E+00
+ 58 eu51     0.10910E-06 0.12572E-06 0.00000E+00 0.00000E+00
+ 59 eu53     0.92822E-06 0.10171E-05 0.00000E+00 0.00000E+00
+ 60 eu54     0.11970E-06 0.13219E-06 0.00000E+00 0.00000E+00
+ 61 gd54     0.31681E-08 0.35107E-08 0.00000E+00 0.00000E+00
+ 62 am42     0.28555E-09 0.33883E-09 0.00000E+00 0.00000E+00
+ 63 cm43     0.16199E-09 0.19604E-09 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   20.454     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.15235     ***k(itt)= 1.15235     ***k(integ)= 1.15235    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.56058E-03 0.54412E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21645E-01 0.21621E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.76189E-04 0.78462E-04 0.00000E+00 0.00000E+00
+ 11 slag     0.22485E-03 0.23740E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.27078E-04 0.28462E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.14467E-04 0.15309E-04 0.00000E+00 0.00000E+00
+ 14 ag09     0.85858E-06 0.96845E-06 0.00000E+00 0.00000E+00
+ 15 cd13     0.50182E-08 0.53206E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.94753E-08 0.96464E-08 0.00000E+00 0.00000E+00
+ 17 sm49     0.11903E-06 0.12119E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.27988E-06 0.27935E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.75595E-07 0.83138E-07 0.00000E+00 0.00000E+00
+ 20 gd55     0.56108E-09 0.57867E-09 0.00000E+00 0.00000E+00
+ 21 gd56     0.30553E-07 0.32133E-07 0.00000E+00 0.00000E+00
+ 22 gd57     0.68513E-08 0.72040E-08 0.00000E+00 0.00000E+00
+ 23 np37     0.32103E-05 0.33268E-05 0.00000E+00 0.00000E+00
+ 24 np39     0.16763E-05 0.18562E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.41819E-06 0.44774E-06 0.00000E+00 0.00000E+00
+ 26 pu39     0.11765E-03 0.12694E-03 0.00000E+00 0.00000E+00
+ 27 pu40     0.20554E-04 0.22667E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.11027E-04 0.12770E-04 0.00000E+00 0.00000E+00
+ 29 pu42     0.13130E-05 0.15977E-05 0.00000E+00 0.00000E+00
+ 30 am41     0.18636E-06 0.21354E-06 0.00000E+00 0.00000E+00
+ 31 am2m     0.21844E-08 0.25041E-08 0.00000E+00 0.00000E+00
+ 32 am43     0.11674E-06 0.14228E-06 0.00000E+00 0.00000E+00
+ 33 cm42     0.28699E-07 0.34054E-07 0.00000E+00 0.00000E+00
+ 34 cm44     0.14448E-07 0.17896E-07 0.00000E+00 0.00000E+00
+ 35 cm45     0.33876E-09 0.42896E-09 0.00000E+00 0.00000E+00
+ 40 sm52     0.23931E-05 0.25340E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.11490E-04 0.12108E-04 0.00000E+00 0.00000E+00
+ 42 cs33     0.29232E-04 0.30736E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.16567E-04 0.17375E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.22691E-04 0.23660E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.64822E-05 0.67393E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.27741E-04 0.29112E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.16478E-05 0.17860E-05 0.00000E+00 0.00000E+00
+ 48 pr41     0.26506E-04 0.27853E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.37267E-07 0.40267E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.73760E-07 0.77669E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.45202E-07 0.49439E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.48347E-07 0.51415E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.20687E-05 0.21564E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.22978E-04 0.24190E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.78299E-05 0.84610E-05 0.00000E+00 0.00000E+00
+ 56 cs35     0.90770E-05 0.92053E-05 0.00000E+00 0.00000E+00
+ 57 sm50     0.60220E-05 0.63319E-05 0.00000E+00 0.00000E+00
+ 58 eu51     0.12706E-06 0.14613E-06 0.00000E+00 0.00000E+00
+ 59 eu53     0.11332E-05 0.12414E-05 0.00000E+00 0.00000E+00
+ 60 eu54     0.15819E-06 0.17438E-06 0.00000E+00 0.00000E+00
+ 61 gd54     0.47222E-08 0.52249E-08 0.00000E+00 0.00000E+00
+ 62 am42     0.38542E-09 0.45738E-09 0.00000E+00 0.00000E+00
+ 63 cm43     0.26952E-09 0.32585E-09 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   22.520     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.13513     ***k(itt)= 1.13513     ***k(integ)= 1.13513    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.52563E-03 0.50859E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21617E-01 0.21590E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.81836E-04 0.84156E-04 0.00000E+00 0.00000E+00
+ 11 slag     0.24876E-03 0.26267E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.29613E-04 0.31121E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.15758E-04 0.16679E-04 0.00000E+00 0.00000E+00
+ 14 ag09     0.99745E-06 0.11258E-05 0.00000E+00 0.00000E+00
+ 15 cd13     0.52198E-08 0.55459E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.93218E-08 0.94971E-08 0.00000E+00 0.00000E+00
+ 17 sm49     0.11861E-06 0.12090E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.27778E-06 0.27776E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.87830E-07 0.96815E-07 0.00000E+00 0.00000E+00
+ 20 gd55     0.63587E-09 0.65825E-09 0.00000E+00 0.00000E+00
+ 21 gd56     0.34700E-07 0.36652E-07 0.00000E+00 0.00000E+00
+ 22 gd57     0.76754E-08 0.81039E-08 0.00000E+00 0.00000E+00
+ 23 np37     0.37825E-05 0.39091E-05 0.00000E+00 0.00000E+00
+ 24 np39     0.17087E-05 0.18919E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.54810E-06 0.58551E-06 0.00000E+00 0.00000E+00
+ 26 pu39     0.12345E-03 0.13291E-03 0.00000E+00 0.00000E+00
+ 27 pu40     0.23423E-04 0.25659E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.12903E-04 0.14961E-04 0.00000E+00 0.00000E+00
+ 29 pu42     0.17348E-05 0.21123E-05 0.00000E+00 0.00000E+00
+ 30 am41     0.23828E-06 0.27300E-06 0.00000E+00 0.00000E+00
+ 31 am2m     0.29155E-08 0.33371E-08 0.00000E+00 0.00000E+00
+ 32 am43     0.17221E-06 0.20992E-06 0.00000E+00 0.00000E+00
+ 33 cm42     0.40305E-07 0.47827E-07 0.00000E+00 0.00000E+00
+ 34 cm44     0.23873E-07 0.29594E-07 0.00000E+00 0.00000E+00
+ 35 cm45     0.61285E-09 0.77590E-09 0.00000E+00 0.00000E+00
+ 40 sm52     0.25737E-05 0.27238E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.12451E-04 0.13120E-04 0.00000E+00 0.00000E+00
+ 42 cs33     0.31913E-04 0.33548E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.18048E-04 0.18923E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.24475E-04 0.25495E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.67901E-05 0.70506E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.30285E-04 0.31771E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.19678E-05 0.21331E-05 0.00000E+00 0.00000E+00
+ 48 pr41     0.29079E-04 0.30554E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.39620E-07 0.42786E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.77703E-07 0.81772E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.47109E-07 0.51584E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.49240E-07 0.52394E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.22347E-05 0.23271E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.25201E-04 0.26531E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.88755E-05 0.96048E-05 0.00000E+00 0.00000E+00
+ 56 cs35     0.99071E-05 0.10050E-04 0.00000E+00 0.00000E+00
+ 57 sm50     0.66835E-05 0.70247E-05 0.00000E+00 0.00000E+00
+ 58 eu51     0.14540E-06 0.16692E-06 0.00000E+00 0.00000E+00
+ 59 eu53     0.13514E-05 0.14802E-05 0.00000E+00 0.00000E+00
+ 60 eu54     0.20213E-06 0.22243E-06 0.00000E+00 0.00000E+00
+ 61 gd54     0.67373E-08 0.74437E-08 0.00000E+00 0.00000E+00
+ 62 am42     0.50036E-09 0.59388E-09 0.00000E+00 0.00000E+00
+ 63 cm43     0.42212E-09 0.50987E-09 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   24.590     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.11828     ***k(itt)= 1.11827     ***k(integ)= 1.11828    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.49211E-03 0.47464E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21588E-01 0.21558E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.87158E-04 0.89502E-04 0.00000E+00 0.00000E+00
+ 11 slag     0.27294E-03 0.28825E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.32115E-04 0.33744E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.17013E-04 0.18012E-04 0.00000E+00 0.00000E+00
+ 14 ag09     0.11426E-05 0.12903E-05 0.00000E+00 0.00000E+00
+ 15 cd13     0.54036E-08 0.57523E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.91674E-08 0.93475E-08 0.00000E+00 0.00000E+00
+ 17 sm49     0.11797E-06 0.12039E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.27526E-06 0.27574E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.10153E-06 0.11209E-06 0.00000E+00 0.00000E+00
+ 20 gd55     0.71753E-09 0.74492E-09 0.00000E+00 0.00000E+00
+ 21 gd56     0.39358E-07 0.41715E-07 0.00000E+00 0.00000E+00
+ 22 gd57     0.85943E-08 0.91049E-08 0.00000E+00 0.00000E+00
+ 23 np37     0.43836E-05 0.45184E-05 0.00000E+00 0.00000E+00
+ 24 np39     0.17416E-05 0.19281E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.70068E-06 0.74691E-06 0.00000E+00 0.00000E+00
+ 26 pu39     0.12854E-03 0.13811E-03 0.00000E+00 0.00000E+00
+ 27 pu40     0.26330E-04 0.28641E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.14785E-04 0.17165E-04 0.00000E+00 0.00000E+00
+ 29 pu42     0.22239E-05 0.27097E-05 0.00000E+00 0.00000E+00
+ 30 am41     0.29524E-06 0.33823E-06 0.00000E+00 0.00000E+00
+ 31 am2m     0.37432E-08 0.42793E-08 0.00000E+00 0.00000E+00
+ 32 am43     0.24389E-06 0.29737E-06 0.00000E+00 0.00000E+00
+ 33 cm42     0.54404E-07 0.64561E-07 0.00000E+00 0.00000E+00
+ 34 cm44     0.37553E-07 0.46590E-07 0.00000E+00 0.00000E+00
+ 35 cm45     0.10456E-08 0.13235E-08 0.00000E+00 0.00000E+00
+ 40 sm52     0.27404E-05 0.28989E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.13376E-04 0.14093E-04 0.00000E+00 0.00000E+00
+ 42 cs33     0.34546E-04 0.36309E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.19499E-04 0.20438E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.26170E-04 0.27236E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.70560E-05 0.73179E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.32789E-04 0.34387E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.23113E-05 0.25058E-05 0.00000E+00 0.00000E+00
+ 48 pr41     0.31638E-04 0.33239E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.41798E-07 0.45105E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.81107E-07 0.85288E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.48979E-07 0.53687E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.50096E-07 0.53331E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.23934E-05 0.24899E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.27411E-04 0.28858E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.99592E-05 0.10791E-04 0.00000E+00 0.00000E+00
+ 56 cs35     0.10720E-04 0.10878E-04 0.00000E+00 0.00000E+00
+ 57 sm50     0.73478E-05 0.77195E-05 0.00000E+00 0.00000E+00
+ 58 eu51     0.16400E-06 0.18796E-06 0.00000E+00 0.00000E+00
+ 59 eu53     0.15808E-05 0.17312E-05 0.00000E+00 0.00000E+00
+ 60 eu54     0.25117E-06 0.27595E-06 0.00000E+00 0.00000E+00
+ 61 gd54     0.92718E-08 0.10230E-07 0.00000E+00 0.00000E+00
+ 62 am42     0.63024E-09 0.74816E-09 0.00000E+00 0.00000E+00
+ 63 cm43     0.62909E-09 0.75923E-09 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   26.663     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.10175     ***k(itt)= 1.10174     ***k(integ)= 1.10175    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000      0.9999999    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.45998E-03 0.44222E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21558E-01 0.21526E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.92164E-04 0.94509E-04 0.00000E+00 0.00000E+00
+ 11 slag     0.29741E-03 0.31414E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.34584E-04 0.36331E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.18234E-04 0.19307E-04 0.00000E+00 0.00000E+00
+ 14 ag09     0.12934E-05 0.14612E-05 0.00000E+00 0.00000E+00
+ 15 cd13     0.55731E-08 0.59433E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.90086E-08 0.91934E-08 0.00000E+00 0.00000E+00
+ 17 sm49     0.11714E-06 0.11968E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.27226E-06 0.27325E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.11666E-06 0.12892E-06 0.00000E+00 0.00000E+00
+ 20 gd55     0.80402E-09 0.83651E-09 0.00000E+00 0.00000E+00
+ 21 gd56     0.44417E-07 0.47203E-07 0.00000E+00 0.00000E+00
+ 22 gd57     0.95860E-08 0.10183E-07 0.00000E+00 0.00000E+00
+ 23 np37     0.50099E-05 0.51510E-05 0.00000E+00 0.00000E+00
+ 24 np39     0.17752E-05 0.19649E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.87703E-06 0.93301E-06 0.00000E+00 0.00000E+00
+ 26 pu39     0.13300E-03 0.14263E-03 0.00000E+00 0.00000E+00
+ 27 pu40     0.29260E-04 0.31595E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.16651E-04 0.19355E-04 0.00000E+00 0.00000E+00
+ 29 pu42     0.27806E-05 0.33903E-05 0.00000E+00 0.00000E+00
+ 30 am41     0.35638E-06 0.40824E-06 0.00000E+00 0.00000E+00
+ 31 am2m     0.46527E-08 0.53136E-08 0.00000E+00 0.00000E+00
+ 32 am43     0.33388E-06 0.40722E-06 0.00000E+00 0.00000E+00
+ 33 cm42     0.71049E-07 0.84319E-07 0.00000E+00 0.00000E+00
+ 34 cm44     0.56691E-07 0.70356E-07 0.00000E+00 0.00000E+00
+ 35 cm45     0.16981E-08 0.21489E-08 0.00000E+00 0.00000E+00
+ 40 sm52     0.28939E-05 0.30601E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.14264E-04 0.15026E-04 0.00000E+00 0.00000E+00
+ 42 cs33     0.37133E-04 0.39020E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.20917E-04 0.21918E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.27778E-04 0.28882E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.72837E-05 0.75452E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.35252E-04 0.36959E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.26773E-05 0.29030E-05 0.00000E+00 0.00000E+00
+ 48 pr41     0.34183E-04 0.35910E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.43806E-07 0.47243E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.84059E-07 0.88339E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.50796E-07 0.55727E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.50908E-07 0.54224E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.25449E-05 0.26449E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.29605E-04 0.31169E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.11079E-04 0.12019E-04 0.00000E+00 0.00000E+00
+ 56 cs35     0.11515E-04 0.11688E-04 0.00000E+00 0.00000E+00
+ 57 sm50     0.80135E-05 0.84150E-05 0.00000E+00 0.00000E+00
+ 58 eu51     0.18281E-06 0.20918E-06 0.00000E+00 0.00000E+00
+ 59 eu53     0.18195E-05 0.19925E-05 0.00000E+00 0.00000E+00
+ 60 eu54     0.30493E-06 0.33450E-06 0.00000E+00 0.00000E+00
+ 61 gd54     0.12380E-07 0.13641E-07 0.00000E+00 0.00000E+00
+ 62 am42     0.77362E-09 0.91847E-09 0.00000E+00 0.00000E+00
+ 63 cm43     0.89951E-09 0.10847E-08 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   28.742     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.08548     ***k(itt)= 1.08547     ***k(integ)= 1.08548    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=  0.9999999       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.42923E-03 0.41131E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21528E-01 0.21493E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.96857E-04 0.99183E-04 0.00000E+00 0.00000E+00
+ 11 slag     0.32217E-03 0.34035E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.37018E-04 0.38881E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.19418E-04 0.20563E-04 0.00000E+00 0.00000E+00
+ 14 ag09     0.14491E-05 0.16376E-05 0.00000E+00 0.00000E+00
+ 15 cd13     0.57247E-08 0.61156E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.88481E-08 0.90382E-08 0.00000E+00 0.00000E+00
+ 17 sm49     0.11610E-06 0.11875E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.26905E-06 0.27053E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.13315E-06 0.14720E-06 0.00000E+00 0.00000E+00
+ 20 gd55     0.89514E-09 0.93287E-09 0.00000E+00 0.00000E+00
+ 21 gd56     0.49903E-07 0.53142E-07 0.00000E+00 0.00000E+00
+ 22 gd57     0.10657E-07 0.11344E-07 0.00000E+00 0.00000E+00
+ 23 np37     0.56579E-05 0.58033E-05 0.00000E+00 0.00000E+00
+ 24 np39     0.18094E-05 0.20024E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.10781E-05 0.11447E-05 0.00000E+00 0.00000E+00
+ 26 pu39     0.13688E-03 0.14652E-03 0.00000E+00 0.00000E+00
+ 27 pu40     0.32205E-04 0.34509E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.18484E-04 0.21511E-04 0.00000E+00 0.00000E+00
+ 29 pu42     0.34047E-05 0.41538E-05 0.00000E+00 0.00000E+00
+ 30 am41     0.42077E-06 0.48197E-06 0.00000E+00 0.00000E+00
+ 31 am2m     0.56292E-08 0.64234E-08 0.00000E+00 0.00000E+00
+ 32 am43     0.44415E-06 0.54184E-06 0.00000E+00 0.00000E+00
+ 33 cm42     0.90246E-07 0.10711E-06 0.00000E+00 0.00000E+00
+ 34 cm44     0.82619E-07 0.10262E-06 0.00000E+00 0.00000E+00
+ 35 cm45     0.26445E-08 0.33459E-08 0.00000E+00 0.00000E+00
+ 40 sm52     0.30344E-05 0.32078E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.15116E-04 0.15921E-04 0.00000E+00 0.00000E+00
+ 42 cs33     0.39671E-04 0.41679E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.22303E-04 0.23365E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.29297E-04 0.30434E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.74763E-05 0.77361E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.37674E-04 0.39487E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.30649E-05 0.33237E-05 0.00000E+00 0.00000E+00
+ 48 pr41     0.36713E-04 0.38565E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.45660E-07 0.49214E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.86529E-07 0.90883E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.52580E-07 0.57730E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.51688E-07 0.55081E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.26892E-05 0.27920E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.31785E-04 0.33465E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.12234E-04 0.13285E-04 0.00000E+00 0.00000E+00
+ 56 cs35     0.12291E-04 0.12481E-04 0.00000E+00 0.00000E+00
+ 57 sm50     0.86796E-05 0.91100E-05 0.00000E+00 0.00000E+00
+ 58 eu51     0.20174E-06 0.23047E-06 0.00000E+00 0.00000E+00
+ 59 eu53     0.20659E-05 0.22620E-05 0.00000E+00 0.00000E+00
+ 60 eu54     0.36288E-06 0.39752E-06 0.00000E+00 0.00000E+00
+ 61 gd54     0.16110E-07 0.17728E-07 0.00000E+00 0.00000E+00
+ 62 am42     0.92956E-09 0.11037E-08 0.00000E+00 0.00000E+00
+ 63 cm43     0.12418E-08 0.14964E-08 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   30.824     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.06949     ***k(itt)= 1.06948     ***k(integ)= 1.06949    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.39984E-03 0.38188E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21498E-01 0.21460E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.10124E-03 0.10353E-03 0.00000E+00 0.00000E+00
+ 11 slag     0.34722E-03 0.36689E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.39417E-04 0.41394E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.20565E-04 0.21780E-04 0.00000E+00 0.00000E+00
+ 14 ag09     0.16091E-05 0.18188E-05 0.00000E+00 0.00000E+00
+ 15 cd13     0.58615E-08 0.62718E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.86860E-08 0.88818E-08 0.00000E+00 0.00000E+00
+ 17 sm49     0.11490E-06 0.11765E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.26561E-06 0.26759E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.15088E-06 0.16682E-06 0.00000E+00 0.00000E+00
+ 20 gd55     0.98919E-09 0.10322E-08 0.00000E+00 0.00000E+00
+ 21 gd56     0.55735E-07 0.59444E-07 0.00000E+00 0.00000E+00
+ 22 gd57     0.11791E-07 0.12573E-07 0.00000E+00 0.00000E+00
+ 23 np37     0.63242E-05 0.64717E-05 0.00000E+00 0.00000E+00
+ 24 np39     0.18443E-05 0.20406E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.13046E-05 0.13826E-05 0.00000E+00 0.00000E+00
+ 26 pu39     0.14023E-03 0.14984E-03 0.00000E+00 0.00000E+00
+ 27 pu40     0.35149E-04 0.37370E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.20275E-04 0.23615E-04 0.00000E+00 0.00000E+00
+ 29 pu42     0.40953E-05 0.49992E-05 0.00000E+00 0.00000E+00
+ 30 am41     0.48747E-06 0.55830E-06 0.00000E+00 0.00000E+00
+ 31 am2m     0.66552E-08 0.75888E-08 0.00000E+00 0.00000E+00
+ 32 am43     0.57643E-06 0.70341E-06 0.00000E+00 0.00000E+00
+ 33 cm42     0.11194E-06 0.13286E-06 0.00000E+00 0.00000E+00
+ 34 cm44     0.11688E-06 0.14529E-06 0.00000E+00 0.00000E+00
+ 35 cm45     0.39726E-08 0.50255E-08 0.00000E+00 0.00000E+00
+ 40 sm52     0.31627E-05 0.33426E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.15930E-04 0.16776E-04 0.00000E+00 0.00000E+00
+ 42 cs33     0.42160E-04 0.44286E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.23657E-04 0.24778E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.30728E-04 0.31891E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.76371E-05 0.78939E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.40055E-04 0.41971E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.34731E-05 0.37668E-05 0.00000E+00 0.00000E+00
+ 48 pr41     0.39229E-04 0.41206E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.47374E-07 0.51031E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.88596E-07 0.93003E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.54325E-07 0.59688E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.52434E-07 0.55905E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.28262E-05 0.29315E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.33949E-04 0.35746E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.13422E-04 0.14590E-04 0.00000E+00 0.00000E+00
+ 56 cs35     0.13049E-04 0.13255E-04 0.00000E+00 0.00000E+00
+ 57 sm50     0.93450E-05 0.98032E-05 0.00000E+00 0.00000E+00
+ 58 eu51     0.22072E-06 0.25178E-06 0.00000E+00 0.00000E+00
+ 59 eu53     0.23181E-05 0.25378E-05 0.00000E+00 0.00000E+00
+ 60 eu54     0.42451E-06 0.46443E-06 0.00000E+00 0.00000E+00
+ 61 gd54     0.20504E-07 0.22538E-07 0.00000E+00 0.00000E+00
+ 62 am42     0.10965E-08 0.13019E-08 0.00000E+00 0.00000E+00
+ 63 cm43     0.16636E-08 0.20031E-08 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   32.911     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.05376     ***k(itt)= 1.05375     ***k(integ)= 1.05376    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.37179E-03 0.35390E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21466E-01 0.21425E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.10532E-03 0.10756E-03 0.00000E+00 0.00000E+00
+ 11 slag     0.37257E-03 0.39376E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.41781E-04 0.43869E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.21674E-04 0.22956E-04 0.00000E+00 0.00000E+00
+ 14 ag09     0.17727E-05 0.20040E-05 0.00000E+00 0.00000E+00
+ 15 cd13     0.59847E-08 0.64133E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.85231E-08 0.87248E-08 0.00000E+00 0.00000E+00
+ 17 sm49     0.11358E-06 0.11643E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.26197E-06 0.26444E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.16974E-06 0.18764E-06 0.00000E+00 0.00000E+00
+ 20 gd55     0.10848E-08 0.11329E-08 0.00000E+00 0.00000E+00
+ 21 gd56     0.61843E-07 0.66036E-07 0.00000E+00 0.00000E+00
+ 22 gd57     0.12976E-07 0.13854E-07 0.00000E+00 0.00000E+00
+ 23 np37     0.70056E-05 0.71530E-05 0.00000E+00 0.00000E+00
+ 24 np39     0.18799E-05 0.20795E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.15570E-05 0.16471E-05 0.00000E+00 0.00000E+00
+ 26 pu39     0.14309E-03 0.15267E-03 0.00000E+00 0.00000E+00
+ 27 pu40     0.38080E-04 0.40163E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.22011E-04 0.25655E-04 0.00000E+00 0.00000E+00
+ 29 pu42     0.48514E-05 0.59247E-05 0.00000E+00 0.00000E+00
+ 30 am41     0.55556E-06 0.63615E-06 0.00000E+00 0.00000E+00
+ 31 am2m     0.77130E-08 0.87897E-08 0.00000E+00 0.00000E+00
+ 32 am43     0.73227E-06 0.89385E-06 0.00000E+00 0.00000E+00
+ 33 cm42     0.13604E-06 0.16145E-06 0.00000E+00 0.00000E+00
+ 34 cm44     0.16113E-06 0.20041E-06 0.00000E+00 0.00000E+00
+ 35 cm45     0.57836E-08 0.73157E-08 0.00000E+00 0.00000E+00
+ 40 sm52     0.32793E-05 0.34651E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.16708E-04 0.17592E-04 0.00000E+00 0.00000E+00
+ 42 cs33     0.44599E-04 0.46840E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.24979E-04 0.26156E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.32069E-04 0.33256E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.77687E-05 0.80217E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.42394E-04 0.44412E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.39010E-05 0.42313E-05 0.00000E+00 0.00000E+00
+ 48 pr41     0.41730E-04 0.43831E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.48956E-07 0.52706E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.90303E-07 0.94747E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.56032E-07 0.61602E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.53148E-07 0.56695E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.29559E-05 0.30632E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.36097E-04 0.38011E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.14642E-04 0.15930E-04 0.00000E+00 0.00000E+00
+ 56 cs35     0.13789E-04 0.14011E-04 0.00000E+00 0.00000E+00
+ 57 sm50     0.10008E-04 0.10494E-04 0.00000E+00 0.00000E+00
+ 58 eu51     0.23972E-06 0.27305E-06 0.00000E+00 0.00000E+00
+ 59 eu53     0.25745E-05 0.28183E-05 0.00000E+00 0.00000E+00
+ 60 eu54     0.48927E-06 0.53463E-06 0.00000E+00 0.00000E+00
+ 61 gd54     0.25599E-07 0.28107E-07 0.00000E+00 0.00000E+00
+ 62 am42     0.12729E-08 0.15112E-08 0.00000E+00 0.00000E+00
+ 63 cm43     0.21713E-08 0.26123E-08 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   35.003     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.03828     ***k(itt)= 1.03829     ***k(integ)= 1.03828    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.34506E-03 0.32734E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21435E-01 0.21391E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.10911E-03 0.11127E-03 0.00000E+00 0.00000E+00
+ 11 slag     0.39822E-03 0.42097E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.44109E-04 0.46306E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.22744E-04 0.24091E-04 0.00000E+00 0.00000E+00
+ 14 ag09     0.19393E-05 0.21924E-05 0.00000E+00 0.00000E+00
+ 15 cd13     0.60945E-08 0.65401E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.83603E-08 0.85681E-08 0.00000E+00 0.00000E+00
+ 17 sm49     0.11214E-06 0.11509E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.25819E-06 0.26113E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.18960E-06 0.20951E-06 0.00000E+00 0.00000E+00
+ 20 gd55     0.11809E-08 0.12341E-08 0.00000E+00 0.00000E+00
+ 21 gd56     0.68184E-07 0.72869E-07 0.00000E+00 0.00000E+00
+ 22 gd57     0.14204E-07 0.15179E-07 0.00000E+00 0.00000E+00
+ 23 np37     0.76987E-05 0.78438E-05 0.00000E+00 0.00000E+00
+ 24 np39     0.19160E-05 0.21191E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.18354E-05 0.19381E-05 0.00000E+00 0.00000E+00
+ 26 pu39     0.14553E-03 0.15504E-03 0.00000E+00 0.00000E+00
+ 27 pu40     0.40987E-04 0.42881E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.23685E-04 0.27617E-04 0.00000E+00 0.00000E+00
+ 29 pu42     0.56713E-05 0.69281E-05 0.00000E+00 0.00000E+00
+ 30 am41     0.62414E-06 0.71447E-06 0.00000E+00 0.00000E+00
+ 31 am2m     0.87860E-08 0.10007E-07 0.00000E+00 0.00000E+00
+ 32 am43     0.91302E-06 0.11148E-05 0.00000E+00 0.00000E+00
+ 33 cm42     0.16238E-06 0.19270E-06 0.00000E+00 0.00000E+00
+ 34 cm44     0.21712E-06 0.27019E-06 0.00000E+00 0.00000E+00
+ 35 cm45     0.81919E-08 0.10361E-07 0.00000E+00 0.00000E+00
+ 40 sm52     0.33846E-05 0.35760E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.17448E-04 0.18368E-04 0.00000E+00 0.00000E+00
+ 42 cs33     0.46987E-04 0.49340E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.26267E-04 0.27500E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.33322E-04 0.34526E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.78737E-05 0.81225E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.44692E-04 0.46809E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.43476E-05 0.47162E-05 0.00000E+00 0.00000E+00
+ 48 pr41     0.44216E-04 0.46442E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.50415E-07 0.54247E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.91668E-07 0.96135E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.57704E-07 0.63476E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.53834E-07 0.57456E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.30784E-05 0.31872E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.38229E-04 0.40260E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.15893E-04 0.17304E-04 0.00000E+00 0.00000E+00
+ 56 cs35     0.14510E-04 0.14749E-04 0.00000E+00 0.00000E+00
+ 57 sm50     0.10669E-04 0.11180E-04 0.00000E+00 0.00000E+00
+ 58 eu51     0.25868E-06 0.29422E-06 0.00000E+00 0.00000E+00
+ 59 eu53     0.28336E-05 0.31017E-05 0.00000E+00 0.00000E+00
+ 60 eu54     0.55656E-06 0.60750E-06 0.00000E+00 0.00000E+00
+ 61 gd54     0.31425E-07 0.34467E-07 0.00000E+00 0.00000E+00
+ 62 am42     0.14573E-08 0.17295E-08 0.00000E+00 0.00000E+00
+ 63 cm43     0.27697E-08 0.33296E-08 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   37.099     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.02305     ***k(itt)= 1.02305     ***k(integ)= 1.02305    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000      0.9999999    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.31964E-03 0.30219E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21402E-01 0.21355E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.11260E-03 0.11468E-03 0.00000E+00 0.00000E+00
+ 11 slag     0.42418E-03 0.44852E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.46399E-04 0.48705E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.23775E-04 0.25183E-04 0.00000E+00 0.00000E+00
+ 14 ag09     0.21084E-05 0.23835E-05 0.00000E+00 0.00000E+00
+ 15 cd13     0.61890E-08 0.66504E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.82026E-08 0.84175E-08 0.00000E+00 0.00000E+00
+ 17 sm49     0.11063E-06 0.11367E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.25457E-06 0.25799E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.21021E-06 0.23217E-06 0.00000E+00 0.00000E+00
+ 20 gd55     0.12779E-08 0.13362E-08 0.00000E+00 0.00000E+00
+ 21 gd56     0.74852E-07 0.80047E-07 0.00000E+00 0.00000E+00
+ 22 gd57     0.15494E-07 0.16570E-07 0.00000E+00 0.00000E+00
+ 23 np37     0.84004E-05 0.85409E-05 0.00000E+00 0.00000E+00
+ 24 np39     0.19527E-05 0.21591E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.21400E-05 0.22558E-05 0.00000E+00 0.00000E+00
+ 26 pu39     0.14755E-03 0.15699E-03 0.00000E+00 0.00000E+00
+ 27 pu40     0.43869E-04 0.45518E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.25291E-04 0.29499E-04 0.00000E+00 0.00000E+00
+ 29 pu42     0.65532E-05 0.80067E-05 0.00000E+00 0.00000E+00
+ 30 am41     0.69233E-06 0.79221E-06 0.00000E+00 0.00000E+00
+ 31 am2m     0.98642E-08 0.11228E-07 0.00000E+00 0.00000E+00
+ 32 am43     0.11198E-05 0.13677E-05 0.00000E+00 0.00000E+00
+ 33 cm42     0.19084E-06 0.22643E-06 0.00000E+00 0.00000E+00
+ 34 cm44     0.28676E-06 0.35704E-06 0.00000E+00 0.00000E+00
+ 35 cm45     0.11325E-07 0.14321E-07 0.00000E+00 0.00000E+00
+ 40 sm52     0.34791E-05 0.36756E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.18151E-04 0.19105E-04 0.00000E+00 0.00000E+00
+ 42 cs33     0.49324E-04 0.51786E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.27522E-04 0.28810E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.34487E-04 0.35705E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.79546E-05 0.81987E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.46948E-04 0.49162E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.48120E-05 0.52204E-05 0.00000E+00 0.00000E+00
+ 48 pr41     0.46687E-04 0.49038E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.51756E-07 0.55661E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.92650E-07 0.97124E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.59359E-07 0.65331E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.54493E-07 0.58192E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.31936E-05 0.33036E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.40344E-04 0.42493E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.17173E-04 0.18711E-04 0.00000E+00 0.00000E+00
+ 56 cs35     0.15212E-04 0.15468E-04 0.00000E+00 0.00000E+00
+ 57 sm50     0.11326E-04 0.11861E-04 0.00000E+00 0.00000E+00
+ 58 eu51     0.27751E-06 0.31522E-06 0.00000E+00 0.00000E+00
+ 59 eu53     0.30940E-05 0.33864E-05 0.00000E+00 0.00000E+00
+ 60 eu54     0.62572E-06 0.68230E-06 0.00000E+00 0.00000E+00
+ 61 gd54     0.38004E-07 0.41641E-07 0.00000E+00 0.00000E+00
+ 62 am42     0.16488E-08 0.19560E-08 0.00000E+00 0.00000E+00
+ 63 cm43     0.34623E-08 0.41587E-08 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   39.199     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.00817     ***k(itt)= 1.00816     ***k(integ)= 1.00817    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.29549E-03 0.27839E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21369E-01 0.21319E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.11580E-03 0.11778E-03 0.00000E+00 0.00000E+00
+ 11 slag     0.45045E-03 0.47643E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.48652E-04 0.51064E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.24765E-04 0.26233E-04 0.00000E+00 0.00000E+00
+ 14 ag09     0.22790E-05 0.25762E-05 0.00000E+00 0.00000E+00
+ 15 cd13     0.62781E-08 0.67532E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.80372E-08 0.82584E-08 0.00000E+00 0.00000E+00
+ 17 sm49     0.10903E-06 0.11215E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.25044E-06 0.25428E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.23165E-06 0.25571E-06 0.00000E+00 0.00000E+00
+ 20 gd55     0.13698E-08 0.14329E-08 0.00000E+00 0.00000E+00
+ 21 gd56     0.81293E-07 0.86979E-07 0.00000E+00 0.00000E+00
+ 22 gd57     0.16735E-07 0.17907E-07 0.00000E+00 0.00000E+00
+ 23 np37     0.91076E-05 0.92413E-05 0.00000E+00 0.00000E+00
+ 24 np39     0.19901E-05 0.22000E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.24702E-05 0.25993E-05 0.00000E+00 0.00000E+00
+ 26 pu39     0.14924E-03 0.15860E-03 0.00000E+00 0.00000E+00
+ 27 pu40     0.46697E-04 0.48054E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.26822E-04 0.31282E-04 0.00000E+00 0.00000E+00
+ 29 pu42     0.74948E-05 0.91574E-05 0.00000E+00 0.00000E+00
+ 30 am41     0.75947E-06 0.86857E-06 0.00000E+00 0.00000E+00
+ 31 am2m     0.10916E-07 0.12418E-07 0.00000E+00 0.00000E+00
+ 32 am43     0.13533E-05 0.16534E-05 0.00000E+00 0.00000E+00
+ 33 cm42     0.22111E-06 0.26227E-06 0.00000E+00 0.00000E+00
+ 34 cm44     0.37199E-06 0.46337E-06 0.00000E+00 0.00000E+00
+ 35 cm45     0.15317E-07 0.19366E-07 0.00000E+00 0.00000E+00
+ 40 sm52     0.35638E-05 0.37651E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.18817E-04 0.19802E-04 0.00000E+00 0.00000E+00
+ 42 cs33     0.51608E-04 0.54178E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.28744E-04 0.30085E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.35562E-04 0.36790E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.80135E-05 0.82529E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.49162E-04 0.51472E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.52934E-05 0.57432E-05 0.00000E+00 0.00000E+00
+ 48 pr41     0.49142E-04 0.51619E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.52996E-07 0.56970E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.93525E-07 0.97991E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.60940E-07 0.67105E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.55116E-07 0.58896E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.33016E-05 0.34124E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.42441E-04 0.44709E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.18480E-04 0.20149E-04 0.00000E+00 0.00000E+00
+ 56 cs35     0.15896E-04 0.16170E-04 0.00000E+00 0.00000E+00
+ 57 sm50     0.11978E-04 0.12536E-04 0.00000E+00 0.00000E+00
+ 58 eu51     0.29627E-06 0.33608E-06 0.00000E+00 0.00000E+00
+ 59 eu53     0.33543E-05 0.36710E-05 0.00000E+00 0.00000E+00
+ 60 eu54     0.69642E-06 0.75867E-06 0.00000E+00 0.00000E+00
+ 61 gd54     0.45352E-07 0.49647E-07 0.00000E+00 0.00000E+00
+ 62 am42     0.18428E-08 0.21849E-08 0.00000E+00 0.00000E+00
+ 63 cm43     0.42508E-08 0.51011E-08 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   41.305     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)=0.993551     ***k(itt)=0.993546     ***k(integ)=0.993551    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.27262E-03 0.25593E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21335E-01 0.21282E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.11871E-03 0.12060E-03 0.00000E+00 0.00000E+00
+ 11 slag     0.47703E-03 0.50470E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.50867E-04 0.53384E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.25716E-04 0.27240E-04 0.00000E+00 0.00000E+00
+ 14 ag09     0.24507E-05 0.27699E-05 0.00000E+00 0.00000E+00
+ 15 cd13     0.63539E-08 0.68420E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.78789E-08 0.81070E-08 0.00000E+00 0.00000E+00
+ 17 sm49     0.10740E-06 0.11061E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.24639E-06 0.25065E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.25362E-06 0.27978E-06 0.00000E+00 0.00000E+00
+ 20 gd55     0.14611E-08 0.15289E-08 0.00000E+00 0.00000E+00
+ 21 gd56     0.87958E-07 0.94145E-07 0.00000E+00 0.00000E+00
+ 22 gd57     0.18019E-07 0.19289E-07 0.00000E+00 0.00000E+00
+ 23 np37     0.98174E-05 0.99419E-05 0.00000E+00 0.00000E+00
+ 24 np39     0.20279E-05 0.22412E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.28253E-05 0.29679E-05 0.00000E+00 0.00000E+00
+ 26 pu39     0.15063E-03 0.15990E-03 0.00000E+00 0.00000E+00
+ 27 pu40     0.49468E-04 0.50489E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.28278E-04 0.32967E-04 0.00000E+00 0.00000E+00
+ 29 pu42     0.84937E-05 0.10376E-04 0.00000E+00 0.00000E+00
+ 30 am41     0.82479E-06 0.94262E-06 0.00000E+00 0.00000E+00
+ 31 am2m     0.11941E-07 0.13575E-07 0.00000E+00 0.00000E+00
+ 32 am43     0.16143E-05 0.19733E-05 0.00000E+00 0.00000E+00
+ 33 cm42     0.25300E-06 0.29998E-06 0.00000E+00 0.00000E+00
+ 34 cm44     0.47487E-06 0.59174E-06 0.00000E+00 0.00000E+00
+ 35 cm45     0.20316E-07 0.25680E-07 0.00000E+00 0.00000E+00
+ 40 sm52     0.36387E-05 0.38446E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.19445E-04 0.20461E-04 0.00000E+00 0.00000E+00
+ 42 cs33     0.53839E-04 0.56514E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.29931E-04 0.31326E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.36549E-04 0.37785E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.80525E-05 0.82874E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.51333E-04 0.53739E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.57907E-05 0.62833E-05 0.00000E+00 0.00000E+00
+ 48 pr41     0.51582E-04 0.54185E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.54128E-07 0.58162E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.94067E-07 0.98528E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.62509E-07 0.68859E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.55719E-07 0.59575E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.34024E-05 0.35137E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.44522E-04 0.46909E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.19814E-04 0.21616E-04 0.00000E+00 0.00000E+00
+ 56 cs35     0.16560E-04 0.16853E-04 0.00000E+00 0.00000E+00
+ 57 sm50     0.12623E-04 0.13204E-04 0.00000E+00 0.00000E+00
+ 58 eu51     0.31488E-06 0.35670E-06 0.00000E+00 0.00000E+00
+ 59 eu53     0.36132E-05 0.39541E-05 0.00000E+00 0.00000E+00
+ 60 eu54     0.76797E-06 0.83589E-06 0.00000E+00 0.00000E+00
+ 61 gd54     0.53480E-07 0.58494E-07 0.00000E+00 0.00000E+00
+ 62 am42     0.20406E-08 0.24176E-08 0.00000E+00 0.00000E+00
+ 63 cm43     0.51347E-08 0.61559E-08 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   43.416     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)=0.979254     ***k(itt)=0.979248     ***k(integ)=0.979254    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.25099E-03 0.23478E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21301E-01 0.21245E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.12135E-03 0.12312E-03 0.00000E+00 0.00000E+00
+ 11 slag     0.50393E-03 0.53334E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.53043E-04 0.55664E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.26625E-04 0.28203E-04 0.00000E+00 0.00000E+00
+ 14 ag09     0.26230E-05 0.29640E-05 0.00000E+00 0.00000E+00
+ 15 cd13     0.64207E-08 0.69196E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.77238E-08 0.79588E-08 0.00000E+00 0.00000E+00
+ 17 sm49     0.10575E-06 0.10902E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.24239E-06 0.24707E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.27596E-06 0.30422E-06 0.00000E+00 0.00000E+00
+ 20 gd55     0.15493E-08 0.16216E-08 0.00000E+00 0.00000E+00
+ 21 gd56     0.94630E-07 0.10132E-06 0.00000E+00 0.00000E+00
+ 22 gd57     0.19303E-07 0.20671E-07 0.00000E+00 0.00000E+00
+ 23 np37     0.10527E-04 0.10640E-04 0.00000E+00 0.00000E+00
+ 24 np39     0.20660E-05 0.22828E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.32047E-05 0.33607E-05 0.00000E+00 0.00000E+00
+ 26 pu39     0.15174E-03 0.16092E-03 0.00000E+00 0.00000E+00
+ 27 pu40     0.52176E-04 0.52818E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.29658E-04 0.34551E-04 0.00000E+00 0.00000E+00
+ 29 pu42     0.95474E-05 0.11658E-04 0.00000E+00 0.00000E+00
+ 30 am41     0.88770E-06 0.10136E-05 0.00000E+00 0.00000E+00
+ 31 am2m     0.12927E-07 0.14684E-07 0.00000E+00 0.00000E+00
+ 32 am43     0.19029E-05 0.23271E-05 0.00000E+00 0.00000E+00
+ 33 cm42     0.28624E-06 0.33922E-06 0.00000E+00 0.00000E+00
+ 34 cm44     0.59744E-06 0.74477E-06 0.00000E+00 0.00000E+00
+ 35 cm45     0.26473E-07 0.33456E-07 0.00000E+00 0.00000E+00
+ 40 sm52     0.37046E-05 0.39147E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.20037E-04 0.21081E-04 0.00000E+00 0.00000E+00
+ 42 cs33     0.56017E-04 0.58795E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.31085E-04 0.32532E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.37449E-04 0.38690E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.80736E-05 0.83042E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.53463E-04 0.55963E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.63029E-05 0.68397E-05 0.00000E+00 0.00000E+00
+ 48 pr41     0.54005E-04 0.56736E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.55157E-07 0.59249E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.94387E-07 0.98830E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.64041E-07 0.70573E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.56290E-07 0.60228E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.34960E-05 0.36075E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.46584E-04 0.49092E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.21171E-04 0.23110E-04 0.00000E+00 0.00000E+00
+ 56 cs35     0.17207E-04 0.17518E-04 0.00000E+00 0.00000E+00
+ 57 sm50     0.13262E-04 0.13864E-04 0.00000E+00 0.00000E+00
+ 58 eu51     0.33328E-06 0.37705E-06 0.00000E+00 0.00000E+00
+ 59 eu53     0.38696E-05 0.42343E-05 0.00000E+00 0.00000E+00
+ 60 eu54     0.83985E-06 0.91340E-06 0.00000E+00 0.00000E+00
+ 61 gd54     0.62393E-07 0.68185E-07 0.00000E+00 0.00000E+00
+ 62 am42     0.22394E-08 0.26508E-08 0.00000E+00 0.00000E+00
+ 63 cm43     0.61119E-08 0.73199E-08 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   45.532     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)=0.965308     ***k(itt)=0.965302     ***k(integ)=0.965308    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000      0.9999999    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.23060E-03 0.21492E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21266E-01 0.21207E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.12371E-03 0.12536E-03 0.00000E+00 0.00000E+00
+ 11 slag     0.53115E-03 0.56234E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.55179E-04 0.57903E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.27493E-04 0.29122E-04 0.00000E+00 0.00000E+00
+ 14 ag09     0.27951E-05 0.31576E-05 0.00000E+00 0.00000E+00
+ 15 cd13     0.64789E-08 0.69869E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.75722E-08 0.78144E-08 0.00000E+00 0.00000E+00
+ 17 sm49     0.10407E-06 0.10743E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.23845E-06 0.24351E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.29853E-06 0.32888E-06 0.00000E+00 0.00000E+00
+ 20 gd55     0.16338E-08 0.17104E-08 0.00000E+00 0.00000E+00
+ 21 gd56     0.10125E-06 0.10844E-06 0.00000E+00 0.00000E+00
+ 22 gd57     0.20577E-07 0.22042E-07 0.00000E+00 0.00000E+00
+ 23 np37     0.11232E-04 0.11332E-04 0.00000E+00 0.00000E+00
+ 24 np39     0.21044E-05 0.23247E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.36071E-05 0.37762E-05 0.00000E+00 0.00000E+00
+ 26 pu39     0.15261E-03 0.16170E-03 0.00000E+00 0.00000E+00
+ 27 pu40     0.54811E-04 0.55036E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.30959E-04 0.36032E-04 0.00000E+00 0.00000E+00
+ 29 pu42     0.10653E-04 0.13001E-04 0.00000E+00 0.00000E+00
+ 30 am41     0.94768E-06 0.10810E-05 0.00000E+00 0.00000E+00
+ 31 am2m     0.13864E-07 0.15734E-07 0.00000E+00 0.00000E+00
+ 32 am43     0.22191E-05 0.27147E-05 0.00000E+00 0.00000E+00
+ 33 cm42     0.32056E-06 0.37966E-06 0.00000E+00 0.00000E+00
+ 34 cm44     0.74178E-06 0.92506E-06 0.00000E+00 0.00000E+00
+ 35 cm45     0.33947E-07 0.42892E-07 0.00000E+00 0.00000E+00
+ 40 sm52     0.37619E-05 0.39760E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.20592E-04 0.21663E-04 0.00000E+00 0.00000E+00
+ 42 cs33     0.58140E-04 0.61020E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.32205E-04 0.33703E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.38264E-04 0.39507E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.80788E-05 0.83054E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.55550E-04 0.58144E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.68291E-05 0.74114E-05 0.00000E+00 0.00000E+00
+ 48 pr41     0.56413E-04 0.59273E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.56091E-07 0.60238E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.94513E-07 0.98929E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.65537E-07 0.72245E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.56834E-07 0.60856E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.35825E-05 0.36941E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.48628E-04 0.51258E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.22552E-04 0.24630E-04 0.00000E+00 0.00000E+00
+ 56 cs35     0.17835E-04 0.18165E-04 0.00000E+00 0.00000E+00
+ 57 sm50     0.13893E-04 0.14515E-04 0.00000E+00 0.00000E+00
+ 58 eu51     0.35144E-06 0.39709E-06 0.00000E+00 0.00000E+00
+ 59 eu53     0.41223E-05 0.45106E-05 0.00000E+00 0.00000E+00
+ 60 eu54     0.91158E-06 0.99067E-06 0.00000E+00 0.00000E+00
+ 61 gd54     0.72086E-07 0.78718E-07 0.00000E+00 0.00000E+00
+ 62 am42     0.24376E-08 0.28824E-08 0.00000E+00 0.00000E+00
+ 63 cm43     0.71787E-08 0.85878E-08 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   47.652     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)=0.951733     ***k(itt)=0.951730     ***k(integ)=0.951733    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.21140E-03 0.19630E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21230E-01 0.21168E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.12580E-03 0.12734E-03 0.00000E+00 0.00000E+00
+ 11 slag     0.55868E-03 0.59172E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.57275E-04 0.60102E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.28321E-04 0.29998E-04 0.00000E+00 0.00000E+00
+ 14 ag09     0.29665E-05 0.33501E-05 0.00000E+00 0.00000E+00
+ 15 cd13     0.65282E-08 0.70450E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.74252E-08 0.76743E-08 0.00000E+00 0.00000E+00
+ 17 sm49     0.10239E-06 0.10583E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.23458E-06 0.24000E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.32119E-06 0.35360E-06 0.00000E+00 0.00000E+00
+ 20 gd55     0.17143E-08 0.17949E-08 0.00000E+00 0.00000E+00
+ 21 gd56     0.10780E-06 0.11546E-06 0.00000E+00 0.00000E+00
+ 22 gd57     0.21834E-07 0.23392E-07 0.00000E+00 0.00000E+00
+ 23 np37     0.11932E-04 0.12016E-04 0.00000E+00 0.00000E+00
+ 24 np39     0.21429E-05 0.23667E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.40311E-05 0.42128E-05 0.00000E+00 0.00000E+00
+ 26 pu39     0.15326E-03 0.16228E-03 0.00000E+00 0.00000E+00
+ 27 pu40     0.57368E-04 0.57139E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.32182E-04 0.37409E-04 0.00000E+00 0.00000E+00
+ 29 pu42     0.11807E-04 0.14398E-04 0.00000E+00 0.00000E+00
+ 30 am41     0.10043E-05 0.11442E-05 0.00000E+00 0.00000E+00
+ 31 am2m     0.14744E-07 0.16715E-07 0.00000E+00 0.00000E+00
+ 32 am43     0.25627E-05 0.31358E-05 0.00000E+00 0.00000E+00
+ 33 cm42     0.35568E-06 0.42092E-06 0.00000E+00 0.00000E+00
+ 34 cm44     0.90995E-06 0.11351E-05 0.00000E+00 0.00000E+00
+ 35 cm45     0.42897E-07 0.54188E-07 0.00000E+00 0.00000E+00
+ 40 sm52     0.38112E-05 0.40291E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.21110E-04 0.22207E-04 0.00000E+00 0.00000E+00
+ 42 cs33     0.60209E-04 0.63189E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.33290E-04 0.34840E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.38993E-04 0.40238E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.80697E-05 0.82928E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.57594E-04 0.60283E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.73682E-05 0.79972E-05 0.00000E+00 0.00000E+00
+ 48 pr41     0.58804E-04 0.61795E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.56934E-07 0.61133E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.94444E-07 0.98852E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.66998E-07 0.73871E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.57354E-07 0.61456E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.36621E-05 0.37735E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.50654E-04 0.53407E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.23955E-04 0.26175E-04 0.00000E+00 0.00000E+00
+ 56 cs35     0.18446E-04 0.18796E-04 0.00000E+00 0.00000E+00
+ 57 sm50     0.14515E-04 0.15155E-04 0.00000E+00 0.00000E+00
+ 58 eu51     0.36933E-06 0.41679E-06 0.00000E+00 0.00000E+00
+ 59 eu53     0.43703E-05 0.47818E-05 0.00000E+00 0.00000E+00
+ 60 eu54     0.98269E-06 0.10672E-05 0.00000E+00 0.00000E+00
+ 61 gd54     0.82554E-07 0.90084E-07 0.00000E+00 0.00000E+00
+ 62 am42     0.26337E-08 0.31102E-08 0.00000E+00 0.00000E+00
+ 63 cm43     0.83293E-08 0.99524E-08 0.00000E+00 0.00000E+00
+:burn                                                                           
+ *** average burn up =   49.779     (mbt*day)/(kg hm)
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)=0.938554     ***k(itt)=0.938551     ***k(integ)=0.938554    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.20000E+00 0.38600E+00 0.45500E+00 0.70760E+00
+ temper   0.10000E+04 0.60000E+03 0.57900E+03 0.30000E+03
+ rez_izot    u238        u238        bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=63
+  1 u235     0.19339E-03 0.17890E-03 0.00000E+00 0.00000E+00
+  2 u238     0.21194E-01 0.21128E-01 0.00000E+00 0.00000E+00
+  3 o        0.45800E-01 0.45800E-01 0.00000E+00 0.00000E+00
+  4 zr       0.00000E+00 0.00000E+00 0.38910E-01 0.00000E+00
+  5 *h*      0.00000E+00 0.00000E+00 0.00000E+00 0.47460E-01
+  7 *o*      0.00000E+00 0.00000E+00 0.00000E+00 0.23730E-01
+ 10 u236     0.12764E-03 0.12905E-03 0.00000E+00 0.00000E+00
+ 11 slag     0.58653E-03 0.62147E-03 0.00000E+00 0.00000E+00
+ 12 tc99     0.59331E-04 0.62260E-04 0.00000E+00 0.00000E+00
+ 13 rh03     0.29108E-04 0.30829E-04 0.00000E+00 0.00000E+00
+ 14 ag09     0.31368E-05 0.35409E-05 0.00000E+00 0.00000E+00
+ 15 cd13     0.65708E-08 0.70948E-08 0.00000E+00 0.00000E+00
+ 16 xe35     0.72831E-08 0.75390E-08 0.00000E+00 0.00000E+00
+ 17 sm49     0.10073E-06 0.10424E-06 0.00000E+00 0.00000E+00
+ 18 sm51     0.23080E-06 0.23656E-06 0.00000E+00 0.00000E+00
+ 19 eu55     0.34379E-06 0.37821E-06 0.00000E+00 0.00000E+00
+ 20 gd55     0.17903E-08 0.18747E-08 0.00000E+00 0.00000E+00
+ 21 gd56     0.11421E-06 0.12234E-06 0.00000E+00 0.00000E+00
+ 22 gd57     0.23065E-07 0.24714E-07 0.00000E+00 0.00000E+00
+ 23 np37     0.12622E-04 0.12689E-04 0.00000E+00 0.00000E+00
+ 24 np39     0.21815E-05 0.24086E-05 0.00000E+00 0.00000E+00
+ 25 pu38     0.44749E-05 0.46686E-05 0.00000E+00 0.00000E+00
+ 26 pu39     0.15373E-03 0.16267E-03 0.00000E+00 0.00000E+00
+ 27 pu40     0.59838E-04 0.59125E-04 0.00000E+00 0.00000E+00
+ 28 pu41     0.33328E-04 0.38683E-04 0.00000E+00 0.00000E+00
+ 29 pu42     0.13007E-04 0.15847E-04 0.00000E+00 0.00000E+00
+ 30 am41     0.10573E-05 0.12029E-05 0.00000E+00 0.00000E+00
+ 31 am2m     0.15561E-07 0.17620E-07 0.00000E+00 0.00000E+00
+ 32 am43     0.29332E-05 0.35896E-05 0.00000E+00 0.00000E+00
+ 33 cm42     0.39130E-06 0.46263E-06 0.00000E+00 0.00000E+00
+ 34 cm44     0.11040E-05 0.13774E-05 0.00000E+00 0.00000E+00
+ 35 cm45     0.53481E-07 0.67544E-07 0.00000E+00 0.00000E+00
+ 40 sm52     0.38532E-05 0.40747E-05 0.00000E+00 0.00000E+00
+ 41 xe31     0.21593E-04 0.22713E-04 0.00000E+00 0.00000E+00
+ 42 cs33     0.62223E-04 0.65302E-04 0.00000E+00 0.00000E+00
+ 43 nd45     0.34342E-04 0.35942E-04 0.00000E+00 0.00000E+00
+ 44 nd43     0.39641E-04 0.40885E-04 0.00000E+00 0.00000E+00
+ 45 pm47     0.80481E-05 0.82683E-05 0.00000E+00 0.00000E+00
+ 46 mo95     0.59596E-04 0.62379E-04 0.00000E+00 0.00000E+00
+ 47 cs34     0.79191E-05 0.85960E-05 0.00000E+00 0.00000E+00
+ 48 pr41     0.61179E-04 0.64303E-04 0.00000E+00 0.00000E+00
+ 49 pm48     0.57688E-07 0.61937E-07 0.00000E+00 0.00000E+00
+ 50 pm8m     0.94222E-07 0.98625E-07 0.00000E+00 0.00000E+00
+ 51 rh05     0.68420E-07 0.75449E-07 0.00000E+00 0.00000E+00
+ 52 pm49     0.57847E-07 0.62029E-07 0.00000E+00 0.00000E+00
+ 53 kr83     0.37347E-05 0.38458E-05 0.00000E+00 0.00000E+00
+ 54 ru01     0.52660E-04 0.55539E-04 0.00000E+00 0.00000E+00
+ 55 pd05     0.25378E-04 0.27741E-04 0.00000E+00 0.00000E+00
+ 56 cs35     0.19039E-04 0.19409E-04 0.00000E+00 0.00000E+00
+ 57 sm50     0.15128E-04 0.15785E-04 0.00000E+00 0.00000E+00
+ 58 eu51     0.38693E-06 0.43613E-06 0.00000E+00 0.00000E+00
+ 59 eu53     0.46128E-05 0.50469E-05 0.00000E+00 0.00000E+00
+ 60 eu54     0.10528E-05 0.11427E-05 0.00000E+00 0.00000E+00
+ 61 gd54     0.93784E-07 0.10227E-06 0.00000E+00 0.00000E+00
+ 62 am42     0.28261E-08 0.33324E-08 0.00000E+00 0.00000E+00
+ 63 cm43     0.95568E-08 0.11404E-07 0.00000E+00 0.00000E+00
+:dina                                                                           
+    -------------------------------------------------------------------------------
+    * n group   * e(i)        * e(i+1)
+          1       0.20000E+08    0.0000    
+    -------------------------------------------------------------------------------
+          fraction of delay neutrons -betaj
+           beta`j
+           one group beta * 10e-4
+  
+          condensated zone : 1
+ nt      1           2           3           4           5           6
+ ne: 1  1.1530      10.199      8.2614      16.958      5.7955      2.8303    
+ ne: 1 0.25511E-01 0.22565     0.18279     0.37520     0.12823     0.62622E-01
+       45.19719    
+  
+          condensated zone : 2
+ nt      1           2           3           4           5           6
+ ne: 1  1.1070      9.9849      7.9962      16.362      5.5572      2.7548    
+ ne: 1 0.25297E-01 0.22816     0.18272     0.37389     0.12699     0.62949E-01
+       43.76243    
+    -------------------------------------------------------------------------------
+    * n group   * e(i)        * e(i+1)
+          1       0.20000E+08    0.0000    
+    -------------------------------------------------------------------------------
+          decay constant -lambdaj
+           one group lambda
+  
+          condensated zone : 1
+ nt      1           2           3           4           5           6
+ ne: 1 0.12500E-01 0.32683E-01 0.13380     0.33027      1.0753      2.5547    
+ 1-group lambda   8.6273924E-02
+  
+          condensated zone : 2
+ nt      1           2           3           4           5           6
+ ne: 1 0.12500E-01 0.32566E-01 0.13333     0.33030      1.0749      2.5506    
+ 1-group lambda   8.5651599E-02
+    -------------------------------------------------------------------------------
+    * n group   * e(i)        * e(i+1)
+          1       0.20000E+08    0.0000    
+    -------------------------------------------------------------------------------
+          spectrum -xj
+  
+          condensated zone : 1
+ nt      1           2           3           4           5           6
+ ne: 1 0.61392E-04  0.0000      0.0000      3.2551      0.0000      0.0000    
+  
+          condensated zone : 2
+ nt      1           2           3           4           5           6
+ ne: 1 0.59173E-04  0.0000      0.0000      3.1170      0.0000      0.0000    
+    -------------------------------------------------------------------------------
+    * n group   * e(i)        * e(i+1)
+          1       0.10500E+08    0.0000    
+    -------------------------------------------------------------------------------
+          production part constant -alfa (id xe pm)
+  
+          condensated zone : 1
+           1  6.3586764E-02  1.7448062E-03  1.3127808E-02
+  
+          condensated zone : 2
+           1  6.3666612E-02  1.7899756E-03  1.3129118E-02
+:stop                                                                           

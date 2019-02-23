@@ -1,0 +1,48 @@
+@chain for mcu
+ &vvod
+@	minerrl=1,
+@izotb= 
+ izotb(1)='slag',
+ izotb(2)='b-10',
+ izotb(3)='b-11',
+ izotb(4)='in15',
+ izotb(5)='dy60',
+ izotb(6)='dy61',
+ izotb(7)='dy62',
+ izotb(8)='dy63',
+ izotb(9)='dy64',
+ izotb(10)='ho65',
+ izotb(11)='er66',
+ izotb(12)='er67',
+ avb= 
+ @1 slag@ 110, 
+ @2 b-10@ 10,
+ @3 b-11@ 11,
+ @4 in  @ 115,
+ @5 dy60@ 160,
+ @6 dy61@ 161,
+ @7 dy62@ 162,
+ @8 dy63@ 163,
+ @9 dy64@ 164,
+ @10ho65@ 165,
+ @11er66@ 166,
+ @12er67@ 167,
+@@
+@ A(i,i)=
+@           rem_a
+ @1  slag@ rem_a(1)=0,
+@           add_c
+ @2  b-10->b-11@add_c(2,3)=1,
+ @4  in  ->slag@add_c(4,1)=0.5,
+ @5  dy60->dy61@add_c(5,6)=1.,
+ @6  dy61->dy62@add_c(6,7)=1.,
+ @7  dy62->dy63@add_c(7,8)=1.,
+ @8  dy63->dy64@add_c(8,9)=1.,
+ @9  dy64->ho65@add_c(9,10)=1.,
+ @10 ho65->er66@add_c(10,11)=1.,
+ @11 er66->er67@add_c(11,12)=1.,
+ @12 er67->slag@add_c(12,1)=.5,
+ &end
+
+
+

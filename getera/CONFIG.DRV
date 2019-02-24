@@ -6,5 +6,5 @@ BNABMLT.BIN:.\Bnabmlt.lib
 BNABTHM.BIN:.\BNABTHM.lib
 BNAB:.\XE35.MLT
 F11:.\f11
-INGET:praktice_1D20.dat
-OUTGET:praktice_1D20.out
+INGET:praktice_1.dat
+OUTGET:praktice_1.out

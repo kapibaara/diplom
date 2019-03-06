@@ -11,9 +11,9 @@ iout(12)=2,
  @ U238  @   2.20300e-02, 0.00000e+00, 0.00000e+00, 
  @ O     @   0.45800e-01, 0.00000e+00, 0.00000e+00, 
  @ Zr    @   0.00000e+00, 0.03891,     0.00000e+00,
- @ *H*   @   0.00000e+00, 0.00000e+00, 0.04685,
- @  D    @   0.00000e+00, 0.00000e+00, 0.000000000,
- @ *O*   @   0.00000e+00, 0.00000e+00, 0.02342,
+ @ *H*   @   0.00000e+00, 0.00000e+00, 0.00839,
+ @  D    @   0.00000e+00, 0.00000e+00, 0.05489,
+ @ *O*   @   0.00000e+00, 0.00000e+00, 0.03164,
 @-------------------------------------------------------------------------------------
  material(1)='chmc',
  &end
@@ -32,40 +32,405 @@ D
 :fier
  &vvod &end
 :burn
- &vvod qv=83.,dtim=50.,
+ &vvod qv=83.,dtim=10.,
  &end
 
 :burn
- &vvod qv=83.,dtim=100,
+ &vvod qv=83.,dtim=10.,
  &end
 
 :burn
- &vvod qv=83.,dtim=200,
+ &vvod qv=83.,dtim=10.,
  &end
- 
 
 :burn
- &vvod qv=83.,dtim=250,
+ &vvod qv=83.,dtim=10.,
  &end
-
 
 :burn
- &vvod qv=83.,dtim=100,
+ &vvod qv=83.,dtim=10.,
  &end
- 
 
 :burn
- &vvod qv=83.,dtim=100,
+ &vvod qv=83.,dtim=10.,
  &end
- 
 
 :burn
- &vvod qv=83.,dtim=100,
+ &vvod qv=83.,dtim=10.,
  &end
- 
 
 :burn
- &vvod qv=83.,dtim=100,
+ &vvod qv=83.,dtim=10.,
  &end
 
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+:burn
+ &vvod qv=83.,dtim=10.,
+ &end
+
+
+  
 :stop

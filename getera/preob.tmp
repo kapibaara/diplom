@@ -10,9 +10,9 @@ iout(12)=2,
     2.20300e-02, 0.00000e+00, 0.00000e+00,
     0.45800e-01, 0.00000e+00, 0.00000e+00,
     0.00000e+00, 0.03891,     0.00000e+00,
-    0.00000e+00, 0.00000e+00, 0.00000,
-    0.00000e+00, 0.00000e+00, 0.06686,
-    0.00000e+00, 0.00000e+00, 0.03343,
+    0.00000e+00, 0.00000e+00, 0.00839,
+    0.00000e+00, 0.00000e+00, 0.05489,
+    0.00000e+00, 0.00000e+00, 0.03164,
  material(1)='chmc',
  &end
 u235
@@ -23,12 +23,315 @@ zr
 d
 *o*
 ****
-:micro
- &vvod
-  et=10.5e+6,2.15,2.15,0.,
- &end
-:macr
- &vvod &end
+ 
 :fier
  &vvod &end
+:burn
+ &vvod qv=83.,dtim=12.,
+ &end
+ 
+:corr
+ &vvod
+ roiz(127)=
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.01049,
+  0.05188,
+  0.03119,
+ &end
+:cont
+:fier
+ &vvod &end
+:burn
+ &vvod qv=83.,dtim=0,
+ &end
+ 
+:burn
+ &vvod qv=83.,dtim=30,
+ &end
+ 
+:corr
+ &vvod
+ roiz(127)=
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.01171,
+  0.05014,
+  0.03093,
+ &end
+:cont
+:fier
+ &vvod &end
+:burn
+ &vvod qv=83.,dtim=0,
+ &end
+ 
+:burn
+ &vvod qv=83.,dtim=40,
+ &end
+ 
+:corr
+ &vvod
+ roiz(127)=
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.01321,
+  0.04800,
+  0.03061,
+ &end
+:cont
+:fier
+ &vvod &end
+:burn
+ &vvod qv=83.,dtim=0,
+ &end
+ 
+:burn
+ &vvod qv=83.,dtim=50,
+ &end
+ 
+:corr
+ &vvod
+ roiz(127)=
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.01499,
+  0.04546,
+  0.03023,
+ &end
+:cont
+:fier
+ &vvod &end
+:burn
+ &vvod qv=83.,dtim=0,
+ &end
+ 
+:burn
+ &vvod qv=83.,dtim=60,
+ &end
+ 
+:corr
+ &vvod
+ roiz(127)=
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.01710,
+  0.04245,
+  0.02978,
+ &end
+:cont
+:fier
+ &vvod &end
+:burn
+ &vvod qv=83.,dtim=0,
+ &end
+ 
+:burn
+ &vvod qv=83.,dtim=85,
+ &end
+ 
+:corr
+ &vvod
+ roiz(127)=
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.02005,
+  0.03824,
+  0.02915,
+ &end
+:cont
+:fier
+ &vvod &end
+:burn
+ &vvod qv=83.,dtim=0,
+ &end
+ 
+:burn
+ &vvod qv=83.,dtim=100,
+ &end
+ 
+:corr
+ &vvod
+ roiz(127)=
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.02319,
+  0.03376,
+  0.02848,
+ &end
+:cont
+:fier
+ &vvod &end
+:burn
+ &vvod qv=83.,dtim=0,
+ &end
+ 
+:burn
+ &vvod qv=83.,dtim=100,
+ &end
+ 
+:corr
+ &vvod
+ roiz(127)=
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.02623,
+  0.02942,
+  0.02782,
+ &end
+:cont
+:fier
+ &vvod &end
+:burn
+ &vvod qv=83.,dtim=0,
+ &end
+ 
+:burn
+ &vvod qv=83.,dtim=100,
+ &end
+ 
+:corr
+ &vvod
+ roiz(127)=
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.02928,
+  0.02507,
+  0.02717,
+ &end
+:cont
+:fier
+ &vvod &end
+:burn
+ &vvod qv=83.,dtim=0,
+ &end
+ 
+:burn
+ &vvod qv=83.,dtim=100,
+ &end
+ 
+:corr
+ &vvod
+ roiz(127)=
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.03256,
+  0.02039,
+  0.02647,
+ &end
+:cont
+:fier
+ &vvod &end
+:burn
+ &vvod qv=83.,dtim=0,
+ &end
+ 
+:burn
+ &vvod qv=83.,dtim=100,
+ &end
+ 
+:corr
+ &vvod
+ roiz(127)=
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.03607,
+  0.01538,
+  0.02572,
+ &end
+:cont
+:fier
+ &vvod &end
+:burn
+ &vvod qv=83.,dtim=0,
+ &end
+ 
+:burn
+ &vvod qv=83.,dtim=100,
+ &end
+ 
+:corr
+ &vvod
+ roiz(127)=
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.03982,
+  0.01003,
+  0.02492,
+ &end
+:cont
+:fier
+ &vvod &end
+:burn
+ &vvod qv=83.,dtim=0,
+ &end
+ 
+:burn
+ &vvod qv=83.,dtim=100,
+ &end
+ 
+:corr
+ &vvod
+ roiz(127)=
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.04403,
+  0.00401,
+  0.02402,
+ &end
+:cont
+:fier
+ &vvod &end
+:burn
+ &vvod qv=83.,dtim=0,
+ &end
+ 
+:burn
+ &vvod qv=83.,dtim=90,
+ &end
+ 
+:corr
+ &vvod
+ roiz(127)=
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.00000e+00,
+  0.04685,
+  0.000,
+  0.02342,
+ &end
+:cont
+:fier
+ &vvod &end
+:burn
+ &vvod qv=83.,dtim=0,
+ &end
+ 
 :stop

@@ -1,24 +1,25 @@
 from keff_calc import read_file, write_file
 
-GETERA_OUTPUT_FILE = "../getera/praktice_1D20.out"
+GETERA_OUTPUT_FILE = "../getera/praktice_1H2O.out"
 OUTPUT_FILE_PU = "output_pu39.txt"
 OUTPUT_FILE_TIME = "output_time.txt"
 
 def get_pu39_conc(lines):
-    pu39_identifier = "     pu39"
+    pu39_identifier = "      pu39" # 23 pu39
     pu39_output = []
 
     for line in lines:
         if pu39_identifier in line:
             splited = line.split(" ")
-            pu39_conc = splited[8]
+            print(splited)
+            pu39_conc = splited[8] # 8 || 7
             pu39_output.append(pu39_conc)
 
     # фильтрую, чтобы избавиться от повторений в массиве
     # тк при расчете с перегрузкой D2O два раза вычисляется
-    # выгорание => конц Pu39 одинакова
+    # выгорание => конц Pu39 одинакова pu39_output[::2]
 
-    return pu39_output[::2]
+    return pu39_output[::2][::2]
 
 def get_time_from_start(lines):
     time_identifier = "time from start"
@@ -29,7 +30,7 @@ def get_time_from_start(lines):
             splited = line.split(" ")
             time = splited[11]
             times.append(time)
-    return times[::2][::2]
+    return times[::2][::2][::2]
 
 def format_list(list):
     formated_list = []

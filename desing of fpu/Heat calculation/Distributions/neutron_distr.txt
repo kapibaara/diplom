@@ -1,0 +1,24 @@
+kG: 0.93
+kQ: 0.98
+kR: 1.164
+kZ: 1.77
+deltaR: 0.272
+deltaZ: 0.126
+Gtn: 8.68 kg/s
+Cp: 5785 J/(kg*k)
+Pt: 1.474 m
+qSr: 0.561 MVt/m^2
+Haz: 1.3 m
+tVhR: 295.7 C
+Qtvs: 1.076 MVt
+qV: 101.451 MVt/m^2
+qlAvg: 119.91 Vt/cm
+roH2O: 708 kg/m^3
+
+d: 6.8e-3 m
+deltaShell: 0.5e-3 m
+lambdaShell: 18 Vt/(m*K)
+lambdaFuel35: 35 Vt/(m*K)
+lambdaFuel14: 14 Vt/(m*K)
+w: 3.2 m/s
+P1c: 12.7 MPa

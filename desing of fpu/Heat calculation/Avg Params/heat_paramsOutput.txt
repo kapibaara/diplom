@@ -1,0 +1,16 @@
+======================
+1st circuit parameters
+----------------------
+Gr: 1129.270 kg/s
+Gtn: 8.680 kg/s
+deltaTr: 20.328 C
+tVhR: 295.672 C
+
+======================
+Average heat characteristics
+----------------------
+qV: 101.451 MVt/m^3
+Qtvs: 1.076 MVt
+qlSr: 119.907 Vt/cm
+qSr: 0.561 MVt/m^2
+

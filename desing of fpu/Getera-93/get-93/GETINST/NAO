@@ -1,0 +1,501 @@
+@*****          FILE OF INPUT DATA SET *******
+@
+@  nao
+@
+@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+:POLY
+ &VVOD
+  IG=2,
+@  IOUT(1)=1,
+  IOUT(54)=1,
+@  IOUT(30)=2,
+@
+@  R=0.25,0.35,0.43,0.5,0.6,0.9027,
+   R=0.5,0.6,0.9027,
+@ NSOS=1,3,4,
+ NSOS=1,1,1,
+ SROIZ=
+@
+@@ 1  - fuel-TVEL
+ 12*0.,
+@ 6.776E-4,2.1632E-2,4.46212E-2,
+ 0.,2.1632E-2,4.46212E-2,
+ 13*0.,
+@@ 2  - fuel-TVEG
+ 12*0.,
+ 6.572E-4,2.0986E-2,4.47829E-2,
+ 9*0.,
+ 2.1732E-5,1.47329E-4,2.03831E-4,1.55841E-4,
+@@ 3  - cover TVEL Zr,Fe,Ni,Cr
+   5*0.,
+@   0.04162,5.5081E-5,0.,0.,2.12E-4,4.237E-5,
+  0.04162,0.,0.,0.,0.,0.,
+  17*0.0,
+@@
+@
+@ - H2O - @@ - H2O - @@ - H2O - @@ - H2O - @@ - H2O - @@ - H2O -
+@
+@ 4  - H2O- - Hot
+@   0.0494933,0.0247417,
+   0.0494933,0.0,
+   26*0.0,
+@ 5  - H2O- - cold
+   0.066834,0.033418,
+   26*0.0,
+@
+  IZOTR(1)=14,14,
+      T=873.,873.,873.,559.,300.,
+@      T=873.,873.,873.,873.,300.,
+@      T=5*300.,
+ &END
+na          1
+pb          2
+B-10         3
+B-11         4
+AL           5
+ZR           6
+FE           7
+NB           8
+HF           9
+NI           10
+CR           11
+*C*          12
+U235         13
+U238         14
+O            15
+XE35         16
+SM49         17
+FP35         18
+FP39         19
+PU39         20
+PU40         21
+PU41         22
+PU42         23
+U236         24
+GD54         25
+GD55         26
+GD56         27
+GD57         28
+****
+:FIER
+ &VVOD &END
+ &END
+:MICRO
+ &VVOD
+  ET=10.5E+6,2.15,2.15,0.,
+  NBV=1,1,1,
+ &END
+:MACRO
+ &VVOD
+  ET=10.5E+6,2.15,2.15,0.,
+  NBV=3*1,
+ &END
+:MACRO
+ &VVOD
+  et=20.e+8,0.,
+  NBV=3*1,
+ &END
+:STOP
+:BURN
+ &VVOD QV=54.,DTIM=5.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=20.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=54.,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:STOP
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+:BURN
+ &VVOD QV=52.6,DTIM=5.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=25.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=30.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:STOP
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+:BURN
+ &VVOD QV=52.6,DTIM=5.,
+ IESBUR=1,1,1,1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=50.,
+ IESBUR=1,1,1,1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=55.,
+ IESBUR=1,1,1,1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=55.,
+ IESBUR=1,1,1,1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=55.,
+ IESBUR=1,1,1,1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=55.,
+ IESBUR=1,1,1,1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=55.,
+ IESBUR=1,1,1,1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=55.,
+ IESBUR=1,1,1,1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=55.,
+ IESBUR=1,1,1,1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=55.,
+ IESBUR=1,1,1,1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:STOP
+:BURN
+ &VVOD QV=52.6,DTIM=5.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=50.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=55.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=55.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=55.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=55.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=55.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=55.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=55.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=55.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:BURN
+ &VVOD QV=52.6,DTIM=55.,
+ IESBUR=1,0,0,
+ &END
+:FIER
+ &VVOD &END
+:STOP

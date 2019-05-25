@@ -1,0 +1,14 @@
+Relative steam consumption
+---------------------------
+gpg2   gpik    g0   g1      g2      g3      gk      gd      gs      gs1     gs2     gsp
+1       0      1   0.076   0.924   0.047   0.525   0.066   0.040   0.612   0.572   0.246
+
+Absolute steam consumption
+---------------------------
+Gpg2   Gpik    G0      G1       G2      G3       Gk      Gd      Gs      Gs1      Gs2      Gsp
+58.859   0   58.859   4.493   54.366   2.787   30.873   3.890   2.353   36.013   33.660   14.463
+
+Efficiency and heat power of reactor
+---------------------------
+etaE   etaEATEC    etaTATEC    Qr            Gtk
+0.345    0.333       0.941   1.353e+08   1.147e+02

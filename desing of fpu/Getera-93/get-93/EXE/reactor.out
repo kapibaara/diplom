@@ -1,0 +1,160 @@
+ *****          file of input data set *******
+:poly
+@===========================================================
+@
+@              20.11.01 14:47
+@
+@   operational  steady state (core only)
+@
+ &vvod
+  r=12.1,18.6,19.18,25.1,
+ izotr= 2,
+ ig=2,
+@ iout(54)=1, iout(55)=1,
+ alout=0.,
+  tz=1497.,775.,775.,775.,
+ nsos=1,2,3,4,
+@
+@       u235      u238       c        ta       mo       nb       al       o       k        na       be       b-10   b-11
+@
+  sroiz=2.184e-2, 1.15e-3,    3.907e-3,3.65e-2, 7.919e-3,1.899e-2,5.15e-3,7.725e-3,2.204e-3,1.186e-3,0.,      0.,      0
+@
+         0.,       0.,       0.,      0.,      0.,       0.,      0.,      0.,    0.,       0.,     1.023e-1, 0.,    0.,
+@
+         0.,       0.,       8.144e-2,0.,      0.,        0.,     0.,      0.,    0.,  0., 0.,     4.613e-1, 5.126e-2,
+@
+         0.,       0.,       0.,      0.,      0.,       0.,      0.,      0.,    0.,       0.,     1.023e-1, 0.,    0.,
+@
+@       u235      u238       c        ta       mo       nb       al       o       k        na       be       b-10   b-11
+@
+                                                                                                                        
+ &end
+@
+u235
+u238
+c
+ta
+mo
+nb
+al
+o
+k
+na
+be
+b-10
+b-11
+****
+@
+:macro
+ &vvod
+ nbv=1,1,1,
+@  et= 10.5e+06,.14e6,.14e6,46500.,46500.,1e4,1e4,465.,465.,100.,100.,
+@       4.65,4.65,2.15,2.15,0.,
+  et= 10.5e+06,2.15,2.15,0.,
+ &end
+:stop
+ ***** end of   file of input data set *******
+:poly                                                                           
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--cefzad  -- programm standart value --cefzad  =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--bakl    -- programm standart value --bakl    =  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alin    -- programm standart value --alin    =  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alcorr  -- programm standart value --alcorr  =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --uncorrected definition--alout   --bat programm use this value --alout     0.000000E+00
+  *******<< check input data>> programm declare *******
+    --uncorrected definition--alin    --bat programm use this value --alin      0.000000E+00
+  *******<< check input data>> programm declare *******
+    --uncorrected definition--alout   --bat programm use this value --alout     0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--nbv     -- programm standart value --nbv     =    1    1    1    1
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--et      -- programm standart value --et      =  0.105000E+08  0.215000E+01
+     0.215000E+01  0.000000E+00
+    ????  storage for pr. getter =      400 ?? common /rrr/ rab(        0 )  ????
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 4
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =  0.0000000E+00
+ ------------------------------------------------------------------------------
+ num zone      1           2           3           4
+ radius   0.12100E+02 0.18600E+02 0.19180E+02 0.25100E+02
+ temper   0.14970E+04 0.77500E+03 0.77500E+03 0.77500E+03
+ rez_izot    u238        bad         bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=13
+  1 u235     0.21840E-01 0.00000E+00 0.00000E+00 0.00000E+00
+  2 u238     0.11500E-02 0.00000E+00 0.00000E+00 0.00000E+00
+  3 c        0.39070E-02 0.00000E+00 0.81440E-01 0.00000E+00
+  4 ta       0.36500E-01 0.00000E+00 0.00000E+00 0.00000E+00
+  5 mo       0.79190E-02 0.00000E+00 0.00000E+00 0.00000E+00
+  6 nb       0.18990E-01 0.00000E+00 0.00000E+00 0.00000E+00
+  7 al       0.51500E-02 0.00000E+00 0.00000E+00 0.00000E+00
+  8 o        0.77250E-02 0.00000E+00 0.00000E+00 0.00000E+00
+  9 k        0.22040E-02 0.00000E+00 0.00000E+00 0.00000E+00
+ 10 na       0.11860E-02 0.00000E+00 0.00000E+00 0.00000E+00
+ 11 be       0.00000E+00 0.10230E+00 0.00000E+00 0.10230E+00
+ 12 b-10     0.00000E+00 0.00000E+00 0.46130E+00 0.00000E+00
+ 13 b-11     0.00000E+00 0.00000E+00 0.51260E-01 0.00000E+00
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >>  K-inf(MLT)= 1.58603 Balance= 1.02997 NU= 2.72 FI-Sum=  2.03E+01
+    >   Include Thermal Matrix > BE(FREE):BNABTHM.BIN   Temp=  700K
+    >   Include Thermal Matrix > BE(FREE):BNABTHM.BIN   Temp=  800K
+    >   Include Thermal Matrix > BE(FREE):BNABTHM.BIN   Temp=  700K
+    >   Include Thermal Matrix > BE(FREE):BNABTHM.BIN   Temp=  800K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.14976     ***k(itt)= 1.06571     ***k(integ)= 1.14976    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  0.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:macro                                                                          
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+    -------------------------------------------------------------------------------
+    * n group   * e(i)        * e(i+1)      *spect neutron fission  *
+          1       0.10500E+08    2.1544           0.99900    
+          2        2.1544        0.0000           0.13551E-08
+    *******************************************************************************
+                                       **    macro cross section    **
+    *******************************************************************************
+    ** n zone    1 vzone=  1155.7     /  1  2  3
+*grp*flux 1/cm2c  * stotal      * sabs        * sfis.       * nu$sfis.    * 1/3*strans  *1/aver.veloci*aver power
+  1  0.2063488E-01 0.6766057     0.3878994E-01 0.1775764E-01 0.4465030E-01 0.5734859     0.6960042E-07  1.151079     0.9992835    
+  2  0.1105059E-04 0.7300239     0.9059069E-01 0.2377696E-01 0.5782556E-01 0.5326097     0.1408642E-07 0.6383168     0.7165444E-03
+                                       * matric. scat.cross. sec. from i to j  *
+       i / j -->            1           2
+       i        1 0.6377690     0.4632319E-04
+       i        2 0.1001891E-02 0.6384314    
+:stop                                                                           

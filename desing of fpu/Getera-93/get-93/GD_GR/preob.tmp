@@ -1,0 +1,253 @@
+:poly
+ &vvod
+ iout(84)=1,  
+  rcel(1,1)=0.1,0.15,0.2,0.25,0.3,0.386,0.455,0.6955,
+  hcel(1)=0.16866,
+                    ncelsos(1,1)=6,6,6,6,6,6,4,5,
+  rcel(1,2)=0.368,0.455,0.6955,  hcel(2)=0.16866,hcel(3)=0.16866,
+                 ncelsos(1,2)=2,4,5,
+ t=        1.00000e+03, 1.00000e+03, 1.0000e+03,1.0000e+03,
+ 0.57900e+03,  1.00000e+03,
+ troiz=
+ 
+    0.00000e+00, 0.00000e+00, 0.00000e+00, 0.00000e+00, 0.47500e-01,
+0.00000e+00,
+    0.00000e+00, 0.00000e+00, 0.00000e+00, 0.00000e+00, 0.23700e-01,
+0.00000e+00,
+    0.00000e+00, 0.00000e+00, 0.00000e+00, 0.39860e-01, 0.00000e+00,
+0.00000e+00,
+    0.00000e+00, 0.00000e+00, 0.00000e+00, 0.30700e-02, 0.30400e-02,
+0.00000e+00,
+    0.00000e+00, 0.00000e+00, 0.00000e+00, 0.39500e-03, 0.00000e+00,
+0.00000e+00,
+    0.00000e+00, 0.00000e+00, 0.00000e+00, 0.61500e-05, 0.00000e+00,
+0.00000e+00,
+    0.00000e+00, 0.00000e+00, 0.00000e+00, 0.43700e-03, 0.00000e+00,
+0.00000e+00,
+    0.00000e+00, 0.00000e+00, 0.00000e+00, 0.90200e-03, 0.00000e+00,
+0.00000e+00,
+    0.00000e+00, 0.11500e-02, 0.88910e-03, 0.00000e+00, 0.00000e+00,
+0.11000e-02,
+    0.00000e+00, 0.22500e-01, 0.19300e-01, 0.00000e+00, 0.00000e+00,
+0.24000e-01,
+    0.73000e-01, 0.50000e-01, 0.40000e-01, 0.00000e+00, 0.00000e+00,
+0.48000e-01,
+    0.51000e-03, 0.00000e+00, 0.00000e+00, 0.00000e+00, 0.00000e+00,
+0.21000e-04,
+    0.36100e-02, 0.00000e+00, 0.00000e+00, 0.00000e+00, 0.00000e+00,
+0.15000e-03,
+    0.50260e-02, 0.00000e+00, 0.00000e+00, 0.00000e+00, 0.00000e+00,
+0.21000e-03,
+    0.38300e-02, 0.00000e+00, 0.00000e+00, 0.00000e+00, 0.00000e+00,
+0.16000e-03,
+ ntcell=1,2,2,
+ krat= 2.,12.,41.,
+ alout=
+       .0,1.,0.,
+       .167,0.333,0.5,
+       .0,0.146,0.854,
+ material(1)='chmc',
+ &end
+*h*
+*o*
+zr
+fe
+nb
+hf
+ni
+cr
+u235
+u238
+o
+gd54
+gd55
+gd56
+gd57
+****
+ &vvod &end
+:fier
+ &vvod &end
+:macr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=1,2,3,4,5,6,7,8,9,10,11,12,13,14,
+ &end
+:micr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=6*1,
+     izotprnt=100*0,izotprnt(12)=1,izotprnt(13)=1,
+                 izotprnt(14)=1,izotprnt(15)=1,&end
+ &end
+:stop
+:burn
+ &vvod qv=111.,dtim=5.,
+ &end
+:fier
+ &vvod &end
+:macr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=1,2,3,4,5,6,7,8,9,10,11,12,13,14,
+ &end
+:micr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=6*1,
+     izotprnt=100*0,izotprnt(12)=1,izotprnt(13)=1,
+                 izotprnt(14)=1,izotprnt(15)=1,&end
+ &end
+:burn
+ &vvod qv=111.,dtim=95.,
+ &end
+:fier
+ &vvod &end
+:macr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=1,2,3,4,5,6,7,8,9,10,11,12,13,14,
+ &end
+:micr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=6*1,
+     izotprnt=100*0,izotprnt(12)=1,izotprnt(13)=1,
+                 izotprnt(14)=1,izotprnt(15)=1,&end
+ &end
+:burn
+ &vvod qv=111.,dtim=100.,
+ &end
+:fier
+ &vvod &end
+:macr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=1,2,3,4,5,6,7,8,9,10,11,12,13,14,
+ &end
+:micr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=6*1,
+     izotprnt=100*0,izotprnt(12)=1,izotprnt(13)=1,
+                 izotprnt(14)=1,izotprnt(15)=1,&end
+ &end
+:burn
+ &vvod qv=111.,dtim=100.,
+ &end
+:fier
+ &vvod &end
+:macr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=1,2,3,4,5,6,7,8,9,10,11,12,13,14,
+ &end
+:micr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=6*1,
+     izotprnt=100*0,izotprnt(12)=1,izotprnt(13)=1,
+                 izotprnt(14)=1,izotprnt(15)=1,&end
+ &end
+:burn
+ &vvod qv=111.,dtim=100.,
+ &end
+:fier
+ &vvod &end
+:macr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=1,2,3,4,5,6,7,8,9,10,11,12,13,14,
+ &end
+:micr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=6*1,
+     izotprnt=100*0,izotprnt(12)=1,izotprnt(13)=1,
+                 izotprnt(14)=1,izotprnt(15)=1,&end
+ &end
+:burn
+ &vvod qv=111.,dtim=100.,
+ &end
+:fier
+ &vvod &end
+:macr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=1,2,3,4,5,6,7,8,9,10,11,12,13,14,
+ &end
+:micr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=6*1,
+     izotprnt=100*0,izotprnt(12)=1,izotprnt(13)=1,
+                 izotprnt(14)=1,izotprnt(15)=1,&end
+ &end
+:burn
+ &vvod qv=111.,dtim=100.,
+ &end
+:fier
+ &vvod &end
+:macr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=1,2,3,4,5,6,7,8,9,10,11,12,13,14,
+ &end
+:micr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=6*1,
+     izotprnt=100*0,izotprnt(12)=1,izotprnt(13)=1,
+                 izotprnt(14)=1,izotprnt(15)=1,&end
+ &end
+:burn
+ &vvod qv=111.,dtim=100.,
+ &end
+:fier
+ &vvod &end
+:macr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=1,2,3,4,5,6,7,8,9,10,11,12,13,14,
+ &end
+:micr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=6*1,
+     izotprnt=100*0,izotprnt(12)=1,izotprnt(13)=1,
+                 izotprnt(14)=1,izotprnt(15)=1,&end
+ &end
+:burn
+ &vvod qv=111.,dtim=100.,
+ &end
+:fier
+ &vvod &end
+:macr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=1,2,3,4,5,6,7,8,9,10,11,12,13,14,
+ &end
+:micr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=6*1,
+     izotprnt=100*0,izotprnt(12)=1,izotprnt(13)=1,
+                 izotprnt(14)=1,izotprnt(15)=1,&end
+ &end
+:burn
+ &vvod qv=111.,dtim=100.,
+ &end
+:fier
+ &vvod &end
+:macr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=1,2,3,4,5,6,7,8,9,10,11,12,13,14,
+ &end
+:micr
+ &vvod
+   et=20.0e+6,0.,
+  nbv=6*1,
+     izotprnt=100*0,izotprnt(12)=1,izotprnt(13)=1,
+                 izotprnt(14)=1,izotprnt(15)=1,&end
+ &end
+:stop

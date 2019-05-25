@@ -1,0 +1,199 @@
+:poly
+ &vvod
+ r=0.39,0.455,0.7,0.83975,
+ nsos=1,2,3,3,
+ t=0.82100e+03,0.57300e+03,0.55600e+03,
+ troiz=
+      0.00000e+00, 0.00000e+00, 0.37340e-01,
+      0.00000e+00, 0.00000e+00, 0.18670e-01,
+      0.00000e+00, 0.42670e-01, 0.00000e+00,
+      0.00000e+00, 0.85000e-03, 0.00000e+00,
+      0.00000e+00, 0.15450e-04, 0.00000e+00,
+      0.84306e-03, 0.00000e+00, 0.00000e+00,
+      0.20233e-01, 0.00000e+00, 0.00000e+00,
+      0.42645e-01, 0.00000e+00, 0.00000e+00,
+ material(1)='chmc',
+ &end
+*h*
+*o*
+zr
+nb
+hf
+u235
+u238
+o
+****
+ &vvod
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:stop
+:burn
+ &vvod qv=41.76,dtim=5.,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=95.,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:burn
+ &vvod qv=41.76,dtim=100.,
+ iesbur=1,0,0,0,
+ &end
+:micro
+ &vvod et=20.e+8,0.,nbv=1,
+  izotprnt=100*0,izotprnt(6)=1,izotprnt(7)=1,izotprnt(11)=1,
+                 izotprnt(27)=1,izotprnt(28)=1,izotprnt(29)=1,&end
+:stop

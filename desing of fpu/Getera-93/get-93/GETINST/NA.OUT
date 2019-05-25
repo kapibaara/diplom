@@ -1,0 +1,386 @@
+ *****          file of input data set *******
+@ *****          file of input data set *******
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@
+@ na
+@
+@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+:poly
+ &vvod
+@ r=0.25,0.35,0.43,0.5,0.6,0.90270e+00,
+ r=0.5,0.6,0.90270e+00,
+@ nsos=2,3,4,
+ nsos=3,3,3,
+ t=0.87300e+03,0.87300e+03,0.87300e+03,0.87300e+03,0.55900e+03,
+ troiz=
+ @ 1 na  @     0.00000e+00, 0.00000e+00, 0.00000e+00, 0.00000e+00, 0.49493e-01,
+ @ 2 pb  @     0.00000e+00, 0.00000e+00, 0.00000e+00, 0.00000e+00, 0.24742e-01,
+ @ 3 zr  @     0.00000e+00, 0.00000e+00, 0.00000e+00, 0.41620e-01, 0.00000e+00,
+ @ 4 fe  @     0.00000e+00, 0.00000e+00, 0.00000e+00, 0.55081e-04, 0.00000e+00,
+ @ 5 ni  @     0.00000e+00, 0.00000e+00, 0.00000e+00, 0.21200e-03, 0.00000e+00,
+ @ 6 cr  @     0.00000e+00, 0.00000e+00, 0.00000e+00, 0.42370e-04, 0.00000e+00,
+ @ 7 u235@     0.00000e+01, 0.67760e-03, 1.10000e-03, 0.00000e+00, 0.00000e+00,
+ @ 8 u238@     0.21632e-01, 0.21632e-01, 0.21632e-01, 0.00000e+00, 0.00000e+00,
+ @ 9 o   @     0.44621e-01, 0.44621e-05, 0.00000e+00, 0.00000e+00, 0.00000e+00,
+ material(1)='chmc',
+ &end
+na
+pb
+zr
+fe
+ni
+cr
+u235
+u238
+o
+****
+:corr
+ &vvod
+ &end
+:micro
+ &vvod
+  et=20.e+8,0.,2.15,2.15,0.,
+  nbv=1,1,1,
+ &end
+:macro
+ &vvod
+  et=20.e+8,0.,2.15,2.15,0.,
+  nbv=3*1,
+ &end
+:macro
+ &vvod
+  et=20.e+8,0.,
+  nbv=3*1,
+ &end
+:stop
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=4*1,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=1,2,3,4,&end
+@:stop
+:burn
+ &vvod qv=54.,endburn=1.,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=4*1,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=1,2,3,4,&end
+:burn
+ &vvod qv=54.,endburn=1.,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=4*1,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=1,2,3,4,&end
+:stop
+:burn
+ &vvod qv=54.,endburn=1.,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=4*1,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=1,2,3,4,&end
+:burn
+ &vvod qv=54.,endburn=1.,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=4*1,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=1,2,3,4,&end
+:burn
+ &vvod qv=54.,endburn=1.,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=4*1,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=1,2,3,4,&end
+:burn
+ &vvod qv=54.,endburn=1.,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=4*1,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=1,2,3,4,&end
+:burn
+ &vvod qv=54.,endburn=1.,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=4*1,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=1,2,3,4,&end
+:burn
+ &vvod qv=54.,endburn=1.,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=4*1,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=1,2,3,4,&end
+:burn
+ &vvod qv=54.,endburn=1.,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=4*1,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=1,2,3,4,&end
+:burn
+ &vvod qv=54.,endburn=1.,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=4*1,&end
+:micro
+ &vvod et=20.e+8,0.,izotprnt=100*0,izotprnt(7)=1,izotprnt(28)=1,izotprnt(29)=1,nbv=1,2,3,4,&end
+:stop
+                                                                                                                        
+ ***** end of   file of input data set *******
+:poly                                                                           
+ definition izotr in sos           1:izotr=   8.000000    
+ definition izotr in sos           2:izotr=   8.000000    
+ definition izotr in sos           3:izotr=   8.000000    
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--cefzad  -- programm standart value --cefzad  =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--bakl    -- programm standart value --bakl    =  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alin    -- programm standart value --alin    =  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alout   -- programm standart value --alout   =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alcorr  -- programm standart value --alcorr  =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--nbv     -- programm standart value --nbv     =    1    1    1
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--et      -- programm standart value --et      =  0.105000E+08  0.215000E+01
+     0.215000E+01  0.000000E+00
+    ????  storage for pr. getter =      300 ?? common /rrr/ rab(        0 )  ????
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 3
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3
+ radius   0.50000E+00 0.60000E+00 0.90270E+00
+ temper   0.87300E+03 0.87300E+03 0.87300E+03
+ rez_izot    u238        u238        u238
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=65
+  7 u235     0.11000E-02 0.11000E-02 0.11000E-02
+  8 u238     0.21632E-01 0.21632E-01 0.21632E-01
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >>  K-inf(MLT)= 0.92976 Balance= 1.02725 NU= 2.71 FI-Sum=  1.56E+02
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)=0.926560     ***k(itt)=0.926560     ***k(integ)=0.926560    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     *  1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000       1.000000    
+:corr                                                                           
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           1
+          cell number    1  number of zone= 3
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      1           2           3
+ radius   0.50000E+00 0.60000E+00 0.90270E+00
+ temper   0.87300E+03 0.87300E+03 0.87300E+03
+ rez_izot    u238        u238        u238
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=65
+  7 u235     0.11000E-02 0.11000E-02 0.11000E-02
+  8 u238     0.21632E-01 0.21632E-01 0.21632E-01
+:micro                                                                          
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+    -------------------------------------------------------------------------------
+    * n group   * e(i)        * e(i+1)
+          1       0.20000E+08   0.10000E-04
+          2        2.1544        2.1544    
+    ---------------------------------------------------------------------------
+         ** microcrossection  ** in   1  zone **v=  2.5600    /  1  2  3
+    * n group  * izotop  * at.mas      *dens         *flux 1/cm2c  * capture   * fission  *    * production *
+          1       na        23.00         0.0000        62.368       0.91515E-03      0.0000         0.0000    
+          2       na        23.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       pb       207.00         0.0000        62.368       0.37311E-02      0.0000         0.0000    
+          2       pb       207.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       zr        91.00         0.0000        62.368       0.16414E-01      0.0000         0.0000    
+          2       zr        91.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       fe        55.80         0.0000        62.368       0.82014E-02      0.0000         0.0000    
+          2       fe        55.80         0.0000        0.0000       NaN             NaN             0.0000    
+          1       ni        58.70         0.0000        62.368       0.24284E-01      0.0000         0.0000    
+          2       ni        58.70         0.0000        0.0000       NaN             NaN             0.0000    
+          1       cr        52.00         0.0000        62.368       0.68415E-02      0.0000         0.0000    
+          2       cr        52.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       u235     235.00        0.11000E-02    62.368        1.7411          1.4264         0.0000    
+          2       u235     235.00        0.11000E-02    0.0000       NaN             NaN             0.0000    
+          1       u238     238.00        0.21632E-01    62.368       0.20100         0.31833E-01     0.0000    
+          2       u238     238.00        0.21632E-01    0.0000       NaN             NaN             0.0000    
+          1       o         16.00         0.0000        62.368       0.11274E-02      0.0000         0.0000    
+          2       o         16.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       fp35     116.00         0.0000        62.368       0.15546E-01      0.0000         0.0000    
+          2       fp35     116.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       fp39     116.00         0.0000        62.368       0.15546E-01      0.0000         0.0000    
+          2       fp39     116.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       u236     236.00         0.0000        62.368       0.32625         0.82434E-01     0.0000    
+          2       u236     236.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       slag     116.00         0.0000        62.368       0.12405          0.0000         0.0000    
+          2       slag     116.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       tc99      99.00         0.0000        62.368       0.30718          0.0000         0.0000    
+          2       tc99      99.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       rh03     103.00         0.0000        62.368       0.36577          0.0000         0.0000    
+          2       rh03     103.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       ag09     109.00         0.0000        62.368       0.35118          0.0000         0.0000    
+          2       ag09     109.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       cd13     113.00         0.0000        62.368       0.29577          0.0000         0.0000    
+          2       cd13     113.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       xe35     135.00         0.0000        62.368       0.27991E-01      0.0000         0.0000    
+          2       xe35     135.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       sm49     149.00         0.0000        62.368       0.76448          0.0000         0.0000    
+          2       sm49     149.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       sm51     151.00         0.0000        62.368       0.67535          0.0000         0.0000    
+          2       sm51     151.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       eu55     155.00         0.0000        62.368       0.41827          0.0000         0.0000    
+          2       eu55     155.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       gd55     155.00         0.0000        62.368       0.92206          0.0000         0.0000    
+          2       gd55     155.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       gd56     156.00         0.0000        62.368       0.39633          0.0000         0.0000    
+          2       gd56     156.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       gd57     157.00         0.0000        62.368       0.46047          0.0000         0.0000    
+          2       gd57     157.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       np37     237.00         0.0000        62.368        1.1600         0.34928         0.0000    
+          2       np37     237.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       np39     239.00         0.0000        62.368        1.5575         0.52490         0.0000    
+          2       np39     239.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       pu38     238.00         0.0000        62.368        1.3969          1.0918         0.0000    
+          2       pu38     238.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       pu39     239.00         0.0000        62.368        1.8003          1.5758         0.0000    
+          2       pu39     239.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       pu40     240.00         0.0000        62.368       0.66905         0.37223         0.0000    
+          2       pu40     240.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       pu41     241.00         0.0000        62.368        2.1575          1.9326         0.0000    
+          2       pu41     241.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       pu42     242.00         0.0000        62.368       0.48735         0.24564         0.0000    
+          2       pu42     242.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       am41     241.00         0.0000        62.368        1.3361         0.26385         0.0000    
+          2       am41     241.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       am2m     242.00         0.0000        62.368        2.9296          2.7887         0.0000    
+          2       am2m     242.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       am43     243.00         0.0000        62.368       0.68190         0.20876         0.0000    
+          2       am43     243.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       cm42     242.00         0.0000        62.368       0.98521         0.75259         0.0000    
+          2       cm42     242.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       cm44     244.00         0.0000        62.368       0.76355         0.42164         0.0000    
+          2       cm44     244.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       cm45     245.00         0.0000        62.368        2.3745          2.1773         0.0000    
+          2       cm45     245.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       th32     232.00         0.0000        62.368       0.22047         0.77548E-02     0.0000    
+          2       th32     232.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       pa33     233.00         0.0000        62.368       0.50808         0.49802E-01     0.0000    
+          2       pa33     233.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       u233     233.00         0.0000        62.368        2.3934          2.2025         0.0000    
+          2       u233     233.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       u234     234.00         0.0000        62.368       0.70474         0.35661         0.0000    
+          2       u234     234.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       sm52     152.00         0.0000        62.368       0.22526          0.0000         0.0000    
+          2       sm52     152.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       xe31     131.00         0.0000        62.368       0.14642          0.0000         0.0000    
+          2       xe31     131.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       cs33     133.00         0.0000        62.368       0.20360          0.0000         0.0000    
+          2       cs33     133.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       nd45     145.00         0.0000        62.368       0.22342          0.0000         0.0000    
+          2       nd45     145.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       nd43     143.00         0.0000        62.368       0.13256          0.0000         0.0000    
+          2       nd43     143.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       pm47     147.00         0.0000        62.368       0.46631          0.0000         0.0000    
+          2       pm47     147.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       mo95      95.00         0.0000        62.368       0.14999          0.0000         0.0000    
+          2       mo95      95.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       cs34     134.00         0.0000        62.368       0.39275          0.0000         0.0000    
+          2       cs34     134.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       pr41     141.00         0.0000        62.368       0.45034E-01      0.0000         0.0000    
+          2       pr41     141.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       pm48     148.00         0.0000        62.368       0.69236          0.0000         0.0000    
+          2       pm48     148.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       pm8m     148.00         0.0000        62.368        1.2494          0.0000         0.0000    
+          2       pm8m     148.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       rh05     105.00         0.0000        62.368       0.32778          0.0000         0.0000    
+          2       rh05     105.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       pm49     149.00         0.0000        62.368       0.46631          0.0000         0.0000    
+          2       pm49     149.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       kr83      83.00         0.0000        62.368       0.95151E-01      0.0000         0.0000    
+          2       kr83      83.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       ru01     101.00         0.0000        62.368       0.36764          0.0000         0.0000    
+          2       ru01     101.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       pd05     105.00         0.0000        62.368       0.51504          0.0000         0.0000    
+          2       pd05     105.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       cs35     135.00         0.0000        62.368       0.82146E-01      0.0000         0.0000    
+          2       cs35     135.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       sm50     150.00         0.0000        62.368       0.23792          0.0000         0.0000    
+          2       sm50     150.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       eu51     152.00         0.0000        62.368        1.4029          0.0000         0.0000    
+          2       eu51     152.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       eu53     153.00         0.0000        62.368       0.98628          0.0000         0.0000    
+          2       eu53     153.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       eu54     154.00         0.0000        62.368        1.5602          0.0000         0.0000    
+          2       eu54     154.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       gd54     154.00         0.0000        62.368       0.12405          0.0000         0.0000    
+          2       gd54     154.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       am42     242.00         0.0000        62.368       0.12405          0.0000         0.0000    
+          2       am42     242.00         0.0000        0.0000       NaN             NaN             0.0000    
+          1       cm43     243.00         0.0000        62.368        2.0407          1.9300         0.0000    
+          2       cm43     243.00         0.0000        0.0000       NaN             NaN             0.0000    
+:macro                                                                          
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+ condensation boundary was changed from  0.21500E+01 to  0.21544E+01
+    -------------------------------------------------------------------------------
+    * n group   * e(i)        * e(i+1)      *spect neutron fission  *
+          1       0.20000E+08    0.0000            1.0000    
+          2        2.1544        2.1544            0.0000    
+    *******************************************************************************
+                                       **    macro cross section    **
+    *******************************************************************************
+    ** n zone    1 vzone=  2.5600     /  1  2  3
+*grp*flux 1/cm2c  * stotal      * sabs        * sfis.       * nu$sfis.    * 1/3*strans  *1/aver.veloci*aver power
+  1   62.36829     0.2313989     0.6263244E-02 0.2257610E-02 0.5803272E-02  1.834110     0.2937605E-06 0.9265600     NaN          
+  2   0.000000     NaN           NaN           NaN           NaN           NaN            0.000000     NaN           NaN          
+                                       * matric. scat.cross. sec. from i to j  *
+       i / j -->            1           2
+       i        1 0.2251356      0.000000    
+       i        2 NaN           NaN          
+:macro                                                                          
+    -------------------------------------------------------------------------------
+    * n group   * e(i)        * e(i+1)      *spect neutron fission  *
+          1       0.20000E+08    0.0000            1.0000    
+    *******************************************************************************
+                                       **    macro cross section    **
+    *******************************************************************************
+    ** n zone    1 vzone=  2.5600     /  1  2  3
+*grp*flux 1/cm2c  * stotal      * sabs        * sfis.       * nu$sfis.    * 1/3*strans  *1/aver.veloci*aver power
+  1   62.36829     0.2313989     0.6263244E-02 0.2257610E-02 0.5803272E-02  1.834110     0.2937605E-06 0.9265600      1.000000    
+                                       * matric. scat.cross. sec. from i to j  *
+       i / j -->            1
+       i        1 0.2251356    
+:stop                                                                           

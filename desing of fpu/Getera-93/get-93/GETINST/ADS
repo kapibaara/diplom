@@ -1,0 +1,795 @@
+@ =========
+@ BREST+DUPIC
+@ =========       ( Pb) +[UO2 +(Pu8)O2 + PuO2 + ThO2] + SS
+:POLY
+ &VVOD
+@ Индикатор геометрии: 1-плоскость, 2-цилиндр, 3-сфера.=====(BAKLING-!!!)
+  IG = 2,
+@ Радиусы зон(cм):   топл,   обол, т/н   (Pitch = 13.6 mm, R-cell= 0.767cm)
+  R =               0.46,    0.51, 0.87,
+@ Номера составов:  Топливо,  Оболочка(SS),  Т/н(Pb)
+  NSOS=                1,        2,            3,
+@ В твэл: графит - 0.0; (U-8+Pu)O2 ; IZOTRZ=7(U-238)
+@ TZ-топл =1500 K       HM (MeO2) = 1.70(-2); 30%-Porosity
+@ Концентрации нуклидов по составам:
+ SROIZ=
+@ 1 состав:
+@                   30.53 %HM - ThO2
+            0.620E-02,
+            0.000E-00,
+            0.720E-03,
+            0.690E-04,
+@                     U-235, U-236
+            0.500E-05,
+            0.000E-00,
+@ U-8,Np-7(9.4%),Pu-8(5%),Pu-9,-40,-41,Am41,Am42m,Pu-42,Cm-42,Am-43,Cm-44,Cm-45
+                       0.6200E-02,
+                       0.1598E-02,
+                       0.8600E-03,
+                       0.1100E-02,
+                       0.1340E-03,
+		       0.8800E-05,
+                       0.0000E-02,
+                       0.0000E-02,
+                       0.0000E-02,
+                       0.0000E-02,
+                       0.0000E-02,
+                       0.0000E-02,
+	               1.0000E-14,
+@    Концентpация O (oxigen)
+            3.400E-02,
+@    Продукты деления от урана и плутония
+            0.000E+00,
+            0.000E+00,
+@    Сильные поглотители - Xe-135 и Sm-149
+            0.000E+00,
+            0.000E+00,
+@        Nitrogen
+            2.720E-12,
+@        SS - (85%FE + 12%CR + 3%SI) -( 8.357E-02)
+            0.000E-02,
+            0.000E-02,
+            0.000E-02,
+@       Pb
+            0.000E-02,
+@ 2 состав:(SS) - (85%FE + 12%CR + 3%SI) -( 8.357E-02)
+       0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+       0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+       0.,0.,0.,0.,0.,
+      7.104E-02, 1.003E-02, 0.500E-02,
+       0.,
+@ 3 состав:(Pb)                                               Pb
+       0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+       0.,0.,0.,0.,0.,0.,0.,0.,0.,1.0E-19,
+       0.,0.,0.,0.,0.,0.,
+                                       0.00E-02,  0.00E-02, 3.043E-02,
+@ 4 состав:(H2O+D2O)                                           Pb
+       0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+       0.,0.,0.,0.,0.,0.,0.,0.,0.,1.0E-19,
+       0.,0.,0.,0.,0.,0.,
+                                       4.78E-02, 2.39E-02, 0.00E-02,
+@ 5 состав:(H2O+D2O)                          H         O
+       0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+       0.,0.,0.,0.,0.,0.,0.,0.,0.,1.0E-19,
+       0.,0.,0.,0.,0.,0.,
+                                       0.00E-02, 2.39E-02, 4.78E-02,
+@ 6 состав:(H2O+D2O)                          H         O
+       0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+       0.,0.,0.,0.,0.,0.,0.,0.,0.,1.0E-19,
+       0.,0.,0.,0.,0.,0.,
+                                       4.78E-02, 2.39E-02, 0.00E-02,
+@ Температура по зонам (в градусах Кельвина)
+ TZ = 1500., 780., 750.,
+@ Номер резонансного нуклида с ненулевой концентрацией в каждой зоне
+ IZOTRZ=7,
+@ Кэф: 0-рассчитать. Вывести на заданное значение (по умолчанию
+@      на 1):  1-утечкой, 2-альбедой, 3-изменением концентрации
+@                                          нуклидов-регуляторов.
+@ Задание номеров нуклидов-регуляторов.
+@ MASK(74) = 1,
+@ MASK(75) = 1,
+@ Расчет на заданное знач.Кэфф(только для вывода баклингом или альбедо):
+@IOUT(1)=1, CEFZAD=1.02,
+@ IOUT(1)=0,
+ IOUT(30)=1,
+@  BAKL=0.0010,
+  BAKL=0.0005,
+@ Печать Кэфф в GROUP:
+ IOUT(54)=1,
+ &END
+TH32
+PA33
+U233
+U234
+U235
+U236
+U238
+NP37
+PU38
+PU39
+PU40
+PU41
+AM41
+AM2M
+PU42
+CM42
+AM43
+CM44
+CM45
+O
+FP35
+FP39
+XE35
+SM49
+N
+FE
+CR
+SI
+PB
+****
+:FIER
+ &VVOD
+ &END
+@     Pb density's correction  750K > 300K > 750K
+@:CORR
+@ &VVOD
+@ CHZONE(3)=1.0763,
+@ &END
+@:CONT
+@:FIER
+@ &VVOD
+@ &END
+@:CORR
+@ &VVOD
+@ CHZONE(3)=0.9291,
+@ &END
+@:CONT
+@:FIER
+@ &VVOD
+@ &END
+@
+@  T (Pb) correction  750K > 300K > 750K
+@:CORR
+@ &VVOD
+@ TZ(3)=300.,
+@ &END
+@:CONT
+@:FIER
+@ &VVOD
+@ &END
+@:CORR
+@ &VVOD
+@ TZ(3)=750.,
+@ &END
+@:CONT
+@:FIER
+@ &VVOD
+@ &END
+@  T-fuel correction  1600K > 300K > 1600K
+@:CORR
+@ &VVOD
+@ TZ(1)=300.,
+@ &END
+@:CONT
+@:FIER
+@ &VVOD
+@ &END
+@:CORR
+@ &VVOD
+@ TZ(1)=1600.,
+@ &END
+@:CONT
+@:FIER
+@ &VVOD
+@ &END
+@
+:BURN
+ &VVOD
+  DTIM=10.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+
+@calculation of coolant density effect of reactivity: -10%coolant density
+:CORR
+ &VVOD
+ CHZONE(3)=0.9,
+ &END
+:CONT
+:CORR
+ &VVOD
+ CHZONE(3)=0.8,
+ &END
+:CONT
+:CORR
+ &VVOD
+ CHZONE(3)=1.3889,
+ &END
+:CONT
+
+@:CORR
+@ &VVOD
+@ CHZONE(3)=0.8,
+@ &END
+@:CONT
+@:CORR
+@ &VVOD
+@ CHZONE(3)=0.8,
+@ &END
+@:CONT
+@:CORR
+@ &VVOD
+@ CHZONE(3)=0.5,
+@ &END
+@:CONT
+@:CORR
+@ &VVOD
+@ CHZONE(3)=0.5,
+@ &END
+@:CONT
+@:CORR
+@ &VVOD
+@ CHZONE(3)=8.68064,
+@ &END
+@:CONT
+@:FIER
+@ &VVOD
+@ &END
+
+@burning calculation
+:BURN
+ &VVOD
+  DTIM=90.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+
+@calculation of coolant density effect of reactivity: -10%coolant density
+@:CORR
+@ &VVOD
+@ CHZONE(3)=0.9,
+@ &END
+@:CONT
+@:CORR
+@ &VVOD
+@ CHZONE(3)=0.8,
+@ &END
+@:CONT
+@:CORR
+@ &VVOD
+@ CHZONE(3)=0.8,
+@ &END
+@:CONT
+@:CORR
+@ &VVOD
+@ CHZONE(3)=0.8,
+@ &END
+@:CONT
+@:CORR
+@ &VVOD
+@ CHZONE(3)=0.5,
+@ &END
+@:CONT
+@:CORR
+@ &VVOD
+@ CHZONE(3)=0.5,
+@ &END
+@:CONT
+@:CORR
+@ &VVOD
+@ CHZONE(3)=8.68064,
+@ &END
+@:CONT
+@:FIER
+@ &VVOD
+@ &END
+
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+
+:STOP
+
+
+@:MICRO
+@ &VVOD
+@  ET=
+@  10.5E+06,  0.,
+@  NBV=1,2,3,
+@ &END
+@:REACTION
+@ &VVOD
+@  ET=
+@  10.5E+06, 6.5E+06,   6.5E+06, 4.0E+06,   4.0E+06, 2.5E+06,
+@   2.5E+06, 1.4E+06,   1.4E+06, 0.8E+06,   0.8E+06, 0.4E+06,
+@   0.4E+06, 0.2E+06,   0.2E+06, 0.1E+06,   0.1E+06,46.5E+03,
+@  46.5E+03,21.5E+03,  21.5E+03,10.0E+03,  10.0E+03,4.65E+03,
+@  4.65E+03,2.15E+03,  2.15E+03, 1.0E+03,   1.0E+03, 465.,
+@      465., 215.,         215., 100.,         100., 46.5,
+@      46.5, 21.5,         21.5, 10.0,         10.0, 4.65,
+@      4.65, 2.15,
+@  NBV=1,
+@ &END
+@:REACTION
+@ &VVOD
+@  ET=
+@  2.150000E+00, 2.001404E+00,    2.001404E+00, 1.759046E+00,
+@  1.759046E+00, 1.606161E+00,    1.606161E+00, 1.389864E+00,
+@  1.389864E+00, 1.254352E+00,    1.254352E+00, 1.125790E+00,
+@  1.125790E+00, 1.004177E+00,    1.004177E+00, 8.895129E-01,
+@  8.895129E-01, 7.817984E-01,    7.817984E-01, 7.305472E-01,
+@  7.305472E-01, 6.332567E-01,    6.332567E-01, 5.429156E-01,
+@  5.429156E-01, 5.003510E-01,    5.003510E-01, 4.595237E-01,
+@  4.595237E-01, 3.830812E-01,    3.830812E-01, 3.474660E-01,
+@  3.474660E-01, 3.135880E-01,    3.135880E-01, 2.814474E-01,
+@  NBV=1,
+@ &END
+@:REACTION
+@ &VVOD
+@  ET=
+@  2.814474E-01, 2.510442E-01,    2.510442E-01, 2.223782E-01,
+@  2.223782E-01, 1.954496E-01,    1.954496E-01, 1.702583E-01,
+@  1.702583E-01, 1.468044E-01,    1.468044E-01, 1.250878E-01,
+@  1.250878E-01, 1.051085E-01,    1.051085E-01, 8.686649E-02,
+@  8.686649E-02, 7.036186E-02,    7.036186E-02, 5.559456E-02,
+@  5.559456E-02, 4.256458E-02,    4.256458E-02, 3.127194E-02,
+@  3.127194E-02, 2.171662E-02,    2.171662E-02, 1.389864E-02,
+@  1.389864E-02, 7.817984E-03,    7.817984E-03, 3.474660E-03,
+@  3.474660E-03, 8.686649E-04,    8.686649E-04, 1.000000E-06,
+@  NBV=1,
+@ &END
+@@:PRINT
+
+@:CORR
+@ &VVOD
+@ CHZONE(3)=2.5,
+@ &END
+@:CONT
+@:FIER
+@ &VVOD
+@ &END
+
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+
+:STOP
+
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+
+@:CORR
+@ &VVOD
+@  CHZONE(3)=1.00,
+@ &END
+@:CONT
+@:FIER
+@ &VVOD
+@ &END
+
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+
+:STOP
+
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=300.,QV=300.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+
+:STOP
+
+@change of moderator
+:CORR
+ &VVOD
+ CHZONE(3)=0.0005,
+ CHZONE(4)=2000.,
+ CHZONE(5)=0.0005,
+ CHZONE(6)=2000.,
+ &END
+:CONT
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=10.,QV=148.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+
+:BURN
+ &VVOD
+  DTIM=90.,QV=148.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+
+:CORR
+ &VVOD
+ CHZONE(3)=0.9,
+ CHZONE(4)=0.9,
+ CHZONE(5)=0.9,
+ CHZONE(6)=0.9,
+ &END
+:CONT
+:FIER
+ &VVOD
+ &END
+:CORR
+ &VVOD
+ CHZONE(3)=1.1111111,
+ CHZONE(4)=1.1111111,
+ CHZONE(5)=1.1111111,
+ CHZONE(6)=1.1111111,
+ &END
+:CONT
+:FIER
+ &VVOD
+ &END
+
+:BURN
+ &VVOD
+  DTIM=100.,QV=148.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=100.,QV=148.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+
+:BURN
+ &VVOD
+  DTIM=600.,QV=148.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=600.,QV=148.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=600.,QV=148.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=600.,QV=148.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+:BURN
+ &VVOD
+  DTIM=600.,QV=148.,
+  NTIM=1,
+ &END
+:FIER
+ &VVOD
+ &END
+
+:STOP

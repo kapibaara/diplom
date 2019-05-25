@@ -1,0 +1,11 @@
+EDIT:cons.dat
+EDIT0:..\bin\cons0.dat
+BETA:..\bin\beta.get
+BNAB.BIN:..\bin\Bnab90.lib
+BNABMLT.BIN:..\bin\Bnabmlt.lib
+BNABTHM.BIN:..\bin\BNABTHM.lib
+BNAB:..\bin\XE35.MLT
+F11:..\bin\f11
+INGET:s1
+OUTGET:s1.out
+

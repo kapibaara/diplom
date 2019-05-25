@@ -1,0 +1,81 @@
+DIR =
+SRC   =
+Depend   = 
+OBJ   = SIGMA.o        \
+        BLKDAT.o     \
+        FPROP.o      \
+        SATPRS.o     \
+        SATTMP.o     \
+        THERMO.o     \
+        CPLL.o       \
+	HEV.o        \
+	PF1STEAM.o   \
+	SETEOS.o     \
+	STEAM_SUB.o     \
+	CPVV1.o	     \
+	RHOLIQ.o     \
+	VISCL.o	     \
+	SATDER.o     \
+	VISCV.o      \
+	THCL.o     \
+	THCV.o     
+ 
+LIBRARY = ../Library/Steam_Table.a
+LIBFLAGS = -r
+LIB  = ar
+OPT     =  -c  -fast -xO4 
+#-xtarget=native 
+$(LIBRARY):$(OBJ)
+	@echo "Linking  <$(LIBRARY)> ..... "
+	@$(LIB) -r $(LIBRARY) $(OBJ) 
+	@ranlib  $(LIBRARY) 
+	@echo "done" 
+all:$(PROGRAM)
+clean:; @echo -n "Removing ..... "
+	@rm $(OBJ)
+	@echo "done"
+clean-pgm:; @echo -n "Removing <$(PROGRAM)> ..... "
+	@rm $(PROGRAM)
+	@echo "done"
+clean-all:; @echo -n "Removing ..... "
+	@rm $(OBJ) $(PROGRAM)
+	@echo "done      
+
+BLKDAT.o:  $(SRC) BLKDAT.f $(Depend)
+	f77 $(OPT) $(SRC)BLKDAT.f 
+FPROP.o:  $(SRC) FPROP.f $(Depend)
+	f77 $(OPT) $(SRC) FPROP.f 
+SATPRS.o: $(SRC)SATPRS.f $(Depend)
+	f77 $(OPT) $(SRC)SATPRS.f 
+SATTMP.o: $(SRC)SATTMP.f $(Depend)
+	f77 $(OPT) $(SRC)SATTMP.f 
+THERMO.o: $(SRC)THERMO.f  $(Depend)
+	f77 $(OPT) $(SRC)THERMO.f 
+CPLL.o: $(SRC)CPLL.f  $(Depend)
+	f77 $(OPT) $(SRC)CPLL.f 
+HEV.o: $(SRC)HEV.f  $(Depend)
+	f77 $(OPT) $(SRC)HEV.f
+PF1STEAM.o: $(SRC)PF1STEAM.f $(Depend)
+	f77 $(OPT) $(SRC)PF1STEAM.f
+SETEOS.o: $(SRC)SETEOS.f $(Depend)
+	f77 $(OPT) $(SRC)SETEOS.f
+CPVV1.o: $(SRC)CPVV1.f $(Depend)
+	f77 $(OPT) $(SRC)CPVV1.f
+RHOLIQ.o: $(SRC)RHOLIQ.f $(Depend)
+	f77 $(OPT) $(SRC)RHOLIQ.f
+SIGMA.o: $(SRC)SIGMA.f  $(Depend)
+	f77 $(OPT) $(SRC)SIGMA.f
+VISCL.o: $(SRC)VISCL.f  $(Depend)
+	f77 $(OPT) $(SRC)VISCL.f
+SATDER.o: $(SRC)SATDER.f  $(Depend)
+	f77 $(OPT) $(SRC)SATDER.f
+STEAM_SUB.o: $(SRC)STEAM_SUB.f  $(Depend)
+	f77 $(OPT) $(SRC)STEAM_SUB.f
+VISCV.o: $(SRC)VISCV.f $(Depend)
+	f77 $(OPT) $(SRC)VISCV.f
+THCL.o: $(SRC)THCL.f $(Depend)
+	f77 $(OPT) $(SRC)THCL.f
+
+
+
+

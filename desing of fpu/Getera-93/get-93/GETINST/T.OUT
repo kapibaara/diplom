@@ -1,0 +1,163 @@
+ *****          file of input data set *******
+:poly
+@ &vvod
+@@  r=0.1,0.189, nsos=1,2,
+@  r=0.15,0.229, nsos=1,2,ig=3,
+@ material(1)='fu1',
+@ material(2)='water'
+@ &end
+@****
+@:stop
+ &vvod
+ iout(84)=1,@ print dankov factor and s0
+@ @gd adsorber cell 1 @ rcel(1,1)=0.1,0.189, @cilindr
+ @u adsorber cell 1 @ rcel(1,1)=0.15,0.229, @ sphire@ igc=3, hcel=1,0.387,0.378,
+                    ncelsos(1,1)=4,2,
+ @clad and water   2 @ rcel(1,2)=0.55,0.7,rcin(2)=0.5,
+                    ncelsos(1,2)=3,5,
+ ntcell=1,2,
+ krat=7,1,
+ alout=
+       0.6220000,0.0000000,
+       0.0000000,1.0000000,
+ aloi=
+       0.0000000,0.3780000,
+       0.0000000,0.0000000,
+ alio=
+       0.0000000,0.0000000,
+       1.0000000,0.0000000,
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@      1-gd
+ troiz= 0.001,
+ izotr(1)=1,
+ izotr(4)=9,
+ material(2)='grafit',
+ material(3)='zircal'
+ material(4)='fu1',
+ material(5)='mod1',
+@@@@@@@@@@@ 2 cells  @@@@@@@@@@@@@@@@@@@@@@2
+@ iout(110)=1,
+@ iout(10)=2,
+ &end
+gd
+****
+:stop
+:macr
+ &vvod
+  et=20.5e+6,0.8e+6,0.8e+6,4.65e+3,4.65e+3,2.15,2.15,0.6,0.6,0.,@
+  nbv=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,
+ &end
+:stop
+                                                                                                                        
+                                                                                                                        
+ ***** end of   file of input data set *******
+:poly                                                                           
+  rout and rin were constructed
+Rout= 0.150, 0.229, 0.550, 0.700,
+Rin = 0.000, 0.150, 0.000, 0.550,
+  nsos  was constructed
+nsos=  4,  2,  3,  5,
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--cefzad  -- programm standart value --cefzad  =  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--bakl    -- programm standart value --bakl    =  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alin    -- programm standart value --alin    =  0.000000E+00  0.000000E+00
+     0.000000E+00  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--alcorr  -- programm standart value --alcorr  =  0.100000E+01  0.100000E+01
+     0.100000E+01  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --uncorrected definition--alin    --bat programm use this value --alin      0.000000E+00  0.000000E+00
+     0.000000E+00  0.000000E+00
+  *******<< check input data>> programm declare *******
+    --uncorrected definition--alout   --bat programm use this value --alout     0.622000E+00  0.000000E+00
+     0.000000E+00  0.100000E+01
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--nbv     -- programm standart value --nbv     =    1    1    1    1
+  *******<< check input data>> programm declare *******
+    --undeclared parametr--et      -- programm standart value --et      =  0.105000E+08  0.215000E+01
+     0.215000E+01  0.000000E+00
+    ????  storage for pr. getter =      400 ?? common /rrr/ rab(        0 )  ????
+ ------------------------------------------------------------------------------
+  backling =  0.0000000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           2
+          cell number    1  number of zone= 2
+ << geometry characteristics >>
+    geometry of cell- sphere      index=           3
+  kratnost of cell =   7.000000    
+  inner radius of cell =  0.0000000E+00
+  out square ratio =  0.6220000      0.0000000E+00
+ ------------------------------------------------------------------------------
+ num zone      1           2
+ radius   0.15000E+00 0.22900E+00
+ temper   0.30000E+03 0.30000E+03
+ rez_izot    u238        bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=12
+  2 *c*      0.00000E+00 0.85283E-01
+  3 b-10     0.00000E+00 0.61404E-08
+  4 b-11     0.00000E+00 0.22329E-07
+  8 u235     0.87370E-03 0.00000E+00
+  9 u238     0.18744E-01 0.00000E+00
+ 10 o        0.39235E-01 0.00000E+00
+ ------------------------------------------------------------------------------
+  number of cells =           2
+          cell number    2  number of zone= 2
+ << geometry characteristics >>
+    geometry of cell- cilindrical index=           2
+  kratnost of cell =   1.000000    
+  inner radius of cell =  0.5000000    
+  out square ratio =  0.0000000E+00   1.000000    
+ ------------------------------------------------------------------------------
+ num zone      3           4
+ radius   0.55000E+00 0.70000E+00
+ temper   0.30000E+03 0.30000E+03
+ rez_izot    bad         bad 
+ ------------------------------------------------------------------------------
+    izotop   /             concentration number of izotops=12
+  3 b-10     0.00000E+00 0.47344E-05
+  4 b-11     0.00000E+00 0.19177E-04
+  5 zr       0.42655E-01 0.00000E+00
+  6 hf       0.65916E-05 0.00000E+00
+  7 nb       0.42172E-03 0.00000E+00
+ 11 *h*      0.00000E+00 0.47830E-01
+ 12 *o*      0.00000E+00 0.23910E-01
+  blfctr s0              1   1.160000       1.941438    
+    > CONSYST Program Ver: 98.01 > started at  0: 0: 0:  
+    { Manturov G., E-mail: abbn@ippe.rssi.ru}
+ 
+       -------------------------------
+ 
+       CONSYST INPUT DATA READ FROM : cons.dat
+       CONSYST PROTOCOL STORED IN   : RESULT
+       GMF X-SECTION'S FILE         : OUT
+       TEMPORARY FILE               : RAB
+       ABBN BASIC DATA SET FROM     : ..\bin\Bnab90.lib
+       ABBN MULTIC DATA SET FROM    : ..\bin\Bnabmlt.lib
+       ABBN THERMAL DATA SET FROM   : ..\bin\BNABTHM.lib
+ 
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > C(GRAPH):BNABTHM.BIN   Temp=  400K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  300K
+    >   Include Thermal Matrix > H(H2O):BNABTHM.BIN   Temp=  350K
+    > CONSYST finished at  0: 0: 0:  
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ therm. calculation avoided
+ *************************************************
+   ***k(inf)= 1.32463     ***k(itt)= 1.32462     ***k(integ)= 1.32463    ***
+   **bakl=  0.0000     **length= 0.10000E+11  ***
+   **matr.  alout*alcorr a(k,i)(k=1,ncel) ***
+     * 0.62200      0.0000    
+     *  0.0000      1.0000    
+ lokal kner      in cell ,ru=           1=   1.000000      0.9999999    
+ lokal kner      in cell ,ru=           2=  0.0000000E+00  0.2200941    
+:stop                                                                           

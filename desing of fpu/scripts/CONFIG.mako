@@ -1,0 +1,12 @@
+EDIT:cons.dat
+EDIT0:.\get-93\bin\cons0.dat
+BETA:.\get-93\bin\beta.get
+BNAB.BIN:.\get-93\bin\Bnab90.lib
+BNABMLT.BIN:.\get-93\bin\Bnabmlt.lib
+BNABTHM.BIN:.\get-93\bin\BNABTHM.lib
+BNAB:.\get-93\bin\XE35.MLT
+F11:.\get-93\bin\f11
+
+
+INGET: prakticeInput\${input_file}.dat
+OUTGET: prakticeOutput\${input_file}.out

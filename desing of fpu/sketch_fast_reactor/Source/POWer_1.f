@@ -1,0 +1,433 @@
+      SUBROUTINE POWer_Compute
+*=====================================================================*
+* calculation of power distribution for the Steady-State Calculatione *
+*    & Neutron Kinetics Calculations                                  *
+* p_reactor - Total Reactor Power (Wt)                                *
+* (c) Slava 4.III.1998 JAERI                                          *
+*=====================================================================*
+      IMPLICIT NONE
+      INCLUDE '../Include/sketch.fh'
+* Input: conv_Wt_to_MWt - Coefficient to conert Wt int MWt
+*        XS_SF_P(NG, N_TOT), Flux(NG, N_TOT), P_Reactor (WT),
+*        NZ_Core_BEG, NZ_Core_End, NH_Core, np_Core(NH_Core), 
+*        v_core
+c      logical KINETICS
+
+* Output: p(NH,NZ) - power density in the nodes (Wt/cm**3)
+*         p_col(N_Poly, NZR) - Assembly Power Density (Wt/cm**3)
+*         p_2D(N_POLY) - Axially-Averaged Assembly Power Density (Wt/cm**3)
+*         P_Total - Total Reactor Power (MWt)
+*         P_Average - Average over the Reactor Core Power Density (Wt/cm**3)
+*         p3d_max - maximum power density (from p_col)
+*         p2d_max - maximum power density (from pch)
+*         k_p3d_max(2) - X-Y Coordinate of the Node
+*                       with maximum power density (3D)
+*         np_max - Axial Level of the Node with maximum power density
+*         k_p2d_max(2) - X-Y Coordinate of the Assembly
+*                       with maximum power density (2D)
+* Pow_Norm - Constant Used for the Neutron Flux Normalization
+      real conv_Wt_to_MWt
+      parameter (conv_Wt_to_MWt = 1.E-06)
+
+*     Local Variables:     
+      INTEGER k, n1, n, kc, nn,  kt
+      REAL  Pow_Core, a1
+
+      if(Problem_Type.NE."Kinetics") then
+
+        Pow_Norm = 0.
+!	  v_core = 0.
+!        write(*,*) 'v_core =', v_core
+!	  pause
+
+        DO n1 =  NZ_Core_BEG, NZ_Core_End 
+           nn = (n1 - 1)*NH
+           DO kc = 1, NH_Core
+
+              k = np_core(kc) + nn 
+!	        IF(XS_SF_P(NG,k).ne.0) THEN
+                  DO n = 1,NG  
+                  Pow_Norm = Pow_Norm + XS_SF_P(n,k)*Flux(n, k)
+     &                        *pow_conv(n)
+                  END DO
+!                  v_core = v_core + volume(k)
+!              END IF
+           END DO
+        END DO
+
+        Pow_Norm = P_Reactor/(Pow_Norm*conv_Wt_to_MWt)
+
+      ELSE
+        Pow_Norm = 1.
+      END IF
+
+      Pow_Core = 0.
+
+      DO n1 =  NZ_Core_BEG, NZ_Core_End 
+         nn = (n1 - 1)*NH
+         DO kc = 1, NH_Core
+	      k = np_core(kc)
+            kt = k + nn 
+	      p(k,n1) = 0.
+            DO n = 1,NG  
+               a1 = pow_conv(n)*XS_SF_P(n,kt)*
+     &                       Flux(n,kt)*Pow_Norm
+               p(k,n1) = p(k,n1) + a1 	  
+            END DO ! NG
+            Pow_Core = Pow_Core + p(k,n1)
+            p(k,n1) = p(k,n1)/volume(kt)
+         END DO
+      END DO
+
+      p_total = Pow_Core*conv_Wt_to_MWt
+      
+      p_col(0,0) = Pow_Core/v_core
+
+	CALL POWer_Compute_Average
+	CALL OUTput_Compute_Average_Flux
+
+      RETURN
+      END 
+
+	SUBROUTINE POWer_Compute_Average
+*=====================================================================*
+! computing the average values
+* (c) Slava 4.III.1998 JAERI                                          *
+*=====================================================================*
+      IMPLICIT NONE
+      INCLUDE '../Include/sketch.fh'
+	REAL weighting_factor(N_POLY)
+!
+      CALL MSC_SSET(N_POLY, 1.0, weighting_factor) 
+
+      CALL OUTput_Compute_3D_Average( p, NZ_Core_Beg, NZ_Core_End, 
+     &   Index_Core, p_col,  p_mm, k_p_mm, weighting_factor )
+
+      CALL OUTput_Compute_2D_Average(p_col, NZR_Core_Beg, NZR_Core_End, 
+     &  Index_Core, p_mm, k_p_mm )
+
+      CALL OUTput_Compute_1D_Average(p_col, NZR_Core_Beg, NZR_Core_End, 
+     &  Index_Core, p_mm, k_p_mm, weighting_factor )
+
+
+      RETURN
+      END 
+
+
+      SUBROUTINE POWer_Output(unit)
+*=====================================================================*
+! Output of the power distribution into "SKETCH.lst"
+* (c) Slava 4.III.1998 JAERI                                          *
+*=====================================================================*
+      IMPLICIT NONE
+      INCLUDE '../Include/sketch.fh'
+     
+!     Input:
+      INTEGER unit
+! LOcal
+
+	CHARACTER*80 Header_Map
+	CHARACTER*4 val_fmt
+	CHARACTER*6 val_char(0:N_POLY)
+	INTEGER ind, ns
+	REAL scale_factor, p_up, p_down
+! external function
+      INTEGER nlz_core
+
+      CALL OUTput_Write_Separator(unit)
+      WRITE(unit,'(A)') 
+     &"     POWER DISTRIBUTION            "
+      CALL OUTput_Write_Separator(unit)
+
+
+      WRITE(unit, '(A, E12.5, A)') 
+     &"     Total Reactor Power                   : ", p_total, " MWt"
+      WRITE(unit, '(A,  E12.5, A)') 
+     &"     Average Power Density                 : ", 
+     &  p_col(0,0),  " Wt/cm^3"
+
+      WRITE(Header_Map, '(5x, A)') 
+     &  "NODAL POWER PEAKING FACTORS"
+	scale_factor = 1./p_col(0,0)
+
+      CALL OUTput_Distrb_Summary( unit, Header_Map, scale_factor, 
+     &   N_POLY, NZR, p_col,  p_mm, k_p_mm)
+
+      Header_Map = 
+     &"     2D RADIAL ASSEMBLY-AVERAGED POWER DENSITY"
+	val_fmt = "A6"
+      DO ind = 1, N_POLY
+          WRITE(val_char(ind), '(F6.3)')  p_col(ind,0)/p_col(0,0)
+      END DO
+      
+      CALL OUT_Write_Map(N_POLY,  NXR_B_Min_Core, 
+     &   NXR_Max_Core, NXR_B_Core, NXR_E_Core, NYR_B_Core, NYR_E_Core,
+     &   index_core, Header_Map, unit, val_char, val_fmt)
+
+      CALL OUTput_Write_Separator(unit)
+      WRITE(unit,'(A, /)') 
+     &"     1D AXIAL AVERAGE POWER DENSITY"
+!      CALL OUTput_Write_Separator(unit)
+
+       DO ns = NZR_Core_Beg, NZR_Core_End ! NZ_Core_BEG, NZ_Core_End
+          WRITE(unit,'(1x, I3,": ", F8.4)') 
+     &    nlz_core( ns ) , p_col(0,ns)/p_col(0,0)
+       END DO
+
+      CALL OUTput_Write_Separator(unit)
+
+
+      IF ( NZ /= 1 ) THEN
+! computing OFFSET       
+!       p_ = 0.
+!       NZR_Core = NZR_Core_End - NZR_Core_Beg + 1
+!       IF( NZR_Core ==  (NZR_Core/2)*2 ) THEN
+! even
+       p_down =0.
+!       write(*,*) 'n_down =', 
+!     &   NZR_Core_Beg, NZR_Core_Beg + NZR_Core/2 - 1  
+       DO ns =  NZR_Core_Beg, NZR_Core_Beg + NZR_Core/2 - 1
+         p_down = p_down + p_col(0,ns)/p_col(0,0)
+       END DO
+       p_up =0.
+!       write(*,*) 'up =', NZR_Core_Beg + NZR_Core/2,  NZR_Core_End
+!       write(*,*) NZR_Core, (NZR_Core/2)*2
+       DO ns =  NZR_Core_Beg + NZR_Core/2,  NZR_Core_End
+         p_up = p_up + p_col(0,ns)/p_col(0,0)
+       END DO
+       IF( NZR_Core .NE. (NZR_Core/2)*2 ) THEN
+         ns = NZR_Core_Beg + NZR_Core/2
+         p_up = p_up -  0.5*p_col(0,ns)/p_col(0,0)
+         p_down = p_down + 0.5*p_col(0,ns)/p_col(0,0)
+       END IF
+
+      CALL OUTput_Write_Separator(unit)
+      WRITE(unit,'(A,F8.2)') 
+     &"     (p_up+p_down) =", (p_up+p_down)
+      WRITE(unit,'(A,2F8.2)') 
+     &"     p_up,p_down =", p_up,p_down
+      WRITE(unit,'(A,F8.2)') 
+     &"     OFFSET (p_down - p_up)*100./(p_up+p_down) =", 
+     &   (p_down - p_up)*100./(p_up+p_down)
+      CALL OUTput_Write_Separator(unit)
+
+	END IF !( NZ /= 1 )
+
+ 
+      RETURN
+      END   
+
+
+	SUBROUTINE OUTput_Compute_Average_Flux
+*=====================================================================*
+! computing the average values
+* (c) Slava 4.III.1998 JAERI                                          *
+*=====================================================================*
+      IMPLICIT NONE
+      INCLUDE '../Include/sketch.fh'
+!
+      REAL FLUX_TMP(N_TOT)
+	INTEGER n, k
+	REAL weighting_factor(N_POLY)
+!
+      CALL MSC_SSET(N_POLY, 1.0, weighting_factor) 
+
+      DO n = 1, NG
+
+	   DO k = 1, N_TOT
+	      flux_tmp(k) = flux(n, k)
+         END DO
+
+         CALL OUTput_Compute_3D_Average(flux_tmp, 1, NZ, 
+     &   npoly, dist_flux(0,0,n), dist_flux_mm(-3, n),
+     &   k_dist_flux(1, -3, n), weighting_factor )
+
+         CALL OUTput_Compute_2D_Average(dist_flux(0,0,n), 
+     &   1,  NZR, npoly, dist_flux_mm(-3, n),
+     &   k_dist_flux(1, -3, n) )
+
+         CALL OUTput_Compute_1D_Average(dist_flux(0,0,n), 
+     &   1, NZR, npoly, dist_flux_mm(-3, n),
+     &   k_dist_flux(1, -3, n), weighting_factor )
+
+	END DO
+
+      RETURN
+      END 
+
+
+      subroutine POW_Neutron_Flux_Output(unit)
+*=====================================================================*
+! Output of the power distribution into "SKETCH.lst"
+* (c) Slava 4.III.1998 JAERI                                          *
+*=====================================================================*
+      implicit none
+      include '../Include/sketch.fh'
+     
+!     Input:
+      INTEGER unit
+! LOcal
+
+	character*80 Header_Map
+	character*4 val_fmt
+	character*6 val_char(0:N_POLY)
+	integer ind, ns, i, n
+!	integer nlx_core, nly_core
+! external function (in "OUTput.f")
+!      integer nlz_core
+!	CHARACTER*30 feedb_name(N_FEEDBACK)
+
+	real scale_factor(NG)
+!-------------------------------------------------------------
+	integer nnn
+        integer nbund
+       integer,parameter,dimension(13:86):: mas=
+     &[12,21,10,24,10,25,9,27,8,29,8,30,7,32,
+     &7,33,7,34,7,35,7,36,7,37,7,38,7,39,7,40,
+     &8,40,9,40,9,41,10,41,10,42,11,42,11,43,
+     &11,44,12,44,13,44,14,44,15,44,16,44,17,
+     &44,18,44,19,44,21,43,22,43,24,42,26,41,
+     &27,41,30,39]
+      integer i_g, j_g, k_g, k1_g
+      INTEGER mas1(978)
+
+      INTEGER NFFGR, NFFGW, n_n, n_h
+      real f_gr(17604)
+      DATA  NFFGR/13/
+
+      CHARACTER *8  NAME, NMFGR, NMFGW
+
+      DATA
+     & NAME   /'        '/,
+     & NMFGR  /'FG      '/
+
+!---------------------------------------------------------------     
+!      CALL OUTput_Write_Separator(unit)
+      WRITE(unit,'(A)') 
+     &"            NEUTRON FLUX"
+      CALL OUTput_Write_Separator(unit)
+
+      WRITE(unit, '(A,/,4x,30E12.5)') 
+     &  "     Average Neutron Flux (1/cm^3)         : ",
+     &  (dist_flux(0,0,n), n = 1, NG)
+
+      DO i = 1, NG
+         WRITE(Header_Map, '(5x, A, I3)') 
+     &       "Neutron Flux [1/(s cm^2)], group ", i
+         scale_factor(i) = 1./dist_flux(0,0,i)
+         CALL OUTput_Distrb_Summary( io_unit, Header_Map, 
+     &      scale_factor(i), N_POLY, NZR, 
+     &      dist_flux(0,0,i), dist_flux_mm(-3,i), 
+     &      k_dist_flux(1,-3,i) )
+
+      END DO
+
+      WRITE(unit,'(A)') 
+     &"            2D NEUTRON FLUX DISTRIBUTION"
+      CALL OUTput_Write_Separator(unit)
+
+!---------------------------------------------------------
+!---------------------------------------------------------
+!--formirovanie massiva dlya zapisi potokov dlya gefesta--
+      k1_g=1
+      i_g=43
+      do while (i_g . ge . 7)
+        k_g=i_g*2
+        do j_g=mas(k_g-1),mas(k_g)
+          mas1(k1_g)=npoly(i_g,j_g)
+          k1_g=k1_g+1
+        enddo
+      i_g=i_g-1
+      enddo
+
+!--formirovanie massiva 17604 s potokami------------------
+
+      
+          
+
+!---------------------------------------------------------
+
+!      open(126,FILE="out1.txt")
+!      write(126,*)mas(13:86)
+!      write(126,"(I5)")mas1(1:978)
+!      write(126,*)"k1_g=",k1_g  
+
+!---------------------------------------------------------
+
+!output flux into flux.txt
+!      open(123,FILE='output/flux.txt')
+!         do nbund=883,914
+!          write(123,)nbund
+!           do nnn=1,NG
+!	    write(123,995)dist_flux(nbund,9,nnn)
+!            if (nnn.eq.26)then
+!	      write(123,997)
+!            endif
+!           enddo
+!         enddo  
+!        write(123,"(I5)")mas1(1:978)
+!       
+!-----------------------------------------------------------------
+!output aver power into power.txt
+      open(135,FILE='output/power.txt')
+         do nbund=1,978
+          write(135,*)nbund,p_col(mas1(nbund),0)*14.43529
+         enddo
+      close(135)
+      
+      OPEN(NFFGR,FILE=".\FILES\f3", 
+     &   STATUS='UNKNOWN',ACCESS='DIRECT',RECL=4000)
+
+      do 8 n_n=1,26
+        k1_g=1
+        do nbund=1,978
+          do n_h=1,18
+           f_gr(k1_g)=dist_flux(mas1(nbund),n_h,n_n)
+           k1_g=k1_g+1
+          enddo   
+        enddo
+
+
+      call macnam (nmfgr,n_n,name)
+      call fw (nffgr,name,f_gr,17604,1)
+              
+    8 continue
+
+
+!-------------------------------------------------------------------
+!-------------------------------------------------------------------
+       DO i = 1, NG
+         WRITE(Header_Map, '(5x, A, I3)') 
+     &       "Neutron Flux [1/(s cm^2)], group ", i
+      	val_fmt = "A6"
+         DO ind = 1, N_POLY
+          WRITE(val_char(ind), '(F6.3)')  
+     &    dist_flux(ind, 0, i)*scale_factor(i)
+         END DO
+      
+         call OUT_Write_Map(N_POLY,  NXR_B_Min_Reactor, 
+     &    NXR_Max_Reactor, NXR_B_Reactor, NXR_E_Reactor, NYR_B_Reactor,
+     &    NYR_E_Reactor, npoly, Header_Map,io_unit, val_char, val_fmt)
+
+      END DO
+
+      CALL OUTput_Write_Separator(unit)
+      WRITE(unit,'(A, /)') 
+     &"     1D AXIAL NEUTRON FLUX DISTRIBUTIONS"
+!      CALL OUTput_Write_Separator(unit)
+      WRITE(unit,'(1x, A3, 2x, 30I6 )') "NZ", (i, i=1, NG)
+
+       do ns = 1, NZR ! NZ_Core_BEG, NZ_Core_End
+          WRITE(unit,'(1x, I3,": ", 30F6.3)') 
+     &    ns, 
+     &    (dist_flux(0, ns, i)*scale_factor(i), 
+     &     i =1, NG)
+       end do
+
+      CALL OUTput_Write_Separator(unit)
+
+ 
+      RETURN
+  995 FORMAT(\,(8E12.5),2x)
+  997 FORMAT(\,1/)   
+      END   

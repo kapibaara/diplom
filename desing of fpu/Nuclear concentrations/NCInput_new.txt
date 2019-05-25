@@ -1,0 +1,40 @@
+MUO2: 267
+roUO2: 10.97
+MPuO2: 276
+roPuO2: 11.5
+%Fuel: 75
+%richPu1: 20
+%richPu2: 18
+%richPu39: 52
+%richPu40: 24
+%richPu41: 15
+MAl: 27
+roAl: 2.6
+
+roB4C: 2.5
+%richB10: 70
+MB4C: 52
+roNi: 8.9
+MNi: 58
+roCr: 7.19
+MCr: 52
+%Ni: 56
+%Cr: 42
+
+%richB10AZ: 90
+
+roGd2O3: 4
+%richGd155: 14.8
+%richGd157: 15.7
+MGd2O3: 362
+
+roH2O: 0.698
+MH2O: 18
+
+roZr: 6.5
+MZr: 91
+
+roNO2: 1.45
+MNO2: 46
+%N: 76
+%O: 24

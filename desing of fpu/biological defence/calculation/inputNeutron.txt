@@ -1,0 +1,14 @@
+Wt: 132.8 MVt
+nuF: 2.91
+S: 6.64 m^2
+kinf: 1.042
+gamma: 0.77
+muEn: 100 cm^2/kg
+k: 10
+
+roH2O: 0.94 g/sm^3
+SrH2O: 0.097 sm^-1
+dH2O: 160 sm
+SrSt: 0.166 sm^-1
+dSt: 67.4 sm
+SrBet: 0.08 sm^-1

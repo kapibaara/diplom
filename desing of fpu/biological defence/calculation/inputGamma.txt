@@ -1,0 +1,49 @@
+Nf: 4.15e18 del/sec
+nuGamma: 8.29
+Vaz: 1.309 m^3
+Spov: 6.64 m^2
+
+epsTop: 0.33
+epsKM: 0.12
+epsCol: 0.55
+
+muH2O3T: 0.03
+muH2O5T: 0.022
+muFuel3: 0.813
+muFuel5: 0.832
+muZr3: 0.237
+muZr5: 0.221
+
+muH2O3D: 0.038
+muH2O5D: 0.028
+muSt3: 0.3
+muSt5: 0.25
+muBet3: 0.08
+muBet5: 0.07
+
+A1H2O3: 230
+alpha1H2O3: -0.0064
+alpha2H2O3: -0.0032
+A1H2O5: 13
+alpha1H2O5: -0.015
+alpha2H2O5: 0.026
+
+A1St3: 5
+alpha1St3: -0.074
+alpha2St3: 0.075
+A1St5: 2.9
+alpha1St5: -0.08
+alpha2St5: 0.075
+
+A1Bet3: 14
+alpha1Bet3: -0.03
+alpha2Bet3: 0.03
+A1Bet5: 9.2
+alpha1Bet5: -0.03
+alpha2Bet5: 0.03
+
+
+
+dH2O: 160
+dSt: 67.4
+dBet: 136.74

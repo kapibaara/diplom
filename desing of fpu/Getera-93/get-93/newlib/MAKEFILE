@@ -1,0 +1,29 @@
+#
+# MKMF template makefile for protected mode executables.
+#
+FC        = f77l3
+LINKER    = 386link
+PROGRAM   = getera.exe
+DEST      = .
+EXTHDRS         =
+FFLAGS    =
+HDRS            =
+LDFLAGS   =
+LDMAP     = nul
+LIBS      = 
+MAKEFILE  = Makefile
+OBJS            = gen_bin.obj
+SRCS            = gen_bin.for
+
+$(PROGRAM):     $(OBJS) $(LIBS)
+          $(LINKER) $(OBJS) -EXE $@ -MAP $(LDMAP) -LIB $(LIBS) $(LDFLAGS)
+
+clean:;         @del -f $(OBJS)
+
+depend:;   @mkmf -f $(MAKEFILE) PROGRAM=$(PROGRAM) DEST=$(DEST)
+
+install:   $(PROGRAM)
+                @echo Installing $(PROGRAM) in $(DEST)
+                @if not $(DEST)x==.x copy $(PROGRAM) $(DEST)
+### OPUS MKMF:  Do not remove this line!  Automatic dependencies follow.
+

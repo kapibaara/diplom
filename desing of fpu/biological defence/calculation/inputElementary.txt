@@ -1,0 +1,3 @@
+a: 9.6 mm
+dTv: 6.8 mm
+deltaSh: 0.5 mm

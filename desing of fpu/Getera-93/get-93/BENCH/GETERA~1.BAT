@@ -1,0 +1,2 @@
+..\bin\getera.exe
+pause

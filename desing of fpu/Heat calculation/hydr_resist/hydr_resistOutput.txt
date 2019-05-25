@@ -1,0 +1,8 @@
+Re: 307219.028
+ksi0: 0.014
+ksi: 0.017
+deltaP_tr: 19665.996 Pa
+
+deltaP_local: 117680.846 Pa
+deltaP: 137346.842 Pa
+Ntn: 398214.137 Vt

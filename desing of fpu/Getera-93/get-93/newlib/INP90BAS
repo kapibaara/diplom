@@ -1,0 +1,55 @@
+***************************************************************
+**  Initializing the BNAB-90 Binary Library         **
+***************************************************************
+*INIT: LIB=BNAB90.LIB,NIND=250,NREC=800
+***************************************************************
+**  Writting TAB to the BNAB-90  Binary Library       **
+***************************************************************
+*BNAB: LIB=BNAB90.LIB,EXT=TAB,NF=0,LIST=
+ AG   ,AG09 ,AL   ,AM2M ,AM41 ,AM43 ,AR   ,AS   ,AS75 ,AU   ,
+ B-10 ,B-11 ,BA   ,BE   ,BI   ,BR   ,C    ,CA   ,CAPT ,CD   ,
+ CD13 ,CE   ,CL   ,CM42 ,CM43 ,CM44 ,CM45 ,CM46 ,CM48 ,CO   ,
+ CR   ,CS   ,CS33 ,CS34 ,CS35 ,CS37 ,CU   ,D-SC ,D    ,DY   ,
+ ER   ,ER66 ,ER67 ,EU   ,EU53 ,EU54 ,EU55 ,F    ,FE   ,FP35 ,
+ FP39 ,GA   ,GD   ,GD55 ,GD57 ,GE   ,GEL  ,H--3 ,H    ,HE-3 ,
+ HE   ,HEAD ,HF   ,HO   ,HYDR ,I    ,I129 ,IN   ,IN15 ,IR   ,
+ J127 ,J129 ,K    ,KR83 ,LA   ,LA39 ,LI-6 ,LI-7 ,LU   ,MG   ,
+ MN   ,MO   ,MO95 ,MO97 ,N-15 ,N    ,NA   ,NB   ,ND   ,ND43 ,
+ ND45 ,NI   ,NP37 ,NP39 ,O    ,OS   ,P    ,PA31 ,PA33 ,PB   ,
+ PD   ,PD05 ,PD07 ,PD08 ,PM47 ,PM48 ,PM8M ,PR   ,PR41 ,PT   ,
+ PU36 ,PU38 ,PU39 ,PU40 ,PU41 ,PU42 ,RE   ,RH   ,RH03 ,RH05 ,
+ RU   ,RU01 ,RU03 ,S    ,SB   ,SC   ,SCAT ,SE   ,SI   ,SLAG ,
+ SM   ,SM47 ,SM49 ,SM50 ,SM51 ,SM52 ,SN   ,SN19 ,SR   ,SR89 ,
+ SR90 ,TA   ,TB59 ,TC99 ,TE   ,TH30 ,TH32 ,TI   ,TM   ,U232 ,
+ U233 ,U234 ,U235 ,U236 ,U238 ,V    ,W    ,XE31 ,XE35 ,Y    ,
+ Y89  ,ZN   ,ZR   ,GD56 
+***************************************************************
+**  Writting G-FACT to the BNAB-90  Binary Library    **
+***************************************************************
+*BNAB: LIB=BNAB90.LIB,EXT=GFC,NF=0,LIST=AM2M,AM41,AM43,CD,
+EU51,EU53,EU55,GD,GD55,GD57,HF,NP37,PA31,PA33,PU39,PU40,PU41,
+TH32,U233,U235,U238
+***************************************************************
+**  Writting DELAY to the BNAB-90  Binary Library     **
+***************************************************************
+*BNAB: LIB=BNAB90.LIB,EXT=DN,NF=0,LIST=AM41,AM2M,AM43,
+CM42,CM44,CM45,NP37,PA31,PU39,PU40,PU41,PU42,TH32,
+U232,U233,U234,U235,U236,U238
+***************************************************************
+**  Writting SUBGROUPS to the BNAB-90  Binary Library     **
+***************************************************************
+*BNAB: LIB=BNAB90.LIB,EXT=SUB,NF=0,LIST=
+AG  ,AL  ,AS  ,AU  ,B-11,BE  ,BI  ,BR  C   ,CA  ,CD  ,CL  ,
+CO  ,CR  ,CU  ,DY  ,EU  ,F   ,FE  ,GA  ,GD  ,HF  ,I   ,K   ,
+LA  ,LI-6,LI-7,MG  ,MN  ,MO  ,N   ,NA  ,NB  ,NI  ,O   ,P   ,
+PB  ,PR  ,PT  ,PU39,PU40,RE  ,RH  ,SB  ,SI  ,TA  ,TB59,TC99,
+TH32,TI  ,U235,U238,V   ,W   ,Y   ,ZN  
+*****************************************************************
+** ADDITIONALLY for CARE
+*****************************************************************
+*BNAB: LIB=BNAB90.LIB,EXT=REA,NF=0,LIST=AM2M,AM41,AM42,AM43,BK49,
+BK50,CF49,CF50,CF51,CF52,CM42,CM43,CM44,CM45,CM46,CM47,CM48,NP37,
+NP38,NP39,PA30,PA31,PA32,PA33,PU36,PU38,PU39,PU40,PU41,PU42,TH28,
+TH29,TH30,TH31,TH32,U232,U233,U234,U235,U236,U237,U238
+***************************************************************
+*END

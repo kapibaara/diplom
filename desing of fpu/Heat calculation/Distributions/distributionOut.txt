@@ -1,0 +1,16 @@
+qVMax: 195.922 MVt/m^3
+qlAvgMax: 163.078 Vt/cm
+Qtvsm: 1.528 MVt
+qMax: 1.083 MVt/m^2
+qAvg: 0.793 MVt/m^2
+Gtvsm: 12.326 kg/s
+Wtvsm: 4.544 kg/s
+roWtvsm: 3217.152 kg/(m^2*s)
+tOutShMax: 332.476 C
+tInShMax: 362.091 C
+tFuel35Max:  414.492 C
+tFuel14Max:  493.324 C
+LBoil: 0.450 m
+deltaZ: 0.126 m
+deltaR: 0.272 m
+kV: 1.931

@@ -1,13 +1,13 @@
 import os
 from mako.template import Template
-from scripts.materials import B4C, UO2, H2O, Shall, Shall_B4C, Gd2o3
+from scripts.materials import B4C, Fuel, H2O, Shall, Shall_B4C, Gd2o3
 
 
 class Getera():
 
-    def __init__(self, template_name, burn_n=50, burn_time=5, C=6E-3):
+    def __init__(self, template_name, burn_n=30, burn_time=50, C=6E-3):
         self.cur_path = os.path.split(__file__)[0]
-        self.getera_exe_path = r"C:\Users\kapib\Documents\Repositories\Designing-of-the-FPU\Getera-93\Getera-93.bat"
+        self.getera_exe_path = r"C:\Users\kapib\Documents\Repositories\diplom\desing of fpu\Getera-93\Getera-93.bat"
 
         self.template_name = template_name
         self.filename = self.template_name.split(".")[0]
@@ -21,19 +21,21 @@ class Getera():
         self.burn_n = burn_n
         self.burn_time = burn_time
 
-        self.uo2_x1 = UO2(0.15)
-        self.uo2_x2 = UO2(0.13)
-        self.b4c = B4C(0.9)
-        self.h2o = H2O(1.0)
+        self.uo2_x1 = Fuel(0.15)
+        self.uo2_x2 = Fuel(0.13)
+        self.b4c_pel = B4C(0.7)
+        self.b4c_az = B4C(0.9)
+        self.h2o = H2O()
         self.gd2o3 = Gd2o3()
 
-        self.shall = Shall(0.99)
+        self.shall = Shall(1.0)
         self.shall_b4c = Shall_B4C()
 
     def prepare_data(self):
         self.uo2_x1.calc_nuclear_density()
         self.uo2_x2.calc_nuclear_density()
-        self.b4c.calc_nuclear_density()
+        self.b4c_pel.calc_nuclear_density()
+        self.b4c_az.calc_nuclear_density()
         self.shall.calc_nuclear_density()
         self.h2o.calc_nuclear_density()
         self.shall_b4c.calc_nuclear_density()
@@ -45,7 +47,8 @@ class Getera():
         data["Zr_ob_tv"] = {"zr": self.shall.Zr.N}
         data["H2O"] = {"h": self.h2o.H.N, "o": self.h2o.O.N}
         data["SVP"] = {"o": self.gd2o3.O.N, "gd55": self.gd2o3.Gd55.N, "gd57": self.gd2o3.Gd57.N}
-        data["PEL"] = {"b-10": self.b4c.B10.N, "c": self.b4c.C.N}
+        data["az"] = {"b-10": self.b4c_az.B10.N, "c": self.b4c_az.C.N}
+        data["PEL"] = {"b-10": self.b4c_pel.B10.N, "c": self.b4c_pel.C.N}
         data["ob_pel"] = {"ni": self.shall_b4c.Ni.N, "cr": self.shall_b4c.Cr.N}
 
         return data
@@ -54,7 +57,7 @@ class Getera():
         data = self.prepare_data()
 
         template = Template(filename=self.template_path)
-        input_file = template.render(el=data)
+        input_file = template.render(el=data, burn_n=self.burn_n, burn_time=self.burn_time)
         input_file = input_file.replace("\r\n", "\n")
         input_file = input_file.replace("\n\n", "\n")
 
@@ -78,7 +81,6 @@ class Getera():
         os.system(getera_exe)
         # time.sleep(2)
         os.chdir(cur_dir)
-
 
 if __name__ == "__main__":
     template_names = os.listdir("../templates")

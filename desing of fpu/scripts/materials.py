@@ -11,7 +11,7 @@ class Material(object):
         for key in kwargs:
             self.__dict__[key] = kwargs[key]
 
-class UO2():
+class Fuel():
     def __init__(self, x):
         self.x = x
         self.density = 10.97
@@ -22,7 +22,7 @@ class UO2():
 
     def calc_nuclear_density(self):
         self.M = (self.U238.M * self.U235.M) / (self.U235.x * self.U238.M + self.U238.x * self.U235.M) + self.O.M * 2
-        self.N = self.density * Na / self.M
+        self.N = self.density * Na / 267
         self.j = (self.N*self.M)/Na
         self.U235.append(N = self.U235.x*self.N)
         self.U238.append(N = self.U238.x*self.N)
@@ -63,9 +63,8 @@ class Gd2o3(object):
         self.O.append(N= self.N*3)
 
 class H2O(object):
-    def __init__(self, x):
-        self.x = x
-        self.density = 1.00/(1 + 7E-4*(573.0 - 298.0))
+    def __init__(self):
+        self.density = 0.698
         self.H = Material(x=1.0, M=1)
         self.O = Material(x=1.0, M=16)
         self.M = 2*self.H.M + self.O.M
@@ -88,8 +87,8 @@ class Shall(object):
 
 class Shall_B4C(object):
     def __init__(self):
-        self.x_Cr = 0.042
-        self.x_Ni = 0.056
+        self.x_Cr = 0.42
+        self.x_Ni = 0.56
 
         self.d_Cr = 7.19
         self.d_Ni = 8.91

@@ -69,6 +69,15 @@ pu39
 pu40
 pu41
 ****
+
+%for b in range(burn_n):
+:burn
+ &vvod qv=105.5,dtim=${burn_time},
+ &end
+:corr
+ &vvod &end
+%endfor
+
 :corr
  &vvod &end
 :fier

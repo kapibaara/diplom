@@ -62,27 +62,26 @@ GMT_MSH_ZDIR # Spatial Mesh in Z direction
 
 GMT_COR_LOAD ## Core Loading with Bundle Types
 
-
             5 5 5 5 5 5 5 5 5
            5 5 5 5 5 5 5 5 5 5
           5 5 5 2 2 2 2 2 5 5 5
          5 5 2 2 2 2 2 2 2 4 5 5
         5 5 2 2 2 2 2 2 2 2 2 5 5
-       5 5 2 2 2 2 2 2 2 2 2 2 5 5
-      5 5 2 3 2 2 1 1 1 2 2 3 2 5 5
-     5 5 2 3 2 2 1 1 1 1 2 2 3 2 5 5
-    5 5 5 2 2 2 1 1 1 1 1 2 2 2 5 5 5
-     5 5 2 2 2 2 1 1 1 1 2 2 2 2 5 5
-      5 5 4 2 2 2 1 1 1 2 2 2 4 5 5
-       5 5 2 2 2 2 2 2 2 2 2 2 5 5
+       5 5 2 2 2 1 1 1 1 2 2 2 5 5
+      5 5 2 3 2 1 1 1 1 1 2 3 2 5 5
+     5 5 2 3 2 1 1 1 1 1 1 2 3 2 5 5
+    5 5 5 2 2 1 1 1 1 1 1 1 2 2 5 5 5
+     5 5 2 2 2 1 1 1 1 1 1 2 2 2 5 5
+      5 5 4 2 2 1 1 1 1 1 2 2 4 5 5
+       5 5 2 2 2 1 1 1 1 2 2 2 5 5
         5 5 2 2 2 2 2 2 2 2 2 5 5
          5 5 4 2 2 2 3 3 2 2 5 5
           5 5 5 2 2 2 2 2 5 5 5
            5 5 5 5 5 5 5 5 5 5
             5 5 5 5 5 5 5 5 5
 
- 5 0*1 10*2 5    ## nb = 1  1-ТВС центральной зоны
- 5 0*3 10*4 5    ## nb = 2  2-ТВС переферийной зоны
+ 5 10*1 5        ## nb = 1  1-ТВС центральной зоны
+ 5 10*3 5        ## nb = 2  2-ТВС переферийной зоны
  5 10*6 5        ## nb = 3  3-ТВС со стержнем АЗ
  5 10*6 5        ## nb = 4  4-ТВС с пустым каналом
  5 10*5 5        ## nb = 5  5-отражатель
@@ -143,7 +142,7 @@ ${data["pr_AZ_NotAZ"]["sd21"]} ${data["pr_AZ_NotAZ"]["sd22"]}        6          
 
 
  ${data["pr_AZ_WithAZ"]["d1"]}  ${data["pr_AZ_WithAZ"]["sa1"]}  ${data["pr_AZ_WithAZ"]["nsf1"]}  ${data["pr_AZ_WithAZ"]["sf1"]}
-${data["pr_AZ_NotAZ"]["d2"]}  ${data["pr_AZ_NotAZ"]["sa2"]}  ${data["pr_AZ_NotAZ"]["nsf2"]}  ${data["pr_AZ_NotAZ"]["sf2"]}
+${data["pr_AZ_WithAZ"]["d2"]}  ${data["pr_AZ_WithAZ"]["sa2"]}  ${data["pr_AZ_WithAZ"]["nsf2"]}  ${data["pr_AZ_WithAZ"]["sf2"]}
 
 ${data["pr_AZ_WithAZ"]["sd11"]}  ${data["pr_AZ_WithAZ"]["sd12"]}
 ${data["pr_AZ_WithAZ"]["sd21"]} ${data["pr_AZ_WithAZ"]["sd22"]}       7           ${data["pr_AZ_WithAZ"]["kinf"]}         0.0       ##AZ, with az

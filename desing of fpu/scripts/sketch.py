@@ -1,16 +1,19 @@
 import os
 from mako.template import Template
 import codecs
+from scripts.getera import Getera
 
 class Sketch():
 
     def __init__(self):
         self.cur_path = os.path.split(__file__)[0]
+        self.sketch_exe_path = r"C:\Users\kapib\Documents\Repositories\diplom\desing of fpu\sketch_fast_reactor\SKETCH.exe"
+
         self.getera_outputs_path = os.path.join(self.cur_path, r"../Getera-93/prakticeOutput/")
         self.getera_outputs = os.listdir(self.getera_outputs_path)
         self.sketch_input = os.path.join(self.cur_path, r"../sketch_fast_reactor/Input/prakticeInput.dat")
 
-        self.sketch_template_path = os.path.join(self.cur_path, r"..\templates\sketch.mako")
+        self.sketch_template_path = os.path.join(self.cur_path, r".\sketch.mako")
 
     def read_file(self, file):
         lines = []
@@ -44,18 +47,18 @@ class Sketch():
                     kinf = splited[1].split(" ")[0]
             if sections_identifier in line:
                 # быстрая область
-                sections = lines[i + 1].split(" ")
-                d1 = sections[18]
-                sa1 = sections[14]
-                sf1 = sections[15]
-                nsf1 = sections[16]
+                sections = lines[i + 1].split()
+                d1 = sections[6]
+                sa1 = sections[3]
+                sf1 = sections[4]
+                nsf1 = sections[5]
 
                 # тепловая область
-                sections = lines[i + 2].split(" ")
-                d2 = sections[22]
-                sa2 = sections[11]
-                sf2 = sections[16]
-                nsf2 = sections[17]
+                sections = lines[i + 2].split()
+                d2 = sections[6]
+                sa2 = sections[3]
+                sf2 = sections[4]
+                nsf2 = sections[5]
             if matrix_identifier in line:
                 matrix_row = lines[i + 1].split(" ")
                 sd11 = matrix_row[16]
@@ -76,8 +79,8 @@ class Sketch():
             "sf2": sf2,
             "nsf2": nsf2,
             "sd11": sd11,
-            "sd12": sd12,
-            "sd21": sd21,
+            "sd12": sd21,
+            "sd21": sd12,
             "sd22": sd22,
         }
 
@@ -90,7 +93,20 @@ class Sketch():
         with codecs.open(self.sketch_input, 'w', encoding='cp1251') as file:
             file.write(template.render(data=data))
 
+    def start(self):
+        self.render()
 
+        sketch_folder, sketch_exe = os.path.split(self.sketch_exe_path)
+        cur_dir = os.getcwd()
+        os.chdir(sketch_folder)
+        os.system(sketch_exe)
+        os.chdir(cur_dir)
 
-sketch = Sketch()
-sketch.render()
+if __name__ == "__main__":
+    template_names = os.listdir("../templates")
+
+    for template_name in template_names:
+        getera = Getera(template_name)
+        getera.start()
+    sketch = Sketch()
+    sketch.start()

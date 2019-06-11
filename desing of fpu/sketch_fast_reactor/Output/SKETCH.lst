@@ -2,7 +2,7 @@
 !                                   SKETCH-N                                   !
 !  Nodal Neutron Diffusion Code for Solving Steady-State and Kinetics Problems !
 !              Version 1.0 (c) Slava 2000 e-mail: na.vzimin@na-net.ornl.gov    !
-!      Date & Time of Calculation :  6 June     2019  11:59:26 am              !
+!      Date & Time of Calculation :  6 June     2019  11:30:12 am              !
 !==============================================================================!
  
 !------------------------------------------------------------------------------!
@@ -131,10 +131,10 @@ CNT_RCT_POWR ## REACTOR POWER (MWt)
  17:                    5   5   5   5   5   5   5   5   5
  
     Bundle Material Compositions:
-          1:      5      1      1      1      1      1      1      1      1      1
-                  1      5
-          2:      5      3      3      3      3      3      3      3      3      3
-                  3      5
+          1:      5      1      2      2      2      2      2      2      2      2
+                  2      2
+          2:      5      3      3      3      3      3      4      4      4      4
+                  4      5
           3:      5      6      6      6      6      6      6      6      6      6
                   6      5
           4:      5      6      6      6      6      6      6      6      6      6
@@ -240,35 +240,35 @@ CNT_RCT_POWR ## REACTOR POWER (MWt)
  Macro Cross Section Data :
     Diffusion Coefficient Flag in the Input Data :  1
     Basic Macro Cross Section Set:
-  0.136606E+01  0.134905E-01  0.993071E-02  0.690230E-02  0.264260E-02
-  0.428632E+00  0.108161E+00  0.149111E+00  0.572648E-01             1
+  0.137842E+01  0.129125E-01  0.109635E-01  0.105557E-01  0.420978E-02
+  0.437821E+00  0.137111E+00  0.181451E+00  0.735001E-01             1
 
-  0.137570E+01  0.102036E-01  0.139664E-01  0.699742E-02  0.266201E-02
-  0.450039E+00  0.130775E+00  0.158798E+00  0.604065E-01             2
+  0.138584E+01  0.976422E-02  0.149315E-01  0.996053E-02  0.395988E-02
+  0.458037E+00  0.150675E+00  0.182809E+00  0.738834E-01             2
 
-  0.136799E+01  0.132012E-01  0.103387E-01  0.774114E-02  0.298548E-02
-  0.427909E+00  0.114294E+00  0.161954E+00  0.626032E-01             3
+  0.138080E+01  0.126116E-01  0.113889E-01  0.113987E-01  0.455513E-02
+  0.435975E+00  0.141969E+00  0.191770E+00  0.778212E-01             3
 
-  0.137743E+01  0.996444E-02  0.143193E-01  0.773662E-02  0.296528E-02
-  0.449880E+00  0.136644E+00  0.170760E+00  0.654359E-01             4
+  0.138814E+01  0.950477E-02  0.153117E-01  0.107637E-01  0.428903E-02
+  0.456611E+00  0.156095E+00  0.194165E+00  0.786532E-01             4
 
   0.156371E+01  0.616019E-05  0.334408E-03  0.000000E+00  0.000000E+00
   0.319889E+00  0.809934E-02  0.000000E+00  0.000000E+00             5
 
-  0.137730E+01  0.124958E-01  0.104011E-01  0.781540E-02  0.301251E-02
-  0.444266E+00  0.115506E+00  0.163252E+00  0.629912E-01             6
+  0.139031E+01  0.119234E-01  0.114219E-01  0.114035E-01  0.455805E-02
+  0.452904E+00  0.141097E+00  0.191607E+00  0.777235E-01             6
 
-  0.136716E+01  0.912981E-02  0.156246E-01  0.760178E-02  0.291056E-02
-  0.453185E+00  0.136402E+00  0.172011E+00  0.659025E-01             7
+  0.137645E+01  0.874830E-02  0.165455E-01  0.104673E-01  0.416556E-02
+  0.459746E+00  0.154660E+00  0.194179E+00  0.786566E-01             7
 
   0.156371E+01  0.616019E-05  0.334408E-03  0.000000E+00  0.000000E+00
   0.319889E+00  0.809934E-02  0.000000E+00  0.000000E+00             8
 
-  0.137730E+01  0.124958E-01  0.104011E-01  0.781540E-02  0.301251E-02
-  0.444266E+00  0.115506E+00  0.163252E+00  0.629912E-01             9
+  0.139031E+01  0.119234E-01  0.114219E-01  0.114035E-01  0.455805E-02
+  0.452904E+00  0.141097E+00  0.191607E+00  0.777235E-01             9
 
-  0.136716E+01  0.912981E-02  0.156246E-01  0.760178E-02  0.291056E-02
-  0.444266E+00  0.115506E+00  0.163252E+00  0.629912E-01            10
+  0.137645E+01  0.874830E-02  0.165455E-01  0.104673E-01  0.416556E-02
+  0.452904E+00  0.141097E+00  0.191607E+00  0.777235E-01            10
 
     Polynomial Coefficients for Macro Cross Sections
            Material Composition number :   1
@@ -379,7 +379,7 @@ CNT_RCT_POWR ## REACTOR POWER (MWt)
 !                                   SKETCH-N                                   !
 !  Nodal Neutron Diffusion Code for Solving Steady-State and Kinetics Problems !
 !              Version 1.0 (c) Slava 2000 e-mail: na.vzimin@na-net.ornl.gov    !
-!      Date & Time of Calculation :  6 June     2019  11:59:26 am              !
+!      Date & Time of Calculation :  6 June     2019  11:30:12 am              !
 !==============================================================================!
                  INITIAL DATA SET
                  STEADY-STATE CALCULATIONS
@@ -437,27 +437,27 @@ CNT_RCT_POWR ## REACTOR POWER (MWt)
      Scaling Factor                        :  0.94537E-02
      Average Value                         :  1.00000
 
-     3D Maximum Value                      :  1.03314
-     Reactor Location of 3D Maximum (X,Y,Z): 10  4  2
-     Core    Location of 3D Maximum (X,Y,Z):  8  2  1
+     3D Maximum Value                      :  1.02206
+     Reactor Location of 3D Maximum (X,Y,Z):  4  3  7
+     Core    Location of 3D Maximum (X,Y,Z):  1  1  6
 
-     3D Minimum Value                      :  0.93772
-     Reactor Location of 3D minimum (X,Y,Z): 12 12 11
-     Core    Location of 3D minimum (X,Y,Z):  7 10 10
+     3D Minimum Value                      :  0.95759
+     Reactor Location of 3D minimum (X,Y,Z):  6  6  2
+     Core    Location of 3D minimum (X,Y,Z):  4  4  1
 
-     2D Maximum Value                      :  1.03314
-     Reactor Location of 2D Maximum (X,Y)  : 10  4
-     Core    Location of 2D Maximum (X,Y)  :  8  2
+     2D Maximum Value                      :  1.01858
+     Reactor Location of 2D Maximum (X,Y)  :  4  3
+     Core    Location of 2D Maximum (X,Y)  :  1  1
 
-     2D Minimum Value                      :  0.93772
+     2D Minimum Value                      :  0.95907
      Reactor Location of 2D minimum (X,Y)  :  6  6
      Core    Location of 2D minimum (X,Y)  :  4  4
 
-     1D Maximum                            :  0.99999
-     Reactor Location of the 1D Maximum (Z):        2
-     Core    Location of the 1D Maximum (Z):        1
+     1D Maximum                            :  1.00218
+     Reactor Location of the 1D Maximum (Z):        7
+     Core    Location of the 1D Maximum (Z):        6
 
-     1D Minimum                            :  0.99999
+     1D Minimum                            :  0.99741
      Reactor Location of the 1D minimum (Z):        2
      Core    Location of the 1D minimum (Z):        1
 !------------------------------------------------------------------------------!
@@ -466,38 +466,38 @@ CNT_RCT_POWR ## REACTOR POWER (MWt)
 
                          3     4     5     6     7     8     9    10    11    12    13    14    15
                      ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
-  3:                       1.027 1.027 1.027 1.027 1.027
-  4:              1.027 1.027 1.027 1.027 1.027 1.027 1.027 1.033
-  5:           1.027 1.027 1.027 1.027 1.027 1.027 1.027 1.027 1.027
-  6:        1.027 1.027 1.027 0.938 0.938 0.938 0.938 1.027 1.027 1.027
-  7:     1.027 1.033 1.027 0.938 0.938 0.938 0.938 0.938 1.027 1.033 1.027
-  8:  1.027 1.033 1.027 0.938 0.938 0.938 0.938 0.938 0.938 1.027 1.033 1.027
-  9:     1.027 1.027 0.938 0.938 0.938 0.938 0.938 0.938 0.938 1.027 1.027
- 10:  1.027 1.027 1.027 0.938 0.938 0.938 0.938 0.938 0.938 1.027 1.027 1.027
- 11:     1.033 1.027 1.027 0.938 0.938 0.938 0.938 0.938 1.027 1.027 1.033
- 12:        1.027 1.027 1.027 0.938 0.938 0.938 0.938 1.027 1.027 1.027
- 13:           1.027 1.027 1.027 1.027 1.027 1.027 1.027 1.027 1.027
- 14:              1.033 1.027 1.027 1.027 1.033 1.033 1.027 1.027
- 15:                       1.027 1.027 1.027 1.027 1.027
+  3:                       1.019 1.019 1.019 1.019 1.019
+  4:              1.019 1.019 1.019 1.019 1.019 1.019 1.019 1.014
+  5:           1.019 1.019 1.019 1.019 1.019 1.019 1.019 1.019 1.019
+  6:        1.019 1.019 1.019 0.959 0.959 0.959 0.959 1.019 1.019 1.019
+  7:     1.019 1.014 1.019 0.959 0.959 0.959 0.959 0.959 1.019 1.014 1.019
+  8:  1.019 1.014 1.019 0.959 0.959 0.959 0.959 0.959 0.959 1.019 1.014 1.019
+  9:     1.019 1.019 0.959 0.959 0.959 0.959 0.959 0.959 0.959 1.019 1.019
+ 10:  1.019 1.019 1.019 0.959 0.959 0.959 0.959 0.959 0.959 1.019 1.019 1.019
+ 11:     1.014 1.019 1.019 0.959 0.959 0.959 0.959 0.959 1.019 1.019 1.014
+ 12:        1.019 1.019 1.019 0.959 0.959 0.959 0.959 1.019 1.019 1.019
+ 13:           1.019 1.019 1.019 1.019 1.019 1.019 1.019 1.019 1.019
+ 14:              1.014 1.019 1.019 1.019 1.014 1.014 1.019 1.019
+ 15:                       1.019 1.019 1.019 1.019 1.019
  
 !------------------------------------------------------------------------------!
      1D AXIAL AVERAGE POWER DENSITY
 
-   1:   1.0000
-   2:   1.0000
-   3:   1.0000
-   4:   1.0000
-   5:   1.0000
-   6:   1.0000
-   7:   1.0000
-   8:   1.0000
-   9:   1.0000
-  10:   1.0000
+   1:   0.9974
+   2:   0.9979
+   3:   0.9979
+   4:   0.9979
+   5:   0.9979
+   6:   1.0022
+   7:   1.0022
+   8:   1.0022
+   9:   1.0022
+  10:   1.0022
 !------------------------------------------------------------------------------!
 !------------------------------------------------------------------------------!
                     pow_reactor_down + pow_reactor_up =   10.00
-                    pow_reactor_down , pow_reactor_up =    6.00    4.00
-POWER AXIAL OFFSET (p_down - p_up)*100./(p_up+p_down) =   20.00
+                    pow_reactor_down , pow_reactor_up =    5.99    4.01
+POWER AXIAL OFFSET (p_down - p_up)*100./(p_up+p_down) =   19.83
 !------------------------------------------------------------------------------!
             FEEDBACK DISTRIBUTION
 !------------------------------------------------------------------------------!
@@ -713,64 +713,64 @@ POWER AXIAL OFFSET (p_down - p_up)*100./(p_up+p_down) =   20.00
             NEUTRON FLUX
 !------------------------------------------------------------------------------!
      Average Neutron Flux (1/cm^3)         : 
-     0.51678E+14 0.51678E+14
+     0.40683E+14 0.40683E+14
 
      Neutron Flux [1/(s cm^2)], group   1                                       
-     Scaling Factor                        :  0.19351E-13
+     Scaling Factor                        :  0.24580E-13
      Average Value                         :  1.00000
 
-     3D Maximum Value                      :  1.00000
+     3D Maximum Value                      :  0.99998
      Reactor Location of 3D Maximum (X,Y,Z): 17 17 11
      Core    Location of 3D Maximum (X,Y,Z): 18 15 10
 
-     3D Minimum Value                      :  1.00000
+     3D Minimum Value                      :  0.99998
      Reactor Location of 3D minimum (X,Y,Z): 17 17 12
      Core    Location of 3D minimum (X,Y,Z): 18 15 11
 
-     2D Maximum Value                      :  0.99999
+     2D Maximum Value                      :  0.99998
      Reactor Location of 2D Maximum (X,Y)  :  1  1
      Core    Location of 2D Maximum (X,Y)  :  2 -1
 
-     2D Minimum Value                      :  0.99999
+     2D Minimum Value                      :  0.99998
      Reactor Location of 2D minimum (X,Y)  :  1  1
      Core    Location of 2D minimum (X,Y)  :  2 -1
 
-     1D Maximum                            :  1.00000
-     Reactor Location of the 1D Maximum (Z):        2
-     Core    Location of the 1D Maximum (Z):        1
+     1D Maximum                            :  0.99999
+     Reactor Location of the 1D Maximum (Z):        1
+     Core    Location of the 1D Maximum (Z):        0
 
-     1D Minimum                            :  0.99999
-     Reactor Location of the 1D minimum (Z):        1
-     Core    Location of the 1D minimum (Z):        0
+     1D Minimum                            :  0.99998
+     Reactor Location of the 1D minimum (Z):        2
+     Core    Location of the 1D minimum (Z):        1
 !------------------------------------------------------------------------------!
 
      Neutron Flux [1/(s cm^2)], group   2                                       
-     Scaling Factor                        :  0.19351E-13
+     Scaling Factor                        :  0.24580E-13
      Average Value                         :  1.00000
 
-     3D Maximum Value                      :  1.00000
+     3D Maximum Value                      :  0.99998
      Reactor Location of 3D Maximum (X,Y,Z): 17 17 11
      Core    Location of 3D Maximum (X,Y,Z): 18 15 10
 
-     3D Minimum Value                      :  1.00000
+     3D Minimum Value                      :  0.99998
      Reactor Location of 3D minimum (X,Y,Z): 17 17 12
      Core    Location of 3D minimum (X,Y,Z): 18 15 11
 
-     2D Maximum Value                      :  0.99999
+     2D Maximum Value                      :  0.99998
      Reactor Location of 2D Maximum (X,Y)  :  1  1
      Core    Location of 2D Maximum (X,Y)  :  2 -1
 
-     2D Minimum Value                      :  0.99999
+     2D Minimum Value                      :  0.99998
      Reactor Location of 2D minimum (X,Y)  :  1  1
      Core    Location of 2D minimum (X,Y)  :  2 -1
 
-     1D Maximum                            :  1.00000
-     Reactor Location of the 1D Maximum (Z):        2
-     Core    Location of the 1D Maximum (Z):        1
+     1D Maximum                            :  0.99999
+     Reactor Location of the 1D Maximum (Z):        1
+     Core    Location of the 1D Maximum (Z):        0
 
-     1D Minimum                            :  0.99999
-     Reactor Location of the 1D minimum (Z):        1
-     Core    Location of the 1D minimum (Z):        0
+     1D Minimum                            :  0.99998
+     Reactor Location of the 1D minimum (Z):        2
+     Core    Location of the 1D minimum (Z):        1
 !------------------------------------------------------------------------------!
             2D NEUTRON FLUX DISTRIBUTION
 !------------------------------------------------------------------------------!
@@ -1124,12 +1124,12 @@ Sm149 Average Value of Isotope concentration =0.000000E+00 [nuclei/cm^3 x 10^24]
 !                                   SKETCH-N                                   !
 !  Nodal Neutron Diffusion Code for Solving Steady-State and Kinetics Problems !
 !              Version 1.0 (c) Slava 2000 e-mail: na.vzimin@na-net.ornl.gov    !
-!      Date & Time of Calculation :  6 June     2019  11:59:26 am              !
+!      Date & Time of Calculation :  6 June     2019  11:30:12 am              !
 !==============================================================================!
                  NUMERICAL RESULTS
                  STEADY-STATE CALCULATIONS
 !------------------------------------------------------------------------------!
-     k_ef                                  :  1.053658
+     k_ef                                  :  1.012746
 !------------------------------------------------------------------------------!
 
     Control Rod Positions (cm, PWR from the bottom, BWR from the top):          
@@ -1182,67 +1182,67 @@ Sm149 Average Value of Isotope concentration =0.000000E+00 [nuclei/cm^3 x 10^24]
      Scaling Factor                        :  0.94537E-02
      Average Value                         :  1.00000
 
-     3D Maximum Value                      :  1.46503
-     Reactor Location of 3D Maximum (X,Y,Z):  7  5  6
-     Core    Location of 3D Maximum (X,Y,Z):  5  3  5
+     3D Maximum Value                      :  2.31050
+     Reactor Location of 3D Maximum (X,Y,Z): 14 12  4
+     Core    Location of 3D Maximum (X,Y,Z):  9 10  3
 
-     3D Minimum Value                      :  0.43068
-     Reactor Location of 3D minimum (X,Y,Z):  8 14  2
-     Core    Location of 3D minimum (X,Y,Z):  1 12  1
+     3D Minimum Value                      :  0.07534
+     Reactor Location of 3D minimum (X,Y,Z):  9  9 11
+     Core    Location of 3D minimum (X,Y,Z):  6  7 10
 
-     2D Maximum Value                      :  1.08681
-     Reactor Location of 2D Maximum (X,Y)  :  7  5
-     Core    Location of 2D Maximum (X,Y)  :  5  3
+     2D Maximum Value                      :  1.24916
+     Reactor Location of 2D Maximum (X,Y)  : 13  8
+     Core    Location of 2D Maximum (X,Y)  : 11  6
 
-     2D Minimum Value                      :  0.84107
-     Reactor Location of 2D minimum (X,Y)  :  8 14
-     Core    Location of 2D minimum (X,Y)  :  1 12
+     2D Minimum Value                      :  0.52785
+     Reactor Location of 2D minimum (X,Y)  :  9  9
+     Core    Location of 2D minimum (X,Y)  :  6  7
 
-     1D Maximum                            :  1.34673
-     Reactor Location of the 1D Maximum (Z):        7
-     Core    Location of the 1D Maximum (Z):        6
+     1D Maximum                            :  1.84440
+     Reactor Location of the 1D Maximum (Z):        4
+     Core    Location of the 1D Maximum (Z):        3
 
-     1D Minimum                            :  0.50586
-     Reactor Location of the 1D minimum (Z):        2
-     Core    Location of the 1D minimum (Z):        1
+     1D Minimum                            :  0.11718
+     Reactor Location of the 1D minimum (Z):       11
+     Core    Location of the 1D minimum (Z):       10
 !------------------------------------------------------------------------------!
 
      2D RADIAL ASSEMBLY-AVERAGED POWER DENSITY                                  
 
                          3     4     5     6     7     8     9    10    11    12    13    14    15
                      ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
-  3:                       0.881 0.922 0.931 0.920 0.878
-  4:              0.879 0.960 1.012 1.031 1.031 1.009 0.954 0.843
-  5:           0.918 1.010 1.056 1.080 1.087 1.078 1.053 1.004 0.912
-  6:        0.923 1.025 1.077 1.034 1.043 1.043 1.032 1.074 1.021 0.920
-  7:     0.911 0.988 1.080 1.041 1.052 1.056 1.051 1.039 1.077 0.985 0.908
-  8:  0.871 0.967 1.069 1.039 1.054 1.061 1.060 1.053 1.037 1.067 0.965 0.869
-  9:     0.949 1.046 1.028 1.050 1.060 1.063 1.059 1.049 1.027 1.045 0.948
- 10:  0.871 1.001 1.072 1.038 1.053 1.059 1.059 1.052 1.037 1.071 1.000 0.870
- 11:     0.880 1.021 1.080 1.038 1.049 1.052 1.048 1.037 1.079 1.020 0.880
- 12:        0.920 1.023 1.073 1.028 1.037 1.037 1.027 1.072 1.022 0.920
- 13:           0.911 1.002 1.049 1.072 1.076 1.067 1.045 1.003 0.913
- 14:              0.841 0.950 1.003 1.020 0.984 0.966 0.949 0.873
- 15:                       0.873 0.913 0.920 0.908 0.870
+  3:                       1.063 1.101 1.110 1.108 1.078
+  4:              1.069 1.132 1.157 1.157 1.160 1.168 1.154 1.139
+  5:           1.115 1.165 1.128 1.079 1.065 1.085 1.141 1.188 1.139
+  6:        1.135 1.178 1.088 0.769 0.718 0.720 0.775 1.101 1.195 1.152
+  7:     1.139 1.230 1.086 0.724 0.629 0.603 0.632 0.731 1.097 1.245 1.151
+  8:  1.101 1.238 1.112 0.731 0.606 0.551 0.552 0.610 0.736 1.121 1.249 1.110
+  9:     1.171 1.161 0.786 0.636 0.554 0.528 0.555 0.639 0.790 1.168 1.178
+ 10:  1.105 1.198 1.108 0.732 0.610 0.555 0.556 0.612 0.735 1.111 1.201 1.109
+ 11:     1.188 1.196 1.090 0.732 0.638 0.612 0.640 0.734 1.092 1.197 1.188
+ 12:        1.152 1.193 1.107 0.785 0.735 0.737 0.789 1.108 1.191 1.149
+ 13:           1.145 1.197 1.157 1.109 1.100 1.121 1.164 1.191 1.135
+ 14:              1.152 1.171 1.192 1.197 1.244 1.245 1.172 1.097
+ 15:                       1.100 1.138 1.151 1.149 1.106
  
 !------------------------------------------------------------------------------!
      1D AXIAL AVERAGE POWER DENSITY
 
-   1:   0.5059
-   2:   0.8196
-   3:   1.0741
-   4:   1.2538
-   5:   1.3467
-   6:   1.3467
-   7:   1.2538
-   8:   1.0741
-   9:   0.8196
-  10:   0.5059
+   1:   1.2330
+   2:   1.6178
+   3:   1.8444
+   4:   1.8077
+   5:   1.4960
+   6:   0.8096
+   7:   0.5227
+   8:   0.3393
+   9:   0.2123
+  10:   0.1172
 !------------------------------------------------------------------------------!
 !------------------------------------------------------------------------------!
                     pow_reactor_down + pow_reactor_up =   10.00
-                    pow_reactor_down , pow_reactor_up =    6.35    3.65
-POWER AXIAL OFFSET (p_down - p_up)*100./(p_up+p_down) =   26.93
+                    pow_reactor_down , pow_reactor_up =    8.81    1.19
+POWER AXIAL OFFSET (p_down - p_up)*100./(p_up+p_down) =   76.17
 !------------------------------------------------------------------------------!
             FEEDBACK DISTRIBUTION
 !------------------------------------------------------------------------------!
@@ -1458,64 +1458,64 @@ POWER AXIAL OFFSET (p_down - p_up)*100./(p_up+p_down) =   26.93
             NEUTRON FLUX
 !------------------------------------------------------------------------------!
      Average Neutron Flux (1/cm^3)         : 
-     0.26280E+15 0.18774E+14
+     0.27206E+15 0.12239E+14
 
      Neutron Flux [1/(s cm^2)], group   1                                       
-     Scaling Factor                        :  0.38052E-14
+     Scaling Factor                        :  0.36757E-14
      Average Value                         :  1.00000
 
-     3D Maximum Value                      :  1.84525
-     Reactor Location of 3D Maximum (X,Y,Z):  9  9  7
-     Core    Location of 3D Maximum (X,Y,Z):  6  7  6
+     3D Maximum Value                      :  2.46048
+     Reactor Location of 3D Maximum (X,Y,Z): 14 12  4
+     Core    Location of 3D Maximum (X,Y,Z):  9 10  3
 
-     3D Minimum Value                      :  0.19031
-     Reactor Location of 3D minimum (X,Y,Z): 17  9 12
-     Core    Location of 3D minimum (X,Y,Z): 14  7 11
+     3D Minimum Value                      :  0.03699
+     Reactor Location of 3D minimum (X,Y,Z):  9  9 12
+     Core    Location of 3D minimum (X,Y,Z):  6  7 11
 
-     2D Maximum Value                      :  1.18619
-     Reactor Location of 2D Maximum (X,Y)  :  9  9
-     Core    Location of 2D Maximum (X,Y)  :  6  7
+     2D Maximum Value                      :  1.19607
+     Reactor Location of 2D Maximum (X,Y)  : 13  8
+     Core    Location of 2D Maximum (X,Y)  : 11  6
 
-     2D Minimum Value                      :  0.81640
-     Reactor Location of 2D minimum (X,Y)  : 17  9
-     Core    Location of 2D minimum (X,Y)  : 14  7
+     2D Minimum Value                      :  0.62497
+     Reactor Location of 2D minimum (X,Y)  :  9  9
+     Core    Location of 2D minimum (X,Y)  :  6  7
 
-     1D Maximum                            :  1.54682
-     Reactor Location of the 1D Maximum (Z):        6
-     Core    Location of the 1D Maximum (Z):        5
+     1D Maximum                            :  1.97399
+     Reactor Location of the 1D Maximum (Z):        4
+     Core    Location of the 1D Maximum (Z):        3
 
-     1D Minimum                            :  0.21839
-     Reactor Location of the 1D minimum (Z):        1
-     Core    Location of the 1D minimum (Z):        0
+     1D Minimum                            :  0.06716
+     Reactor Location of the 1D minimum (Z):       12
+     Core    Location of the 1D minimum (Z):       11
 !------------------------------------------------------------------------------!
 
      Neutron Flux [1/(s cm^2)], group   2                                       
-     Scaling Factor                        :  0.53266E-13
+     Scaling Factor                        :  0.81707E-13
      Average Value                         :  1.00000
 
-     3D Maximum Value                      :  3.21239
-     Reactor Location of 3D Maximum (X,Y,Z):  9  9  7
-     Core    Location of 3D Maximum (X,Y,Z):  6  7  6
+     3D Maximum Value                      :  4.80747
+     Reactor Location of 3D Maximum (X,Y,Z): 14 12  4
+     Core    Location of 3D Maximum (X,Y,Z):  9 10  3
 
-     3D Minimum Value                      :  0.00058
-     Reactor Location of 3D minimum (X,Y,Z):  9 17  1
-     Core    Location of 3D minimum (X,Y,Z): 10 15  0
+     3D Minimum Value                      :  0.00032
+     Reactor Location of 3D minimum (X,Y,Z):  1  1 12
+     Core    Location of 3D minimum (X,Y,Z):  2 -1 11
 
-     2D Maximum Value                      :  2.00404
-     Reactor Location of 2D Maximum (X,Y)  :  9  9
-     Core    Location of 2D Maximum (X,Y)  :  6  7
+     2D Maximum Value                      :  2.14526
+     Reactor Location of 2D Maximum (X,Y)  : 13  8
+     Core    Location of 2D Maximum (X,Y)  : 11  6
 
-     2D Minimum Value                      :  0.00361
-     Reactor Location of 2D minimum (X,Y)  :  9 17
-     Core    Location of 2D minimum (X,Y)  : 10 15
+     2D Minimum Value                      :  0.00545
+     Reactor Location of 2D minimum (X,Y)  :  1  1
+     Core    Location of 2D minimum (X,Y)  :  2 -1
 
-     1D Maximum                            :  1.59961
-     Reactor Location of the 1D Maximum (Z):        6
-     Core    Location of the 1D Maximum (Z):        5
+     1D Maximum                            :  2.21570
+     Reactor Location of the 1D Maximum (Z):        4
+     Core    Location of the 1D Maximum (Z):        3
 
-     1D Minimum                            :  0.03206
-     Reactor Location of the 1D minimum (Z):        1
-     Core    Location of the 1D minimum (Z):        0
+     1D Minimum                            :  0.01650
+     Reactor Location of the 1D minimum (Z):       12
+     Core    Location of the 1D minimum (Z):       11
 !------------------------------------------------------------------------------!
             2D NEUTRON FLUX DISTRIBUTION
 !------------------------------------------------------------------------------!
@@ -1524,63 +1524,63 @@ POWER AXIAL OFFSET (p_down - p_up)*100./(p_up+p_down) =   26.93
 
                                   1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17
                               ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
-  1:                          0.825 0.843 0.867 0.885 0.892 0.884 0.864 0.839 0.821
-  2:                       0.842 0.858 0.889 0.918 0.934 0.933 0.916 0.886 0.854 0.838
-  3:                    0.865 0.887 0.930 0.977 1.010 1.020 1.009 0.974 0.926 0.883 0.860
-  4:                 0.882 0.915 0.976 1.039 1.084 1.105 1.104 1.082 1.034 0.968 0.910 0.878
-  5:              0.887 0.929 1.006 1.082 1.128 1.152 1.160 1.151 1.125 1.077 1.001 0.925 0.884
-  6:           0.879 0.928 1.013 1.099 1.149 1.158 1.167 1.167 1.156 1.146 1.095 1.009 0.924 0.876
-  7:        0.859 0.910 1.000 1.094 1.154 1.165 1.175 1.178 1.174 1.163 1.151 1.091 0.997 0.908 0.857
-  8:     0.835 0.881 0.968 1.072 1.143 1.163 1.177 1.184 1.183 1.176 1.161 1.141 1.070 0.965 0.879 0.834
-  9:  0.818 0.851 0.922 1.029 1.119 1.152 1.172 1.183 1.186 1.182 1.171 1.151 1.118 1.028 0.920 0.849 0.816
- 10:     0.835 0.880 0.967 1.074 1.144 1.162 1.175 1.182 1.182 1.174 1.161 1.143 1.073 0.966 0.879 0.834
- 11:        0.858 0.908 0.998 1.095 1.152 1.162 1.171 1.174 1.170 1.161 1.151 1.094 0.997 0.907 0.857
- 12:           0.876 0.924 1.010 1.095 1.145 1.152 1.161 1.160 1.151 1.144 1.095 1.009 0.924 0.876
- 13:              0.883 0.925 1.000 1.074 1.121 1.144 1.150 1.141 1.118 1.075 1.001 0.925 0.883
- 14:                 0.876 0.908 0.966 1.030 1.075 1.094 1.090 1.070 1.029 0.968 0.909 0.877
- 15:                    0.858 0.880 0.922 0.968 1.000 1.009 0.998 0.966 0.921 0.880 0.858
- 16:                       0.834 0.850 0.880 0.909 0.925 0.924 0.908 0.880 0.850 0.835
- 17:                          0.817 0.835 0.858 0.877 0.883 0.876 0.858 0.834 0.817
+  1:                          0.882 0.900 0.925 0.945 0.954 0.952 0.938 0.918 0.903
+  2:                       0.903 0.919 0.951 0.982 0.998 1.002 0.993 0.969 0.942 0.927
+  3:                    0.932 0.956 0.998 1.059 1.086 1.095 1.093 1.075 1.025 0.985 0.959
+  4:                 0.958 0.992 1.065 1.107 1.121 1.121 1.124 1.133 1.130 1.115 1.022 0.982
+  5:              0.972 1.016 1.101 1.130 1.094 1.050 1.037 1.056 1.109 1.154 1.127 1.038 0.990
+  6:           0.971 1.024 1.121 1.143 1.060 0.898 0.841 0.843 0.906 1.073 1.161 1.139 1.040 0.985
+  7:        0.955 1.014 1.126 1.178 1.059 0.849 0.742 0.712 0.746 0.856 1.070 1.192 1.139 1.026 0.965
+  8:     0.931 0.985 1.099 1.186 1.085 0.856 0.716 0.652 0.653 0.720 0.862 1.094 1.196 1.109 0.993 0.939
+  9:  0.913 0.952 1.035 1.148 1.130 0.918 0.751 0.655 0.625 0.657 0.754 0.923 1.136 1.155 1.041 0.958 0.919
+ 10:     0.935 0.990 1.104 1.164 1.080 0.858 0.720 0.657 0.658 0.722 0.861 1.083 1.168 1.107 0.994 0.939
+ 11:        0.965 1.029 1.154 1.161 1.063 0.858 0.753 0.723 0.755 0.860 1.064 1.162 1.154 1.029 0.967
+ 12:           0.988 1.045 1.139 1.158 1.078 0.917 0.861 0.864 0.922 1.080 1.155 1.135 1.043 0.987
+ 13:              0.996 1.043 1.133 1.163 1.124 1.081 1.073 1.093 1.132 1.157 1.122 1.035 0.990
+ 14:                 0.989 1.031 1.127 1.147 1.158 1.163 1.191 1.193 1.148 1.094 1.016 0.979
+ 15:                    0.969 0.998 1.041 1.097 1.125 1.138 1.137 1.104 1.033 0.984 0.957
+ 16:                       0.941 0.957 0.989 1.019 1.035 1.038 1.022 0.987 0.950 0.931
+ 17:                          0.918 0.936 0.961 0.980 0.988 0.982 0.961 0.932 0.912
  
 
      Neutron Flux [1/(s cm^2)], group   2                                       
 
                                   1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17
                               ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
-  1:                          0.004 0.009 0.016 0.021 0.021 0.021 0.016 0.008 0.004
-  2:                       0.009 0.022 0.097 0.168 0.176 0.176 0.168 0.097 0.022 0.008
-  3:                    0.016 0.097 0.241 1.451 1.525 1.541 1.523 1.446 0.236 0.093 0.016
-  4:                 0.021 0.168 1.448 1.596 1.690 1.723 1.722 1.686 1.587 1.354 0.163 0.020
-  5:              0.021 0.175 1.519 1.686 1.766 1.807 1.819 1.804 1.760 1.676 1.509 0.174 0.021
-  6:           0.021 0.175 1.528 1.712 1.802 1.946 1.965 1.964 1.943 1.797 1.705 1.522 0.174 0.020
-  7:        0.016 0.166 1.506 1.611 1.807 1.961 1.984 1.991 1.983 1.958 1.802 1.606 1.501 0.166 0.016
-  8:     0.008 0.096 1.434 1.577 1.788 1.957 1.988 2.000 1.999 1.986 1.954 1.784 1.574 1.431 0.096 0.008
-  9:  0.004 0.022 0.238 1.579 1.749 1.936 1.980 1.998 2.004 1.997 1.977 1.934 1.746 1.576 0.238 0.022 0.004
- 10:     0.008 0.096 1.433 1.672 1.794 1.956 1.985 1.997 1.996 1.984 1.954 1.792 1.669 1.431 0.096 0.008
- 11:        0.016 0.163 1.421 1.705 1.807 1.956 1.978 1.984 1.977 1.954 1.805 1.704 1.420 0.163 0.016
- 12:           0.020 0.171 1.523 1.709 1.795 1.937 1.954 1.953 1.934 1.793 1.708 1.523 0.171 0.020
- 13:              0.021 0.174 1.507 1.673 1.753 1.793 1.800 1.784 1.747 1.675 1.511 0.174 0.021
- 14:                 0.020 0.163 1.350 1.580 1.676 1.704 1.606 1.574 1.578 1.437 0.167 0.021
- 15:                    0.016 0.092 0.235 1.437 1.510 1.521 1.502 1.432 0.238 0.096 0.016
- 16:                       0.008 0.022 0.096 0.167 0.174 0.174 0.166 0.096 0.022 0.008
- 17:                          0.004 0.008 0.016 0.021 0.021 0.021 0.016 0.008 0.004
+  1:                          0.005 0.012 0.021 0.027 0.027 0.027 0.021 0.012 0.006
+  2:                       0.012 0.028 0.122 0.210 0.219 0.219 0.211 0.124 0.030 0.012
+  3:                    0.021 0.122 0.299 1.789 1.865 1.881 1.876 1.812 0.310 0.131 0.023
+  4:                 0.027 0.211 1.798 1.931 1.984 1.986 1.991 2.002 1.966 1.925 0.222 0.028
+  5:              0.028 0.222 1.886 1.997 1.935 1.850 1.826 1.861 1.957 2.034 1.926 0.226 0.028
+  6:           0.027 0.224 1.920 2.019 1.865 1.343 1.253 1.256 1.354 1.886 2.046 1.947 0.227 0.028
+  7:        0.022 0.216 1.925 2.113 1.859 1.264 1.096 1.051 1.101 1.275 1.877 2.138 1.945 0.218 0.022
+  8:     0.012 0.126 1.849 2.127 1.904 1.275 1.057 0.962 0.964 1.062 1.284 1.918 2.145 1.863 0.127 0.012
+  9:  0.006 0.029 0.309 1.993 1.989 1.371 1.109 0.966 0.922 0.969 1.114 1.379 2.000 2.004 0.311 0.030 0.006
+ 10:     0.012 0.127 1.856 2.050 1.897 1.278 1.063 0.969 0.970 1.066 1.282 1.903 2.057 1.862 0.127 0.012
+ 11:        0.022 0.223 2.019 2.049 1.868 1.278 1.112 1.067 1.115 1.281 1.871 2.051 2.019 0.224 0.022
+ 12:           0.028 0.232 1.948 2.044 1.896 1.371 1.282 1.286 1.377 1.898 2.041 1.944 0.232 0.028
+ 13:              0.029 0.227 1.936 2.050 1.982 1.899 1.883 1.919 1.994 2.041 1.921 0.226 0.029
+ 14:                 0.028 0.224 1.946 1.994 2.043 2.052 2.137 2.139 1.994 1.843 0.216 0.028
+ 15:                    0.023 0.133 0.315 1.847 1.925 1.948 1.943 1.857 0.309 0.125 0.022
+ 16:                       0.012 0.030 0.126 0.216 0.226 0.227 0.218 0.126 0.029 0.012
+ 17:                          0.006 0.012 0.022 0.028 0.028 0.028 0.022 0.012 0.006
  
 !------------------------------------------------------------------------------!
      1D AXIAL NEUTRON FLUX DISTRIBUTIONS
 
   NZ       1     2
-   1:  0.218 0.032
-   2:  0.590 0.600
-   3:  0.945 0.973
-   4:  1.235 1.276
-   5:  1.440 1.489
-   6:  1.547 1.600
-   7:  1.547 1.600
-   8:  1.440 1.489
-   9:  1.235 1.276
-  10:  0.945 0.973
-  11:  0.590 0.600
-  12:  0.218 0.032
+   1:  0.448 0.082
+   2:  1.211 1.516
+   3:  1.712 1.942
+   4:  1.974 2.216
+   5:  1.955 2.173
+   6:  1.657 1.797
+   7:  1.134 0.891
+   8:  0.771 0.574
+   9:  0.515 0.373
+  10:  0.327 0.233
+  11:  0.183 0.129
+  12:  0.067 0.017
 !------------------------------------------------------------------------------!
 !------------------------------------------------------------------------------!
             BURNUP DISTRIBUTION
@@ -1867,19 +1867,19 @@ Sm149 Average Value of Isotope concentration =0.000000E+00 [nuclei/cm^3 x 10^24]
 !------------------------------------------------------------------------------!
  Number of Thermal-Hydraulics Calculations =       0
  Number of Nonlinear Iterations            =       0
- Number of Source Iteration per Nonlinear  =      51
+ Number of Source Iteration per Nonlinear  =      63
  Number of SSOR iterations  per Outer      =       2
  n_inter =  2 e_inter =.10000E-07
- Convergence  of k_eff (actual, tolerance) =  0.71526E-06 0.10000E-04
- Convergence  of flux  (actual, tolerance) =  0.89954E-06 0.10000E-05
+ Convergence  of k_eff (actual, tolerance) =  0.53644E-06 0.10000E-04
+ Convergence  of flux  (actual, tolerance) =  0.60152E-06 0.10000E-05
 !------------------------------------------------------------------------------!
- SKETCH has used  0.1250000    seconds of CPU time
+ SKETCH has used  0.1718750    seconds of CPU time
     This Include: 
        Internal  T/H Module       0.0000000E+00 s   0.0000000E+00 %
        Nodal Coefficient Update:  0.0000000E+00 s   0.0000000E+00 %
-       CMFD Iterations            4.6875000E-02 s    37.50000     %
+       CMFD Iterations            6.2500000E-02 s    36.36364     %
        XS Updates                 0.0000000E+00 s   0.0000000E+00 %
-       Input/Output Module        4.6875000E-02 s    37.50000     %
- CHECKING SUM  0.1562500     seconds of CPU time
- This include user time, system time =   4.6875000E-02  0.1093750    
+       Input/Output Module        3.1250000E-02 s    18.18182     %
+ CHECKING SUM  0.2031250     seconds of CPU time
+ This include user time, system time =   0.1093750      9.3750000E-02
 !------------------------------------------------------------------------------!

@@ -1,7 +1,11 @@
 import os
 from mako.template import Template
 import codecs
+from scipy.interpolate import interp1d
+import numpy as np
+import matplotlib.pyplot as plt
 from scripts.getera import Getera
+from scripts.graphics import read_file, get_burn_time, plot_spline
 
 class Sketch():
 
@@ -102,11 +106,37 @@ class Sketch():
         os.system(sketch_exe)
         os.chdir(cur_dir)
 
-if __name__ == "__main__":
-    template_names = os.listdir("../templates")
+    def get_keff(self, lines):
+        keff_separator = r"k_ef                                  :"
+        keff = []
 
-    for template_name in template_names:
-        getera = Getera(template_name)
-        getera.start()
-    sketch = Sketch()
-    sketch.start()
+        for line in lines:
+            if keff_separator in line:
+                splited = line.split()
+                keff.append(splited[2])
+        return float(keff[1])
+
+
+if __name__ == "__main__":
+    cur_path = os.path.split(__file__)[0]
+    template_names = os.listdir("../templates")
+    sketch_input = os.path.join(cur_path, r"../sketch_fast_reactor/Output/SKETCH.lst")
+    getera_out_path = os.path.join(cur_path, r"../Getera-93/prakticeOutput/")
+    getera_output_files = os.listdir(getera_out_path)
+    getera_output_file = os.path.join(cur_path, getera_out_path, getera_output_files[2])
+
+    burn_n = 5
+    keff = []
+
+    for n in range(burn_n):
+        for template_name in template_names:
+            getera = Getera(template_name, n)
+            getera.start()
+        sketch = Sketch()
+        sketch.start()
+        output_lines = sketch.read_file(sketch_input)
+        keff.append(sketch.get_keff(output_lines))
+
+    data = read_file(getera_output_file)
+    time = get_burn_time(data)
+    plot_spline(time, keff,"t, сутки", "keff")

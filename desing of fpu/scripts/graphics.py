@@ -3,9 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
+
 # Constants
 kinf = 1.15010
-keff = 1.153780
+# keff = 1.153780
 P = 1
 kinf_separator = "  ***k(inf)="
 burn_separator = " *** average burn up ="
@@ -124,13 +125,12 @@ if __name__ == "__main__":
     cur_path = os.path.split(__file__)[0]
     getera_out_path = os.path.join(cur_path, r"../Getera-93/prakticeOutput/")
     getera_output_files = os.listdir(getera_out_path)
-    getera_output_file = os.path.join(cur_path, getera_out_path, getera_output_files[5])
+    getera_output_file = os.path.join(cur_path, getera_out_path, getera_output_files[2])
 
     data = read_file(getera_output_file)
 
     time = get_burn_time(data)
     kinf = get_Kinf(data)
-    keff = list(map(lambda x: float(x) * 0.9459, kinf))
     print(keff)
     gd57_svp1 = get_gd57_svp1(data)
     gd57_svp2 = get_gd57_svp2(data)
@@ -141,6 +141,6 @@ if __name__ == "__main__":
     # plot_spline(time, pu39, "t, сутки", "ro pu39")
     # plot_spline(time, pu41, "t, сутки", "ro pu41")
     # plot_spline(time, burn, "t, сутки", "PT, $МВт⋅сут/кг$")
-    plot_spline(time, kinf, "t, сутки", "keff")
+    # plot_spline(time, kinf, "t, сутки", "keff")
     # plot_spline(time, gd57_svp1, "t, сутки", r"$\rho$ $Gd^{57}$, $1/см^3 \times 10^{24}$ svp1")
     # plot_spline(time, gd57_svp2, "t, сутки", r"$\rho$ $Gd^{57}$, $1/см^3 \times 10^{24}$ svp2")

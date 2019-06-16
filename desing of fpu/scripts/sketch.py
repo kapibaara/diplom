@@ -116,6 +116,9 @@ class Sketch():
                 keff.append(splited[2])
         return float(keff[1])
 
+def write_file(file, lines):
+    with open(file, 'w') as f:
+        f.write(lines)
 
 if __name__ == "__main__":
     cur_path = os.path.split(__file__)[0]
@@ -124,19 +127,21 @@ if __name__ == "__main__":
     getera_out_path = os.path.join(cur_path, r"../Getera-93/prakticeOutput/")
     getera_output_files = os.listdir(getera_out_path)
     getera_output_file = os.path.join(cur_path, getera_out_path, getera_output_files[2])
+    keff_output_file = os.path.join(cur_path, r"./keff.txt")
 
-    burn_n = 5
+    burn_n = 2
     keff = []
 
     for n in range(burn_n):
         for template_name in template_names:
-            getera = Getera(template_name, n)
+            getera = Getera(template_name, n, 0.8)
             getera.start()
         sketch = Sketch()
         sketch.start()
         output_lines = sketch.read_file(sketch_input)
         keff.append(sketch.get_keff(output_lines))
 
-    data = read_file(getera_output_file)
-    time = get_burn_time(data)
-    plot_spline(time, keff,"t, сутки", "keff")
+    write_file(keff_output_file, " ".join(map(str, keff)))
+    # data = read_file(getera_output_file)
+    # time = get_burn_time(data)
+    # plot_spline(time, keff,"t, сутки", "keff")

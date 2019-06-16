@@ -62,17 +62,27 @@ class Gd2o3(object):
         self.Gd57.append(N=self.Gd57.x * self.N * 2)
         self.O.append(N= self.N*3)
 
-class H2O(object):
-    def __init__(self):
-        self.density = 0.698
+class Coolant(object):
+    def __init__(self, delta):
+        self.delta = delta
+        self.d_H2O = 0.7
+        self.d_D2O = 1.11
+        self.d_composition = self.d_H2O * (1 - delta) + self.d_D2O * delta
         self.H = Material(x=1.0, M=1)
         self.O = Material(x=1.0, M=16)
-        self.M = 2*self.H.M + self.O.M
+        self.D = Material(x=1.0, M=2)
+        self.M_H2O = 2 * self.H.M + self.O.M
+        self.M_D2O = 2 * self.D.M + self.O.M
 
     def calc_nuclear_density(self):
-        self.N = (self.density * Na / self.M)
-        self.H.append(N=2*self.N)
-        self.O.append(N= self.N)
+        self.N_H2O = (self.d_H2O / self.M_H2O)
+        self.N_D2O = (self.d_D2O / self.M_D2O)
+        self.M_composition = self.d_composition/(self.N_H2O * (1 - self.delta) + self.N_D2O * self.delta)
+        self.N_O = Na * self.d_composition / self.M_composition
+        self.H.append(N=2 * self.N_H2O * (1 - self.delta) * Na)
+        self.D.append(N=2 * self.N_D2O * self.delta * Na)
+        self.O.append(N= self.N_O)
+
 
 class Shall(object):
     def __init__(self, x):

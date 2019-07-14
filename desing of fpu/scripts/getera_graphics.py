@@ -131,7 +131,6 @@ if __name__ == "__main__":
 
     time = get_burn_time(data)
     kinf = get_Kinf(data)
-    print(keff)
     gd57_svp1 = get_gd57_svp1(data)
     gd57_svp2 = get_gd57_svp2(data)
     burn = get_burn_up(data)

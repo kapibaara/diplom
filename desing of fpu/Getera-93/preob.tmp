@@ -17,9 +17,9 @@
  0.5830e+03,
  troiz=
  
-  0.0000000, 0.0000000, 0.0000000, 0.0093644, 0.0000000, 0.0000000,
+  0.0000000, 0.0000000, 0.0000000, 0.0468222, 0.0000000, 0.0000000,
  0.0000000,
-  0.0000000, 0.0000000, 0.0000000, 0.0314110, 0.0000000 , 0.0000000,
+  0.0000000, 0.0000000, 0.0000000, 0.0234111, 0.0000000 , 0.0000000,
  0.0000000,
   0.0000000, 0.0000000, 0.0431323, 0.0000000, 0.0000000, 0.0000000,
  0.0000000,
@@ -53,7 +53,7 @@
  0.0000000,
   0.0000000, 0.0000000, 0.0000000, 0.0000000, 0.0000000, 0.0000000,
  0.0000000,
-  0.0000000, 0.0000000, 0.0000000, 0.0534576, 0.0000000, 0.0000000,
+  0.0000000, 0.0000000, 0.0000000, 0.0000000, 0.0000000, 0.0000000,
  0.0000000,
  ntcell=1,2,3,4,5,6,
  krat= 51,18,9,6,7,36,
@@ -87,7 +87,367 @@ pu41
 d
 ****
 :burn
- &vvod qv=105.5,dtim=50,
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
+ &end
+:corr
+ &vvod &end
+:burn
+ &vvod qv=119,dtim=20,
  &end
 :corr
  &vvod &end

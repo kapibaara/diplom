@@ -73,7 +73,7 @@ d
 ****
 %for b in range(burn_n):
 :burn
- &vvod qv=105.5,dtim=${burn_time},
+ &vvod qv=119,dtim=${burn_time},
  &end
 :corr
  &vvod &end

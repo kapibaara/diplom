@@ -5,11 +5,11 @@ from scipy.interpolate import interp1d
 import numpy as np
 import matplotlib.pyplot as plt
 from scripts.getera import Getera
-from scripts.graphics import read_file, get_burn_time, plot_spline
+from scripts.getera_graphics import read_file, get_burn_time, plot_spline
 
 class Sketch():
 
-    def __init__(self):
+    def __init__(self, n_per_pel=0, n_cen_pel=0):
         self.cur_path = os.path.split(__file__)[0]
         self.sketch_exe_path = r"C:\Users\kapib\Documents\Repositories\diplom\desing of fpu\sketch_fast_reactor\SKETCH.exe"
 
@@ -18,6 +18,11 @@ class Sketch():
         self.sketch_input = os.path.join(self.cur_path, r"../sketch_fast_reactor/Input/prakticeInput.dat")
 
         self.sketch_template_path = os.path.join(self.cur_path, r".\sketch.mako")
+
+        self.n_per_not_pel = 10 - n_per_pel
+        self.n_per_pel = n_per_pel
+        self.n_cen_not_pel = 10 - n_cen_pel
+        self.n_cen_pel = n_cen_pel
 
     def read_file(self, file):
         lines = []
@@ -92,10 +97,15 @@ class Sketch():
         data = self.get_sketch_input()
 
         template = Template(filename=self.sketch_template_path)
-        input_file = template.render(data=data)
 
         with codecs.open(self.sketch_input, 'w', encoding='cp1251') as file:
-            file.write(template.render(data=data))
+            file.write(template.render(
+                data=data,
+                n_per_not_pel=self.n_per_not_pel,
+                n_per_pel=self.n_per_pel,
+                n_cen_not_pel=self.n_cen_not_pel,
+                n_cen_pel=self.n_cen_pel
+            ))
 
     def start(self):
         self.render()
@@ -116,6 +126,22 @@ class Sketch():
                 keff.append(splited[2])
         return float(keff[1])
 
+    def get_per_pels_ratio(self, lines):
+        per_pels_separator = r"## nb = 2"
+
+        for line in lines:
+            if per_pels_separator in line:
+                splited = line.split()
+        return float(splited[2].split('*')[0])
+
+    def get_cen_pels_ratio(self, lines):
+        cen_pels_separator = r"## nb = 1"
+
+        for line in lines:
+            if cen_pels_separator in line:
+                splited = line.split()
+        return float(splited[2].split('*')[0])
+
 def write_file(file, lines):
     with open(file, 'w') as f:
         f.write(lines)
@@ -127,21 +153,51 @@ if __name__ == "__main__":
     getera_out_path = os.path.join(cur_path, r"../Getera-93/prakticeOutput/")
     getera_output_files = os.listdir(getera_out_path)
     getera_output_file = os.path.join(cur_path, getera_out_path, getera_output_files[2])
-    keff_output_file = os.path.join(cur_path, r"./keff.txt")
+    keff_output_file = os.path.join(cur_path, r"./results/keff.txt")
+    burn_output_file = os.path.join(cur_path, r"./results/burn.txt")
+    time_output_file = os.path.join(cur_path, r"./results/time.txt")
+    per_pel_ratio_output_file = os.path.join(cur_path, r"./results/per_pel_ratio.txt")
+    cen_pel_ratio_output_file = os.path.join(cur_path, r"./results/cen_pel_ratio.txt")
 
-    burn_n = 2
+    burn_n = 150
     keff = []
+    burn = []
+    per_pel_ratio = []
+    cen_pel_ratio = []
+
+    n_per_pel = 8
+    n_cen_pel = 8
 
     for n in range(burn_n):
+        burn.append(n)
         for template_name in template_names:
-            getera = Getera(template_name, n, 0.8)
+            getera = Getera(template_name, n, 0)
             getera.start()
-        sketch = Sketch()
+        sketch = Sketch(n_per_pel, n_cen_pel)
         sketch.start()
         output_lines = sketch.read_file(sketch_input)
-        keff.append(sketch.get_keff(output_lines))
+        input_lines = sketch.read_file(sketch.sketch_input)
+
+        keff_inprogress = sketch.get_keff(output_lines)
+        keff.append(keff_inprogress)
+        per_pel_ratio.append(sketch.get_per_pels_ratio(input_lines))
+        cen_pel_ratio.append(sketch.get_cen_pels_ratio(input_lines))
+
+        if ((keff_inprogress < 1.02) and (n_per_pel > 0) and ( n_cen_pel > 0)):
+            n_per_pel = n_per_pel - 1
+            n_cen_pel = n_cen_pel - 1
+        # if ((keff_inprogress > 1.03) and (n_per_pel > 0) and ( n_cen_pel > 0)):
+        #     n_per_pel = n_per_pel + 1
+        #     n_cen_pel = n_cen_pel + 1
+        if ((n_per_pel == 0) and ( n_cen_pel == 0)):
+            break
+
 
     write_file(keff_output_file, " ".join(map(str, keff)))
-    # data = read_file(getera_output_file)
-    # time = get_burn_time(data)
-    # plot_spline(time, keff,"t, сутки", "keff")
+    write_file(burn_output_file, " ".join(map(str, burn)))
+    write_file(per_pel_ratio_output_file, " ".join(map(str, per_pel_ratio)))
+    write_file(cen_pel_ratio_output_file, " ".join(map(str, cen_pel_ratio)))
+    data = read_file(getera_output_file)
+    time = get_burn_time(data)
+    write_file(time_output_file, " ".join(map(str, time)))
+    plot_spline(time, keff,"t, сутки", "keff")

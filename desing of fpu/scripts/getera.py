@@ -5,7 +5,7 @@ from scripts.materials import B4C, Fuel, Coolant, Shall, Shall_B4C, Gd2o3
 
 class Getera():
 
-    def __init__(self, template_name, burn_n=0, delta=0, burn_time=50, C=6E-3):
+    def __init__(self, template_name, burn_n=0, delta=0, burn_time=20, C=6E-3):
         self.cur_path = os.path.split(__file__)[0]
         self.getera_exe_path = r"C:\Users\kapib\Documents\Repositories\diplom\desing of fpu\Getera-93\Getera-93.bat"
 

@@ -1,13 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.4.20)  23 APR 2019 10:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.7.17)  18 JUL 2019 21:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**îò÷åò.tex
-(./îò÷åò.tex
+**Ð¾Ñ‚Ñ‡ÐµÑ‚.tex
+(./Ð¾Ñ‚Ñ‡ÐµÑ‚.tex
 LaTeX2e <2018-12-01>
-(c:/texlive/2018/texmf-dist/tex/latex/base/article.cls
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
-(c:/texlive/2018/texmf-dist/tex/latex/base/size10.clo
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -22,36 +22,36 @@ File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(c:/texlive/2018/texmf-dist/tex/latex/extsizes/extsizes.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/extsizes/extsizes.sty
 Package: extsizes 1996/10/08 v1.0 Non Standard LaTeX Package
 
 
 Package ExtSizes Warning: It is better to use one of the extsizes classes,
  if you can.
 
-(c:/texlive/2018/texmf-dist/tex/latex/extsizes/size14.clo
+(/usr/local/texlive/2019/texmf-dist/tex/latex/extsizes/size14.clo
 File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
 ))
-(c:/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 )
-(c:/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2018/11/13 3.27 The Babel package
+(/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2019/05/04 3.31 The Babel package
 
-(c:/texlive/2018/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2018/11/13 3.27 Babel switching mechanism
+(/usr/local/texlive/2019/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2019/05/04 3.31 Babel switching mechanism
 )
-(c:/texlive/2018/texmf-dist/tex/generic/babel-russian/russianb.ldf
+(/usr/local/texlive/2019/texmf-dist/tex/generic/babel-russian/russianb.ldf
 Language: russian 2017/08/12 1.3j Russian support for the Babel system
 
-(c:/texlive/2018/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2018/11/13 3.27 Babel common definitions
+(/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2019/05/04 3.31 Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 
-(c:/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@dirlevel=\count89
 )
 
@@ -60,12 +60,12 @@ Package babel Warning: No Cyrillic font encoding has been loaded so far.
 (babel)                Default `T2A' encoding will be loaded  on input line 74.
 
 
-(c:/texlive/2018/texmf-dist/tex/latex/cyrillic/t2aenc.def
+(/usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2aenc.def
 File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
 Now handling font encoding T2A ...
 ... processing UTF-8 mapping file for font encoding T2A
 
-(c:/texlive/2018/texmf-dist/tex/latex/base/t2aenc.dfu
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t2aenc.dfu
 File: t2aenc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
@@ -258,27 +258,27 @@ File: t2aenc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
 Package babel Info: Making " an active character on input line 120.
 Package babel Info: Default for \cyrdash is provided on input line 157.
 ))
-(c:/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen104
 ))
-(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen105
 )
-(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count90
@@ -319,21 +319,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 LaTeX Info: Redefining \[ on input line 2844.
 LaTeX Info: Redefining \] on input line 2845.
 )
-(c:/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
-(c:/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
 )
-(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
-(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(c:/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count102
@@ -349,10 +349,10 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen120
 \Gm@dimlist=\toks22
 )
-(c:/texlive/2018/texmf-dist/tex/latex/tools/indentfirst.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-(c:/texlive/2018/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -367,12 +367,12 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 
-(c:/texlive/2018/texmf-dist/tex/latex/base/ts1enc.def
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-(c:/texlive/2018/texmf-dist/tex/latex/base/ts1enc.dfu
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1enc.dfu
 File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -509,47 +509,48 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-(c:/texlive/2018/texmf-dist/tex/latex/tipa/tipa.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tipa/tipa.sty
 Package: tipa 2002/08/08 TIPA version 1.1
 
-(c:/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
 
-(c:/texlive/2018/texmf-dist/tex/latex/tipa/t3enc.def
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tipa/t3enc.def
 File: t3enc.def 2001/12/31 T3 encoding
 Now handling font encoding T3 ...
 ... no UTF-8 mapping file for font encoding T3
 )
-(c:/texlive/2018/texmf-dist/tex/latex/base/ot1enc.def
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ot1enc.def
 File: ot1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding OT1 on input line 48.
 )))
-(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(c:/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen121
 \Gin@req@width=\dimen122
-) (./îò÷åò.aux
+)
+(./Ð¾Ñ‚Ñ‡ÐµÑ‚.aux
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 3.
 
-(c:/texlive/2018/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+(/usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
-\openout1 = `îò÷åò.aux'.
+\openout1 = `Ð¾Ñ‚Ñ‡ÐµÑ‚.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
@@ -568,14 +569,14 @@ LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 31.
 
-(c:/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 31.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 31.
 
-(c:/texlive/2018/texmf-dist/tex/latex/tipa/t3cmr.fd
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 31.
@@ -614,7 +615,7 @@ LaTeX Font Info:    ... okay on input line 31.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count105
 \scratchdimen=\dimen123
@@ -627,40 +628,35 @@ LaTeX Font Info:    ... okay on input line 31.
 \MPnumerator=\count109
 \makeMPintoPDFobject=\count110
 \everyMPtoPDFconversion=\toks24
-) (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(c:/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 
-(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )))
-(c:/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+))))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -674,7 +670,7 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
-(c:/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -695,8 +691,8 @@ Package pdftex.def Info: pictures/spectr.png  used on input line 48.
 (pdftex.def)             Requested size: 267.24779pt x 188.95546pt.
 [1
 
-{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./pictures/delt
-aOtK.PNG> <./pictures/spectr.PNG>]
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./pictu
+res/deltaOtK.png> <./pictures/spectr.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 62--62
 []\T2A/cmr/m/n/14.4 Âûãîðàíèå
  []
@@ -719,33 +715,35 @@ Package pdftex.def Info: pictures/pu2.png  used on input line 88.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2 <./pictures/pu1.PNG>]
+[2 <./pictures/pu1.png>]
 <pictures/pu2n.png, id=27, 318.43968pt x 185.94469pt>
 File: pictures/pu2n.png Graphic file (type png)
 <use pictures/pu2n.png>
 Package pdftex.def Info: pictures/pu2n.png  used on input line 96.
 (pdftex.def)             Requested size: 318.4389pt x 185.94421pt.
- [3 <./pictures/pu2.PNG> <./pictures/pu2n.PNG>]
-(./îò÷åò.aux) ) 
+ [3 <./pictures/pu2.png> <./pictures/pu2n.png>]
+(./Ð¾Ñ‚Ñ‡ÐµÑ‚.aux) ) 
 Here is how much of TeX's memory you used:
- 5236 strings out of 492616
- 70230 string characters out of 6132768
- 142359 words of memory out of 5000000
- 9049 multiletter control sequences out of 15000+600000
+ 5243 strings out of 492616
+ 71353 string characters out of 6129481
+ 143852 words of memory out of 5000000
+ 9064 multiletter control sequences out of 15000+600000
  15393 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,25p,1546b,264s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2
-a.enc}<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:
-/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2018/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2018/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-su
-per/sfbx1728.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx20
-74.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:
-/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on îò÷åò.pdf (3 pages, 139726 bytes).
+ 41i,12n,25p,1551b,264s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-supe
+r/cm-super-t2a.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx17
+28.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx2074
+.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1000.p
+fb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb
+>
+Output written on Ð¾Ñ‚Ñ‡ÐµÑ‚.pdf (3 pages, 140919 bytes).
 PDF statistics:
  66 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream

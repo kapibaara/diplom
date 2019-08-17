@@ -7,5 +7,5 @@ BNABTHM.BIN:.\get-93\bin\BNABTHM.lib
 BNAB:.\get-93\bin\XE35.MLT
 F11:.\get-93\bin\f11
 
-INGET: prakticeInput\pr_per_WithPel.dat
-OUTGET: prakticeOutput\pr_per_WithPel.out
+INGET: prakticeInput\elementaryCell.dat
+OUTGET: prakticeOutput\elementaryCell.out

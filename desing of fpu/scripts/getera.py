@@ -1,19 +1,19 @@
 import os
 from mako.template import Template
-from scripts.materials import B4C, Fuel, Coolant, Shall, Shall_B4C, Gd2o3
+from materials import B4C, Fuel, Coolant, Shall, Shall_B4C, Gd2o3
 
 
 class Getera():
 
     def __init__(self, template_name, burn_n=0, delta=0, burn_time=20, C=6E-3):
         self.cur_path = os.path.split(__file__)[0]
-        self.getera_exe_path = r"C:\Users\kapib\Documents\Repositories\diplom\desing of fpu\Getera-93\Getera-93.bat"
+        self.getera_exe_path = os.path.join(self.cur_path, "../Getera-93/Getera-93.bat")
 
         self.template_name = template_name
         self.filename = self.template_name.split(".")[0]
-        self.template_path = os.path.join(self.cur_path, r"..\templates", self.template_name)
+        self.template_path = os.path.join(self.cur_path, "../templates", self.template_name)
 
-        self.cfg_template_path = os.path.join(self.cur_path, r".\CONFIG.mako")
+        self.cfg_template_path = os.path.join(self.cur_path, r"./CONFIG.mako")
         self.cfg_file = os.path.join(self.cur_path, r"../Getera-93/CONFIG.DRV")
 
         self.input_file = os.path.join(self.cur_path, r"../Getera-93/prakticeInput/", self.filename + ".dat")
@@ -81,6 +81,7 @@ class Getera():
         os.system(getera_exe)
         # time.sleep(2)
         os.chdir(cur_dir)
+
 
 if __name__ == "__main__":
     template_names = os.listdir("../templates")

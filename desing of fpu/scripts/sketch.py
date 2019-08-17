@@ -4,8 +4,8 @@ import codecs
 from scipy.interpolate import interp1d
 import numpy as np
 import matplotlib.pyplot as plt
-from scripts.getera import Getera
-from scripts.getera_graphics import read_file, get_burn_time, plot_spline
+from getera import Getera
+from getera_graphics import read_file, get_burn_time, plot_spline
 
 class Sketch():
 
